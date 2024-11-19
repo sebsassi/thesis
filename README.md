@@ -1,0 +1,1 @@
+This repository contains the LaTeX sources for my PhD thesis and included plots, as well as the data used to generate the plots.
