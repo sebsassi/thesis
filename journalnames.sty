@@ -1,0 +1,404 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{journalnames}[2024/10/09 Package for journal names macros]
+
+\newcommand{\aap}{Astronomy and Astrophysics}
+\newcommand{\aapr}{Astronomy and Astrophysics Reviews}
+\newcommand{\aaps}{Astronomy and Astrophysics, Supplement}
+\newcommand{\actaa}{Acta Astronomica}
+\newcommand{\adp}{Annalen der Physik}
+\newcommand{\annlund}{Annals of the Observatory of Lund}
+\newcommand{\ahep}{Advances in High Energy Physics}
+\newcommand{\aia}{Advances in Astronomy}
+\newcommand{\aj}{The Astronomical Journal}
+\newcommand{\annmatstat}{The Annals of Mathematical Statistics}
+\newcommand{\apj}{The Astrophysical Journal}
+\newcommand{\apjl}{The Astrophysical Journal, Letters}
+\newcommand{\apjs}{The Astrophysical Journal, Supplement}
+\newcommand{\apl}{Applied Physics Letters}
+\newcommand{\aplett}{Astrophysics Letters}
+\newcommand{\app}{Astroparticle Physics}
+\newcommand{\apss}{Astrophysics and Space Science}
+\newcommand{\apspr}{Astrophysics Space Physics Research}
+\newcommand{\ao}{Applied Optics}
+\newcommand{\araa}{Annual Review of Astronomy and Astrophysics}
+\newcommand{\arnps}{Annual Review of Nuclear and Particle Science}
+\newcommand{\assb}{Annales de la Société Scientifique de Bruxelles}
+\newcommand{\azh}{Astronomicheskii Zhurnal}
+\newcommand{\baas}{Bulletin of the American Astronomical Society}
+\newcommand{\bain}{Bulletin of the Astronomical Institutes of the Netherlands}
+\newcommand{\caa}{Chinese Astronomy and Astrophysics}
+\newcommand{\cjaa}{Chinese Journal of Astronomy and Astrophysics}
+\newcommand{\cmda}{Celestial Mechanics and Dynamical Astronomy}
+\newcommand{\cp}{Communications Physics}
+\newcommand{\cpc}{Chinese Physics C}
+\newcommand{\epjc}{European Physical Journal C}
+\newcommand{\fcp}{Fundamental Cosmic Physics}
+\newcommand{\gca}{Geochimica et Cosmochimica Acta}
+\newcommand{\gcgpgs}{Geochemistry, Geophysics, Geosystems}
+\newcommand{\grl}{Geophysics Research Letters}
+\newcommand{\hpa}{Helvetica Physica Acta}
+\newcommand{\iaucirc}{IAU Circular}
+\newcommand{\icarus}{Icarus}
+\newcommand{\ierstn}{IERS Technical Note}
+\newcommand{\ijmpa}{International Journal of Modern Physics A}
+\newcommand{\ijmpd}{International Journal of Modern Physics D}
+\newcommand{\jap}{Journal of Applied Physics}
+\newcommand{\jcap}{Journal of Cosmology and Astroparticle Physics}
+\newcommand{\jcp}{Journal of Chemical Physics}
+\newcommand{\jetp}{Journal of Experimental and Theoretical Physics}
+\newcommand{\jgr}{Journal of Geophysics Research}
+\newcommand{\jhep}{Journal of High Energy Physics}
+\newcommand{\jltp}{Journal of Low Temperature Physics}
+\newcommand{\jpconf}{Journal of Physics: Conference Series}
+\newcommand{\jpg}{Journal of Physics G: Nuclear and Particle Physics}
+\newcommand{\jqsrt}{Journal of Quantitiative Spectroscopy and Radiative Transfer}
+\newcommand{\jrasc}{Journal of the Royal Astronomical Society of Canada}
+\newcommand{\memras}{Memoirs of the Royal Astronomical Society}
+\newcommand{\memsai}{Memorie Della Società Astronomica Italiana}
+\newcommand{\mnras}{Monthly Notices of the Royal Astronomical Society}
+\newcommand{\mnrasl}{Monthly Notices of the Royal Astronomical Society: Letters}
+\newcommand{\na}{New Astronomy}
+\newcommand{\nar}{New Astronomy Review}
+\newcommand{\nat}{Nature}
+\newcommand{\natcomm}{Nature Communications}
+\newcommand{\nphysa}{Nuclear Physics A}
+\newcommand{\nphysb}{Nuclear Physics B}
+\newcommand{\nppp}{Nuclear and Particle Physics Proceedings}
+\newcommand{\pasa}{Publications of the Astronomical Society of Australia}
+\newcommand{\pasj}{Publications of the Astronomical Society of Japan}
+\newcommand{\pasp}{Publications of the Astronomical Society of the Pacific}
+\newcommand{\pdu}{Physics of the Dark Universe}
+\newcommand{\physrep}{Physics Reports}
+\newcommand{\physscr}{Physica Scripta}
+\newcommand{\planss}{Planetary and Space Science}
+\newcommand{\plb}{Physics Letters B}
+\newcommand{\pos}{Proceedings of Science}
+\newcommand{\ppanp}{Progress in Particle and Nuclear Physics}
+\newcommand{\pra}{Physical Review A: General Physics}
+\newcommand{\prb}{Physical Review B: Solid State}
+\newcommand{\prc}{Physical Review C}
+\newcommand{\prd}{Physical Review D}
+\newcommand{\pre}{Physical Review E}
+\newcommand{\prl}{Physical Review Letters}
+\newcommand{\proclms}{Proceedings of the London Mathematical Society}
+\newcommand{\procspie}{Proceedings of SPIE}
+\newcommand{\qjras}{Quarterly Journal of the Royal Astronomical Society}
+\newcommand{\rmp}{Reviews of Modern Physics}
+\newcommand{\rmxaa}{Revista Mexicana de Astronomía y Astrofísica}
+\newcommand{\skytel}{Sky and Telescope}
+\newcommand{\solphys}{Solar Physics}
+\newcommand{\sovast}{Soviet Astronomy}
+\newcommand{\spjetp}{Soviet Physics---JETP}
+\newcommand{\sppp}{SciPost Physics Proceedings}
+\newcommand{\ssr}{Space Science Reviews}
+\newcommand{\taiaa}{Trudy Astrofizičeskogo Instituta Alma-Ata}
+\newcommand{\tams}{Transactions of the American Mathematical Society}
+\newcommand{\univ}{Universe}
+\newcommand{\zap}{Zeitschrift für Astrophysik}
+\newcommand{\zp}{Zeitschrift für Physik}
+
+\DeclareOption{iso}{
+	\renewcommand{\aap}{Astron. Astrophys.}
+	\renewcommand{\aapr}{Astron. Astrophys. Rev.}
+	\renewcommand{\aaps}{Astron. Astrophys. Supp.}
+	\renewcommand{\actaa}{Acta Astron.}
+	\renewcommand{\adp}{Ann. Phys.}
+	\renewcommand{\annlund}{Ann. Obs. Lund}
+	\renewcommand{\ahep}{Adv. High Energy Phys.}
+	\renewcommand{\aia}{Adv. Astron.}
+	\renewcommand{\aj}{Astron. J.}
+	\renewcommand{\annmatstat}{Ann. Math. Stat.}
+	\renewcommand{\apj}{Astrophys. J.}
+	\renewcommand{\apjl}{Astrophys. J. Lett.}
+	\renewcommand{\apjs}{Astrophys. J. Supp.}
+	\renewcommand{\apl}{Appl. Phys. Lett.}
+	\renewcommand{\aplett}{Astrophys. Lett.}
+	\renewcommand{\ao}{Appl. Opt.}
+	\renewcommand{\app}{Astropart. Phys.}
+	\renewcommand{\apspr}{Astrophys. Space Phys. Res.}
+	\renewcommand{\apss}{Astrophys. Sp. Sci.}
+	\renewcommand{\araa}{Annu. Rev. Astron. Astrophys.}
+	\renewcommand{\arnps}{Annu. Rev. Nuc. Part. Sci.}
+	\renewcommand{\assb}{Ann. Soc. Sci. Brux.}
+	\renewcommand{\azh}{Astron. Zh.}
+	\renewcommand{\baas}{Bull. Am. Astron. Soc.}
+	\renewcommand{\bain}{Bull. Astron. I. Neth.}
+	\renewcommand{\caa}{Chin. Astron. Astrophys.}
+	\renewcommand{\cjaa}{Chin. J. Astron. Astrophys.}
+	\renewcommand{\cmda}{Celest. Mech. Dyn. Astron.}
+	\renewcommand{\cp}{Commun. Phys.}
+	\renewcommand{\cpc}{Chin. Phys. C}
+	\renewcommand{\epjc}{Eur. Phys. J. C}
+	\renewcommand{\fcp}{Fund. Cosmic Phys.}
+	\renewcommand{\gca}{Geochim. Cosmochim. Acta}
+	\renewcommand{\gcgpgs}{Geochem. Geophys. Geosyst.}
+	\renewcommand{\grl}{Geophys. Res. Lett.}
+	\renewcommand{\hpa}{Helv. Phys. Acta}
+	\renewcommand{\iaucirc}{IAU Circ.}
+	\renewcommand{\icarus}{Icarus}
+	\renewcommand{\ierstn}{IERS Tech. Note}
+	\renewcommand{\ijmpa}{Int. J. Mod. Phys. A}
+	\renewcommand{\ijmpd}{Int. J. Mod. Phys. D}
+	\renewcommand{\jap}{J. Appl. Phys.}
+	\renewcommand{\jcap}{J. Cosmol. Astropart. Phys.}
+	\renewcommand{\jcp}{J. Chem. Phys.}
+	\renewcommand{\jetp}{J. Exp. Theor. Phys.}
+	\renewcommand{\jgr}{J. Geophys. Res.}
+	\renewcommand{\jhep}{J. High Energy Phys.}
+	\renewcommand{\jltp}{J. Low Temp. Phys.}
+	\renewcommand{\jpconf}{J. Phys. Conf. Ser.}
+	\renewcommand{\jpg}{J. Phys. G: Nucl. Part. Phys.}
+	\renewcommand{\jqsrt}{J. Quant. Spectrosc. Ra.}
+	\renewcommand{\jrasc}{J. Roy. Astron. Soc. Can.}
+	\renewcommand{\memras}{Mem. R. Astron. Soc.}
+	\renewcommand{\memsai}{Mem. Soc. Astron. Ital.}
+	\renewcommand{\mnras}{Mon. Not. R. Astron. Soc.}
+	\renewcommand{\mnrasl}{Mon. Not. R. Astron. Soc. Lett.}
+	\renewcommand{\na}{New Astron.}
+	\renewcommand{\nat}{Nature}
+	\renewcommand{\natcomm}{Nat. Commun.}
+	\renewcommand{\nar}{New Astron. Rev.}
+	\renewcommand{\nphysa}{Nucl. Phys. A}
+	\renewcommand{\nphysb}{Nucl. Phys. B}
+	\renewcommand{\nppp}{Nucl. Part. Phys. Proc.}
+	\renewcommand{\pasa}{Publ. Astron. Soc. Aust.}
+	\renewcommand{\pasj}{Publ. Astron. Soc. Jpn.}
+	\renewcommand{\pasp}{Publ. Astron. Soc. Pac.}
+	\renewcommand{\pdu}{Phys. Dark Universe}
+	\renewcommand{\physrep}{Phys. Rep.}
+	\renewcommand{\physscr}{Phys. Scr.}
+	\renewcommand{\planss}{Planet. Sp. Sci.}
+	\renewcommand{\plb}{Phys. Lett. B}
+	\renewcommand{\pos}{Proc. Sci.}
+	\renewcommand{\ppanp}{Prog. Part. Nucl. Phys.}
+	\renewcommand{\pra}{Phys. Rev. A: Gen. Phys.}
+	\renewcommand{\prb}{Phys. Rev. B: Solid St.}
+	\renewcommand{\prc}{Phys. Rev. C}
+	\renewcommand{\prd}{Phys. Rev. D}
+	\renewcommand{\pre}{Phys. Rev. E}
+	\renewcommand{\prl}{Phys. Rev. Lett.}
+	\renewcommand{\proclms}{Proc. Lond. Math. Soc.}
+	\renewcommand{\procspie}{Proc. SPIE}
+	\renewcommand{\qjras}{Q. J. Roy. Astron. Soc.}
+	\renewcommand{\rmp}{Rev. Mod. Phys.}
+	\renewcommand{\rmxaa}{Rev. Mex. Astron. Astrofis.}
+	\renewcommand{\skytel}{Sky Telesc.}
+	\renewcommand{\solphys}{Sol. Phys.}
+	\renewcommand{\sovast}{Sov. Astron.}
+	\renewcommand{\spjetp}{Sov. Phys.---JETP}
+	\renewcommand{\sppp}{SciPost Phys. Proc.}
+	\renewcommand{\ssr}{Sp. Sci. Rev.}
+	\renewcommand{\taiaa}{Tr. Astrofiz. Inst. Alma-Ata}
+	\renewcommand{\tams}{Trans. Am. Math. Soc.}
+	\renewcommand{\univ}{Universe}
+	\renewcommand{\zap}{Z. Astrophys.}
+	\renewcommand{\zp}{Z. Phys.}
+}
+
+\DeclareOption{short}{
+	\renewcommand{\aap}{A \& A}
+	\renewcommand{\aapr}{A \& A Rev.}
+	\renewcommand{\aaps}{A \& A Supp.}
+	\renewcommand{\actaa}{Acta Astron.}
+	\renewcommand{\adp}{Ann. Phys.}
+	\renewcommand{\annlund}{Ann. Obs. Lund}
+	\renewcommand{\ahep}{Adv. High Energy Phys.}
+	\renewcommand{\aia}{Adv. Astron.}
+	\renewcommand{\aj}{AJ}
+	\renewcommand{\annmatstat}{Ann. Math. Stat.}
+	\renewcommand{\apj}{Astrophys. J.}
+	\renewcommand{\apjl}{Astrophys. J. Lett.}
+	\renewcommand{\apjs}{Astrophys. J. Supp.}
+	\renewcommand{\apl}{Appl. Phys. Lett.}
+	\renewcommand{\aplett}{Astrophys. Lett.}
+	\renewcommand{\ao}{Appl. Opt.}
+	\renewcommand{\app}{Astropart. Phys.}
+	\renewcommand{\apspr}{Astrophys. Space Phys. Res.}
+	\renewcommand{\apss}{Astrophys. Sp. Sci.}
+	\renewcommand{\araa}{Annu. Rev. Astron. Astrophys.}
+	\renewcommand{\arnps}{Annu. Rev. Nuc. Part. Sci.}
+	\renewcommand{\assb}{Ann. Soc. Sci. Brux.}
+	\renewcommand{\aj}{AJ}
+	\renewcommand{\actaa}{Acta Astron.}
+	\renewcommand{\ahep}{Adv. High Energy Phys.}
+	\renewcommand{\araa}{Annu. Rev. Astron. Astrophys.}
+	\renewcommand{\arnps}{Annu. Rev. Nuc. Part. Sci.}
+	\renewcommand{\baas}{BAAS}
+	\renewcommand{\bain}{Bull. Astron. I. Neth.}
+	\renewcommand{\caa}{Chin. Astron. Astrophys.}
+	\renewcommand{\cjaa}{Chin. J. Astron. Astrophys.}
+	\renewcommand{\cmda}{Celest. Mech. Dyn. Astron.}
+	\renewcommand{\cp}{Commun. Phys.}
+	\renewcommand{\cpc}{Chin. Phys. C}
+	\renewcommand{\epjc}{Eur. Phys. J. C}
+	\renewcommand{\fcp}{Fund. Cosmic Phys.}
+	\renewcommand{\gca}{Geochim. Cosmochim. Acta}
+	\renewcommand{\gcgpgs}{Geochem. Geophys. Geosyst.}
+	\renewcommand{\grl}{Geophys. Res. Lett.}
+	\renewcommand{\hpa}{Helv. Phys. Acta}
+	\renewcommand{\iaucirc}{IAUC}
+	\renewcommand{\icarus}{Icarus}
+	\renewcommand{\ierstn}{IERS Tech. Note}
+	\renewcommand{\ijmpa}{Int. J. Mod. Phys. A}
+	\renewcommand{\ijmpd}{Int. J. Mod. Phys. D}
+	\renewcommand{\jap}{J. Appl. Phys.}
+	\renewcommand{\jcap}{JCAP}
+	\renewcommand{\jcp}{J. Chem. Phys.}
+	\renewcommand{\jetp}{J. Exp. Theor. Phys.}
+	\renewcommand{\jgr}{J. Geophys. Res.}
+	\renewcommand{\jhep}{JHEP}
+	\renewcommand{\jltp}{J. Low Temp. Phys.}
+	\renewcommand{\jpconf}{J. Phys. Conf. Ser.}
+	\renewcommand{\jpg}{J. Phys. G: Nucl. Part. Phys.}
+	\renewcommand{\jqsrt}{J. Quant. Spectrosc. Ra.}
+	\renewcommand{\jrasc}{J. Roy. Astron. Soc. Can.}
+	\renewcommand{\memras}{MmRAS}
+	\renewcommand{\memsai}{Mem. Soc. Astron. Ital.}
+	\renewcommand{\mnras}{MNRAS}
+	\renewcommand{\mnrasl}{MNRAS Lett.}
+	\renewcommand{\na}{New Astron.}
+	\renewcommand{\nat}{Nature}
+	\renewcommand{\natcomm}{Nat. Commun.}
+	\renewcommand{\nar}{New Astron. Rev.}
+	\renewcommand{\nphysa}{Nucl. Phys. A}
+	\renewcommand{\nphysb}{Nucl. Phys. B}
+	\renewcommand{\nppp}{Nucl. Part. Phys. Proc.}
+	\renewcommand{\pasa}{PASA}
+	\renewcommand{\pasj}{PASJ}
+	\renewcommand{\pasp}{PASP}
+	\renewcommand{\pdu}{Phys. Dark Universe}
+	\renewcommand{\physrep}{Phys. Rep.}
+	\renewcommand{\physscr}{Phys. Scr.}
+	\renewcommand{\planss}{Planet. Sp. Sci.}
+	\renewcommand{\plb}{Phys. Lett. B}
+	\renewcommand{\pos}{PoS}
+	\renewcommand{\ppanp}{Prog. Part. Nucl. Phys.}
+	\renewcommand{\pra}{Phys. Rev. A: Gen. Phys.}
+	\renewcommand{\prb}{Phys. Rev. B: Solid St.}
+	\renewcommand{\prc}{Phys. Rev. C}
+	\renewcommand{\prd}{Phys. Rev. D}
+	\renewcommand{\pre}{Phys. Rev. E}
+	\renewcommand{\prl}{Phys. Rev. Lett.}
+	\renewcommand{\proclms}{Proc. Lond. Math. Soc.}
+	\renewcommand{\procspie}{Proc. SPIE}
+	\renewcommand{\qjras}{Q. J. Roy. Astron. Soc.}
+	\renewcommand{\rmp}{Rev. Mod. Phys.}
+	\renewcommand{\rmxaa}{Rev. Mex. Astron. Astrofis.}
+	\renewcommand{\skytel}{Sky Telesc.}
+	\renewcommand{\solphys}{Sol. Phys.}
+	\renewcommand{\sovast}{Sov. Astron.}
+	\renewcommand{\spjetp}{Sov. Phys.---JETP}
+	\renewcommand{\sppp}{SciPost Phys. Proc.}
+	\renewcommand{\ssr}{Sp. Sci. Rev.}
+	\renewcommand{\taiaa}{Tr. Astrofiz. Inst. Alma-Ata}
+	\renewcommand{\tams}{Trans. Am. Math. Soc.}
+	\renewcommand{\univ}{Universe}
+	\renewcommand{\zap}{Z. Astrophys.}
+	\renewcommand{\zp}{Z. Phys.}
+}
+
+\DeclareOption{minimal}{
+	\renewcommand{\aap}{A \& A}
+	\renewcommand{\aapr}{A \& A Rev.}
+	\renewcommand{\aaps}{A \& A Supp.}
+	\renewcommand{\actaa}{Acta Astron.}
+	\renewcommand{\adp}{Ann. Phys.}
+	\renewcommand{\annlund}{Ann. Obs. Lund}
+	\renewcommand{\ahep}{Adv. High Energy Phys.}
+	\renewcommand{\aia}{Adv. Astron.}
+	\renewcommand{\aj}{AJ}
+	\renewcommand{\annmatstat}{Ann. Math. Stat.}
+	\renewcommand{\apj}{Astrophys. J.}
+	\renewcommand{\apjl}{Astrophys. J. Lett.}
+	\renewcommand{\apjs}{Astrophys. J. Supp.}
+	\renewcommand{\apl}{Appl. Phys. Lett.}
+	\renewcommand{\aplett}{Astrophys. Lett.}
+	\renewcommand{\ao}{Appl. Opt.}
+	\renewcommand{\app}{Astropart. Phys.}
+	\renewcommand{\apspr}{Astrophys. Space Phys. Res.}
+	\renewcommand{\apss}{Astrophys. Sp. Sci.}
+	\renewcommand{\araa}{Annu. Rev. Astron. Astrophys.}
+	\renewcommand{\arnps}{Annu. Rev. Nuc. Part. Sci.}
+	\renewcommand{\assb}{Ann. Soc. Sci. Brux.}
+	\renewcommand{\aj}{AJ}
+	\renewcommand{\actaa}{Acta Astron.}
+	\renewcommand{\ahep}{Adv. High Energy Phys.}
+	\renewcommand{\araa}{Annu. Rev. Astron. Astrophys.}
+	\renewcommand{\arnps}{Annu. Rev. Nuc. Part. Sci.}
+	\renewcommand{\baas}{BAAS}
+	\renewcommand{\bain}{Bull. Astron. I. Neth.}
+	\renewcommand{\caa}{Chin. Astron. Astrophys.}
+	\renewcommand{\cjaa}{Chin. J. Astron. Astrophys.}
+	\renewcommand{\cmda}{Celest. Mech. Dyn. Astron.}
+	\renewcommand{\cp}{Commun. Phys.}
+	\renewcommand{\cpc}{Chin. Phys. C}
+	\renewcommand{\epjc}{Eur. Phys. J. C}
+	\renewcommand{\fcp}{Fund. Cosmic Phys.}
+	\renewcommand{\gca}{Geochim. Cosmochim. Acta}
+	\renewcommand{\gcgpgs}{Geochem. Geophys. Geosyst.}
+	\renewcommand{\grl}{Geophys. Res. Lett.}
+	\renewcommand{\hpa}{Helv. Phys. Acta}
+	\renewcommand{\iaucirc}{IAUC}
+	\renewcommand{\icarus}{Icarus}
+	\renewcommand{\ierstn}{IERS Tech. Note}
+	\renewcommand{\ijmpa}{Int. J. Mod. Phys. A}
+	\renewcommand{\ijmpd}{Int. J. Mod. Phys. D}
+	\renewcommand{\jap}{J. Appl. Phys.}
+	\renewcommand{\jcap}{JCAP}
+	\renewcommand{\jcp}{J. Chem. Phys.}
+	\renewcommand{\jetp}{J. Exp. Theor. Phys.}
+	\renewcommand{\jgr}{J. Geophys. Res.}
+	\renewcommand{\jhep}{JHEP}
+	\renewcommand{\jltp}{J. Low Temp. Phys.}
+	\renewcommand{\jpconf}{J. Phys. Conf. Ser.}
+	\renewcommand{\jpg}{J. Phys. G}
+	\renewcommand{\jqsrt}{J. Quant. Spectrosc. Ra.}
+	\renewcommand{\jrasc}{J. Roy. Astron. Soc. Can.}
+	\renewcommand{\memras}{MmRAS}
+	\renewcommand{\memsai}{Mem. Soc. Astron. Ital.}
+	\renewcommand{\mnras}{MNRAS}
+	\renewcommand{\mnrasl}{MNRAS Lett.}
+	\renewcommand{\na}{New Astron.}
+	\renewcommand{\nat}{Nature}
+	\renewcommand{\natcomm}{Nat. Commun.}
+	\renewcommand{\nar}{New Astron. Rev.}
+	\renewcommand{\nphysa}{Nucl. Phys. A}
+	\renewcommand{\nphysb}{Nucl. Phys. B}
+	\renewcommand{\nppp}{Nucl. Part. Phys. Proc.}
+	\renewcommand{\pasa}{PASA}
+	\renewcommand{\pasj}{PASJ}
+	\renewcommand{\pasp}{PASP}
+	\renewcommand{\pdu}{Phys. Dark Universe}
+	\renewcommand{\physrep}{Phys. Rep.}
+	\renewcommand{\physscr}{Phys. Scr.}
+	\renewcommand{\planss}{Planet. Sp. Sci.}
+	\renewcommand{\plb}{Phys. Lett. B}
+	\renewcommand{\pos}{PoS}
+	\renewcommand{\ppanp}{Prog. Part. Nucl. Phys.}
+	\renewcommand{\pra}{PRA}
+	\renewcommand{\prb}{PRB}
+	\renewcommand{\prc}{PRC}
+	\renewcommand{\prd}{PRD}
+	\renewcommand{\pre}{PRE}
+	\renewcommand{\prl}{PRL}
+	\renewcommand{\proclms}{Proc. Lond. Math. Soc.}
+	\renewcommand{\procspie}{Proc. SPIE}
+	\renewcommand{\qjras}{Q. J. Roy. Astron. Soc.}
+	\renewcommand{\rmp}{Rev. Mod. Phys.}
+	\renewcommand{\rmxaa}{Rev. Mex. Astron. Astrofis.}
+	\renewcommand{\skytel}{Sky Telesc.}
+	\renewcommand{\solphys}{Sol. Phys.}
+	\renewcommand{\sovast}{Sov. Astron.}
+	\renewcommand{\spjetp}{Sov. Phys.---JETP}
+	\renewcommand{\sppp}{SciPost Phys. Proc.}
+	\renewcommand{\ssr}{Sp. Sci. Rev.}
+	\renewcommand{\taiaa}{Tr. Astrofiz. Inst. Alma-Ata}
+	\renewcommand{\tams}{Trans. Am. Math. Soc.}
+	\renewcommand{\univ}{Universe}
+	\renewcommand{\zap}{Z. Astrophys.}
+	\renewcommand{\zp}{Z. Phys.}
+}
+
+
+\DeclareOption*{\PackageWarning{journalnames}{Unknown ‘\CurrentOption’}}
+\ProcessOptions\relax
