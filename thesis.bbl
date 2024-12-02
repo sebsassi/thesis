@@ -13009,376 +13009,6 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.123.031302
       \endverb
     \endentry
-    \entry{COSINE1002021}{article}{}{}
-      \name{author}{56}{ul=2}{%
-        {{un=1,uniquepart=given,hash=9d6a63751d7e48f2f6661c9761cfd12a}{%
-           family={{Adhikari}},
-           familyi={A\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=a8fd67ce94ad4f895a05f361bf4e4fc6}{%
-           family={{Carlin}},
-           familyi={C\bibinitperiod},
-           given={N.},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=602990282f8d4653e709825175642cc6}{%
-           family={{Choi}},
-           familyi={C\bibinitperiod},
-           given={J.\bibnamedelimi J.},
-           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4c83e612ca6179605e076be7f68a2296}{%
-           family={{Choi}},
-           familyi={C\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=efb4dbb08a0cd253c3c68b7087d36a30}{%
-           family={{Ezeribe}},
-           familyi={E\bibinitperiod},
-           given={A.\bibnamedelimi C.},
-           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b7de5042d16368a8d3081d7a0ac26a21}{%
-           family={{Fraņ̧a}},
-           familyi={F\bibinitperiod},
-           given={L.\bibnamedelimi E.},
-           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f4a2a051a0e5ac662190953499b1dcd3}{%
-           family={{Ha}},
-           familyi={H\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d7ac282e6570e00b3ea3b39cf59d2b26}{%
-           family={{Hahn}},
-           familyi={H\bibinitperiod},
-           given={I.\bibnamedelimi S.},
-           giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f7db17c076077a9d50d1c35b7d21f650}{%
-           family={{Hollick}},
-           familyi={H\bibinitperiod},
-           given={S.\bibnamedelimi J.},
-           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=dea209575856a33e3ede514e848a078a}{%
-           family={{Jeon}},
-           familyi={J\bibinitperiod},
-           given={E.\bibnamedelimi J.},
-           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=962a8b64d0b2e42f44e3b0ce3ee76f40}{%
-           family={{Jo}},
-           familyi={J\bibinitperiod},
-           given={J.\bibnamedelimi H.},
-           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=08e8aae04b7fc5279bf10c6a5f4331aa}{%
-           family={{Joo}},
-           familyi={J\bibinitperiod},
-           given={H.\bibnamedelimi W.},
-           giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=42ec782df5d93442f743a7f0b9b05e18}{%
-           family={{Kang}},
-           familyi={K\bibinitperiod},
-           given={W.\bibnamedelimi G.},
-           giveni={W\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=fed34ca97f8163e94c62fb3646ac9a38}{%
-           family={{Kauer}},
-           familyi={K\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1a48868d4b7e2996a44219cbaef3fb20}{%
-           family={{Kim}},
-           familyi={K\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b182a2eec4e96a403f4b109145401e77}{%
-           family={{Kim}},
-           familyi={K\bibinitperiod},
-           given={H.\bibnamedelimi J.},
-           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b2236af712a294693dcea632d195b1fb}{%
-           family={{Kim}},
-           familyi={K\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d40d1c742c73f588f380a487d9c867ec}{%
-           family={{Kim}},
-           familyi={K\bibinitperiod},
-           given={K.\bibnamedelimi W.},
-           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3f2795c89ac6dc999a049193306f41b7}{%
-           family={{Kim}},
-           familyi={K\bibinitperiod},
-           given={S.\bibnamedelimi H.},
-           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2b31e46bbf78c7f39ef0ede037430cb0}{%
-           family={{Kim}},
-           familyi={K\bibinitperiod},
-           given={S.\bibnamedelimi K.},
-           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=426b7b418c4a1f9064a1f9186525622b}{%
-           family={{Kim}},
-           familyi={K\bibinitperiod},
-           given={W.\bibnamedelimi K.},
-           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1c8e69c32ab0efb737ac5b7782a30ba7}{%
-           family={{Kim}},
-           familyi={K\bibinitperiod},
-           given={Y.\bibnamedelimi D.},
-           giveni={Y\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c635388c28ab3c4cbc8fdb1762f98052}{%
-           family={{Kim}},
-           familyi={K\bibinitperiod},
-           given={Y.\bibnamedelimi H.},
-           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8120cc48a27be5c7723db6d5490ef910}{%
-           family={{Ko}},
-           familyi={K\bibinitperiod},
-           given={Y.\bibnamedelimi J.},
-           giveni={Y\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8ad3b3ae160133cb398bdb2f43e24e06}{%
-           family={{Kwon}},
-           familyi={K\bibinitperiod},
-           given={H.\bibnamedelimi J.},
-           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=bfd3770350250edf7bac1595cfe7c20a}{%
-           family={{Lee}},
-           familyi={L\bibinitperiod},
-           given={D.\bibnamedelimi H.},
-           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=afcd26dc3aca2c7de854cc7f4b6caa61}{%
-           family={{Lee}},
-           familyi={L\bibinitperiod},
-           given={E.\bibnamedelimi K.},
-           giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5b7ae85b03c5b187088b01846c0a6d48}{%
-           family={{Lee}},
-           familyi={L\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=39c01afaaee20212b5e2bac6d6a68cd8}{%
-           family={{Lee}},
-           familyi={L\bibinitperiod},
-           given={H.\bibnamedelimi S.},
-           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7bb95892ab45c7a86798a000cf3cac44}{%
-           family={{Lee}},
-           familyi={L\bibinitperiod},
-           given={H.\bibnamedelimi Y.},
-           giveni={H\bibinitperiod\bibinitdelim Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2f05d2806925480b88929111536d0789}{%
-           family={{Lee}},
-           familyi={L\bibinitperiod},
-           given={I.\bibnamedelimi S.},
-           giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a38fe2282e0ae708270c02346a36d08f}{%
-           family={{Lee}},
-           familyi={L\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d4ada0fcbe516daf85f40b05e51b3022}{%
-           family={{Lee}},
-           familyi={L\bibinitperiod},
-           given={J.\bibnamedelimi Y.},
-           giveni={J\bibinitperiod\bibinitdelim Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d0e047b6988b85a84de8699cad4ad2a0}{%
-           family={{Lee}},
-           familyi={L\bibinitperiod},
-           given={M.\bibnamedelimi H.},
-           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=02d7c10227de7a3a5a85272801ef0fc4}{%
-           family={{Lee}},
-           familyi={L\bibinitperiod},
-           given={S.\bibnamedelimi H.},
-           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=58af86b4bd9a0bc53e782fe9fa23d7da}{%
-           family={{Lee}},
-           familyi={L\bibinitperiod},
-           given={S.\bibnamedelimi M.},
-           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5292f322d0b260e71b851c973ab9ae6d}{%
-           family={{Leonard}},
-           familyi={L\bibinitperiod},
-           given={D.\bibnamedelimi S.},
-           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5925aae7bc8c8bd4cadf29e7aba3d845}{%
-           family={{Manzato}},
-           familyi={M\bibinitperiod},
-           given={B.\bibnamedelimi B.},
-           giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=40e4f6c4d6b0ff462bfcdb283cc23de2}{%
-           family={{Maruyama}},
-           familyi={M\bibinitperiod},
-           given={R.\bibnamedelimi H.},
-           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5f2d17b21d482daf2375d27ab509e824}{%
-           family={{Neal}},
-           familyi={N\bibinitperiod},
-           given={R.\bibnamedelimi J.},
-           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=55058ac51299f730da9f63d5b79cd732}{%
-           family={{Olsen}},
-           familyi={O\bibinitperiod},
-           given={S.\bibnamedelimi L.},
-           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2781e8b0d93d5fa21349f32bcf584a7b}{%
-           family={{Park}},
-           familyi={P\bibinitperiod},
-           given={B.\bibnamedelimi J.},
-           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0b710e027d7ada0b2b72941d4d53e0a6}{%
-           family={{Park}},
-           familyi={P\bibinitperiod},
-           given={H.\bibnamedelimi K.},
-           giveni={H\bibinitperiod\bibinitdelim K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7bd84b486f4107cc0e6a90d8437de732}{%
-           family={{Park}},
-           familyi={P\bibinitperiod},
-           given={H.\bibnamedelimi S.},
-           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ee8b8c9db3b427e6b45f8be197993e1b}{%
-           family={{Park}},
-           familyi={P\bibinitperiod},
-           given={K.\bibnamedelimi S.},
-           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=817254e653c8f3a3d93014623fcd6444}{%
-           family={{Park}},
-           familyi={P\bibinitperiod},
-           given={S.\bibnamedelimi D.},
-           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2da96937b3a6feb3764f62ece37d3e88}{%
-           family={{Pitta}},
-           familyi={P\bibinitperiod},
-           given={R.\bibnamedelimi L.\bibnamedelimi C.},
-           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=56527d1fc92b600c31174332bf7345dc}{%
-           family={{Prihtiadi}},
-           familyi={P\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ed7ecd0465df0605813cfb1192776fe6}{%
-           family={{Ra}},
-           familyi={R\bibinitperiod},
-           given={S.\bibnamedelimi J.},
-           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=20de9fa2f03c3cfeddc55a1e7c1a0db2}{%
-           family={{Rott}},
-           familyi={R\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a293702602559db5941ca01dba619cd1}{%
-           family={{Shin}},
-           familyi={S\bibinitperiod},
-           given={K.\bibnamedelimi A.},
-           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8b3ff6f706a7d06433fa6348434836c6}{%
-           family={{Scarff}},
-           familyi={S\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ee9b2d526d155b0c12763b7099ba9a6f}{%
-           family={{Spooner}},
-           familyi={S\bibinitperiod},
-           given={N.\bibnamedelimi J.\bibnamedelimi C.},
-           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=01fd745886dc555b0bf3ccf1111b5e19}{%
-           family={{Thompson}},
-           familyi={T\bibinitperiod},
-           given={W.\bibnamedelimi G.},
-           giveni={W\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=527f0ca92e7ed462c77915036481c907}{%
-           family={{Yang}},
-           familyi={Y\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=04d70a829eef906f2baaad847ebe9828}{%
-           family={{Yu}},
-           familyi={Y\bibinitperiod},
-           given={G.\bibnamedelimi H.},
-           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{0a24fd12a92601f4592b15e2183cc952}
-      \strng{fullhash}{f57e08fe87a38ab1cdafd45a10b2f6c5}
-      \strng{fullhashraw}{f57e08fe87a38ab1cdafd45a10b2f6c5}
-      \strng{bibnamehash}{0a24fd12a92601f4592b15e2183cc952}
-      \strng{authorbibnamehash}{0a24fd12a92601f4592b15e2183cc952}
-      \strng{authornamehash}{0a24fd12a92601f4592b15e2183cc952}
-      \strng{authorfullhash}{f57e08fe87a38ab1cdafd45a10b2f6c5}
-      \strng{authorfullhashraw}{f57e08fe87a38ab1cdafd45a10b2f6c5}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{collaboration}{COSINE-100 Collaboration}
-      \field{eid}{042006}
-      \field{eprintclass}{hep-ex}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{\prd}
-      \field{month}{2}
-      \field{number}{4}
-      \field{title}{{Searching for low-mass dark matter via the Migdal effect in COSINE-100}}
-      \field{volume}{105}
-      \field{year}{2022}
-      \verb{doi}
-      \verb 10.1103/PhysRevD.105.042006
-      \endverb
-      \verb{eprint}
-      \verb 2110.05806
-      \endverb
-    \endentry
     \entry{COSINE1002018}{article}{}{}
       \name{author}{51}{ul=8}{%
         {{un=1,uniquepart=given,hash=8cfea8acd1fdfc5a280f260f3e89b5c3}{%
@@ -13729,6 +13359,376 @@
       \verb{url}
       \verb https://doi.org/10.1038/s41586-018-0739-1
       \endverb
+    \endentry
+    \entry{AgafonovaEtAl2018}{article}{}{}
+      \name{author}{56}{}{%
+        {{un=0,uniquepart=base,hash=199ed4e59e1d03ad01e8b8aaed27a19b}{%
+           family={{Agafonova}},
+           familyi={A\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e2436fa4b5eecb54d2ab89e34f2edfb5}{%
+           family={{Aleksandrov}},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9a85f8c7e262a0036e79fd4c189c34f9}{%
+           family={{Anokhina}},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=78b83be953a00f326fd0f9e5c17762ab}{%
+           family={{Asada}},
+           familyi={A\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0abfd2336f14dab1537b9e9fa03f9e9d}{%
+           family={{Ashikhmin}},
+           familyi={A\bibinitperiod},
+           given={V.\bibnamedelimi V.},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=83e273daffd8b21a9135655644a142f6}{%
+           family={{Bodnarchuk}},
+           familyi={B\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55640d3b0669c1650a34aa1d3f660ed7}{%
+           family={{Buonaura}},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9bfec5060c57d82dd42e3c2c494453ee}{%
+           family={{Chernyavskii}},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2f0a61855b42efcfab33e18a39390969}{%
+           family={{Chukanov}},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b0745cd7b8b685b12b8a09eece54f94}{%
+           family={{D'Ambrosio}},
+           familyi={D\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc0a6191918b518f3d2a3010a6e7fb7f}{%
+           family={{De Lellis}},
+           familyi={D\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec17acfff0d0c0a8b564acddf048b0e9}{%
+           family={{Di Crescenzo}},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58a6aab171facabc80a6dc5e6241528e}{%
+           family={{Di Marco}},
+           familyi={D\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22ee3e339f972a02c69f60973f8f426e}{%
+           family={{Dmitrievski}},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d006a2784354d3896c7c5304dbc044ae}{%
+           family={{Enikeev}},
+           familyi={E\bibinitperiod},
+           given={R.\bibnamedelimi I.},
+           giveni={R\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11677dbb451884cfcc22fe2b628efa09}{%
+           family={{Fini}},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=243340c1a90dddd2ed9f5cb40dd859e5}{%
+           family={{Galati}},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b11dca8e51ed056bd9eb51deab8340e5}{%
+           family={{Gentile}},
+           familyi={G\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4777613a5c2fc8da29857f657c607fa9}{%
+           family={{Gorbunov}},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00876936fe7e29772e9a60c54ec58695}{%
+           family={{Gornushkin}},
+           familyi={G\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=68a5b715d4e8a68a7e579f613e18f21b}{%
+           family={{Guler}},
+           familyi={G\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba45c82ebcfd2055381a09dd239e1c7c}{%
+           family={{Ichiki}},
+           familyi={I\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d78159d53c749b7f48d637a6eedeac3d}{%
+           family={{Katsuragawa}},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=491045693c4d04be9f646ebab55e245b}{%
+           family={{Konovalova}},
+           familyi={K\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ab115f30830d6a2244f85ba3a6221cf}{%
+           family={{Kuge}},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa5ad29089e89bf4785cede3402a43f8}{%
+           family={{Lauria}},
+           familyi={L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba0955bd62e3b54a3df291bcf17d50b9}{%
+           family={{Lee}},
+           familyi={L\bibinitperiod},
+           given={K.\bibnamedelimi Y.},
+           giveni={K\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e81a9f8fd5648caacf6a54c7bb914b9}{%
+           family={{Lista}},
+           familyi={L\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce89e50791b3303175979785dda8d241}{%
+           family={{Malgin}},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=657b5c08d7a2e22ed8a9b77e3ba1c054}{%
+           family={{Managadze}},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=efe7c6d140c788523906cf687b474d5d}{%
+           family={{Monacelli}},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e80575ccdafa95d9e271c8d54962491}{%
+           family={{Montesi}},
+           familyi={M\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30ef9de95f3111a5c80fae3f46191e72}{%
+           family={{Naka}},
+           familyi={N\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd15ccecb3f45e5e0bdd37f8b8e8bfb2}{%
+           family={{Okateva}},
+           familyi={O\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1386f680ec9ae5a1dfd5f44e654b9b47}{%
+           family={{Park}},
+           familyi={P\bibinitperiod},
+           given={B.\bibnamedelimi D.},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5af2dfcff64131357457791e5bc95cd}{%
+           family={{Podgrudkov}},
+           familyi={P\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7abcd288eb4d13e098be42e1c4076f85}{%
+           family={{Polukhina}},
+           familyi={P\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=05a88271713e253fb18b4db06c64eec4}{%
+           family={{Pupilli}},
+           familyi={P\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b0944a6ed0737396b439647ab2a5d86a}{%
+           family={{Roganova}},
+           familyi={R\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9161699e6609f1864b3831f1bd18df31}{%
+           family={{Rogozhnikov}},
+           familyi={R\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4ec8c7a29d982c169239c95579241ae}{%
+           family={{Rosa}},
+           familyi={R\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f09e9bc4545621fd2b4aae073ffe932f}{%
+           family={{Ryazhskaya}},
+           familyi={R\bibinitperiod},
+           given={O.\bibnamedelimi G.},
+           giveni={O\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d2764d50e10b8e07bef8a80009c429cc}{%
+           family={{Sato}},
+           familyi={S\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=482b9e453ba41917bccd22e1b410a294}{%
+           family={{Shakiryanova}},
+           familyi={S\bibinitperiod},
+           given={I.\bibnamedelimi R.},
+           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9a2901bfefddbd9078a545db9699ab74}{%
+           family={{Shchedrina}},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=52bcedc6897af75654f4cf2747dc42f0}{%
+           family={{Sirignano}},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=109f32bf902ecb948abaf2cc50c1e83e}{%
+           family={{Sohn}},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi Y.},
+           giveni={J\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=19803af10d7f167fe4b329be45c651a8}{%
+           family={{Sotnikov}},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d0147dca00223804c025496f7d15409b}{%
+           family={{Starkov}},
+           familyi={S\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=909c6bd0857d1fa0e347b247e38eadaa}{%
+           family={{Strolin}},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48c88373839fd54dc81c96158f5279da}{%
+           family={{Tioukov}},
+           familyi={T\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af7185283c4245c94d594a5b999117f8}{%
+           family={{Umemoto}},
+           familyi={U\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7cfa46e1c48588bf96efe745de7e31b}{%
+           family={{Ustyuzhanin}},
+           familyi={U\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8a332ddf7b002b688be6d29e1336d702}{%
+           family={{Yoon}},
+           familyi={Y\bibinitperiod},
+           given={C.\bibnamedelimi S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c879b8304185993a9741dcbf34803816}{%
+           family={{Yoshimoto}},
+           familyi={Y\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=daacf81f504013d4a1d79aa35f65e523}{%
+           family={{Vasina}},
+           familyi={V\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cd1d15ec2f99245529671bf66dcd06e5}
+      \strng{fullhash}{7073c19ccfb74fe8ebd0535296854a81}
+      \strng{fullhashraw}{7073c19ccfb74fe8ebd0535296854a81}
+      \strng{bibnamehash}{91648e43a955be729422e9d8c50d974c}
+      \strng{authorbibnamehash}{91648e43a955be729422e9d8c50d974c}
+      \strng{authornamehash}{cd1d15ec2f99245529671bf66dcd06e5}
+      \strng{authorfullhash}{7073c19ccfb74fe8ebd0535296854a81}
+      \strng{authorfullhashraw}{7073c19ccfb74fe8ebd0535296854a81}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{578}
+      \field{eprintclass}{astro-ph.CO}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\epjc}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{{Discovery potential for directional Dark Matter detection with nuclear emulsions: NEWSdm Collaboration}}
+      \field{volume}{78}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-018-6060-1
+      \endverb
+      \verb{eprint}
+      \verb 1705.00613
+      \endverb
+      \keyw{Astrophysics - Cosmology and Nongalactic Astrophysics,High Energy Physics - Phenomenology,Physics - Instrumentation and Detectors}
     \endentry
     \entry{Planck2018}{article}{}{}
       \name{author}{181}{}{%
@@ -23771,6 +23771,344 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevD.91.065002
       \endverb
     \endentry
+    \entry{BaracchiniEtAl2018}{article}{}{}
+      \name{author}{51}{}{%
+        {{un=0,uniquepart=base,hash=c5d4e509b62e9b47229e778fce4da54a}{%
+           family={{Baracchini}},
+           familyi={B\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ad6a98899d020ceaa46d859b77140881}{%
+           family={{Betti}},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b0456d59b812ca82aa60c2df789bec7}{%
+           family={{Biasotti}},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb0164117b65bd09c14fe1d63b0d2784}{%
+           family={{Bosca}},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3b782712e1f669343736ca2c30c1d5e}{%
+           family={{Calle}},
+           familyi={C\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed1567db87d8d9bb29cfd535111f11b1}{%
+           family={{Carabe-Lopez}},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=68726760a464dfb98535349a233620df}{%
+           family={{Cavoto}},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39df4de56d3cd222098658f388d75b46}{%
+           family={{Chang}},
+           familyi={C\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99529384a541e885ba2476a36e47d228}{%
+           family={{Cocco}},
+           familyi={C\bibinitperiod},
+           given={A.\bibnamedelimi G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1145cc7ff3bd975ee627feea1cb97f0a}{%
+           family={{Colijn}},
+           familyi={C\bibinitperiod},
+           given={A.\bibnamedelimi P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8db3b89611bc95c04a6121c776fd1445}{%
+           family={{Conrad}},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b0745cd7b8b685b12b8a09eece54f94}{%
+           family={{D'Ambrosio}},
+           familyi={D\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe1f9b12373250d5f00bfe3589294722}{%
+           family={{de Salas}},
+           familyi={d\bibinitperiod},
+           given={P.\bibnamedelimi F.},
+           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8dbf4248183ecffdf8c2b62b20d3cf7}{%
+           family={{Faverzani}},
+           familyi={F\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c32e014c1d2f22fdb60113996e60d97f}{%
+           family={{Ferella}},
+           familyi={F\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=afbeab678822a59ff04af7d46b547382}{%
+           family={{Ferri}},
+           familyi={F\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15aa18aace9cc98aab64ded9a919a89a}{%
+           family={{Garcia-Abia}},
+           familyi={G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b29f7dbb1d6fc48151c4ad3e16919a7}{%
+           family={{Garcia Gomez-Tejedor}},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc69bcc789d2b19edcab799ff75d959b}{%
+           family={{Gariazzo}},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8fe4f8d2cd083dfd91efa5db0cd1a303}{%
+           family={{Gatti}},
+           familyi={G\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06d846058adae9feb2821f2b6fdef59b}{%
+           family={{Gentile}},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90c41b33ebd530dce7b2ac51d465f4a3}{%
+           family={{Giachero}},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c41a6de6f8ae80e681b013302b6022c}{%
+           family={{Gudmundsson}},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=870135c98f82d83d9deb54c0b818725b}{%
+           family={{Hochberg}},
+           familyi={H\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2293988735d39a33827fbc46b1d8344e}{%
+           family={{Kahn}},
+           familyi={K\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f509d47fd1d1a4925a2e0638e2805e8e}{%
+           family={{Lisanti}},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a30ac730e28d71987d8aa7f7309a6814}{%
+           family={{Mancini-Terracciano}},
+           familyi={M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e66cd4e541e99c5e02ee153e459f1db5}{%
+           family={{Mangano}},
+           familyi={M\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8a8633fc109448bf5b21a102ee6e721e}{%
+           family={{Marcucci}},
+           familyi={M\bibinitperiod},
+           given={L.\bibnamedelimi E.},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11b9d893e8d70446a7152cd30388c0bc}{%
+           family={{Mariani}},
+           familyi={M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9c4f83e61bbf995b0f27385dc7bb84d}{%
+           family={{Martinez}},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01e279a281c55d803db34445c25002e5}{%
+           family={{Mazzitelli}},
+           familyi={M\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb468a8c668207363a181289ffe08cac}{%
+           family={{Messina}},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c1ed2dbc89aa54dcca48753e5933d82d}{%
+           family={{Molinero-Vela}},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a4b47b6b357177143b18c45e8d3643f}{%
+           family={{Monticone}},
+           familyi={M\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13d5aeb096670128a7872fe7307fe9dd}{%
+           family={{Nucciotti}},
+           familyi={N\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44ec976f6b66382fe615cf4d1aabaa72}{%
+           family={{Pandolfi}},
+           familyi={P\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb9ad6d4d757bf7e97055ae77ac186a7}{%
+           family={{Pastor}},
+           familyi={P\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e8cdc787083cc2db5219a516324065e}{%
+           family={{Pedros}},
+           familyi={P\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8d8f36ea82db089c9fdb94b05376b86}{%
+           family={{Perez de los Heros}},
+           familyi={P\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5979c16cba5048e43fc8f4374b8ef957}{%
+           family={{Pisanti}},
+           familyi={P\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33e55256c640f205fffe17ffb7c5076b}{%
+           family={{Polosa}},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9dc62d6a37a378a579dd44d09c991beb}{%
+           family={{Puiu}},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd6d4031495a90a4cb4876b00f74fe25}{%
+           family={{Rajteri}},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6c3115e18959d0b5d05feb475016733}{%
+           family={{Santorelli}},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f37aa65dd21a128efad7cfd7f8249767}{%
+           family={{Schaeffner}},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2048d0e59192571f71a83555302822b4}{%
+           family={{Tully}},
+           familyi={T\bibinitperiod},
+           given={C.\bibnamedelimi G.},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e255071fb8b704f36fddad44270a615b}{%
+           family={{Raitses}},
+           familyi={R\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98c1519ffeb5c53b23cfeb6640afd5cd}{%
+           family={{Rossi}},
+           familyi={R\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=131093b32cfc248eb878910414e84f69}{%
+           family={{Zhao}},
+           familyi={Z\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e528f9ed31a89c9db0dd9ff782c479d}{%
+           family={{Zurek}},
+           familyi={Z\bibinitperiod},
+           given={K.\bibnamedelimi M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{815cb1535ddde9ecc1cfe089edbe80f4}
+      \strng{fullhash}{bae5114f7f182b623a9af0eafc3d98ab}
+      \strng{fullhashraw}{bae5114f7f182b623a9af0eafc3d98ab}
+      \strng{bibnamehash}{3990c7005ab8af692f00ecb1ca116b88}
+      \strng{authorbibnamehash}{3990c7005ab8af692f00ecb1ca116b88}
+      \strng{authornamehash}{815cb1535ddde9ecc1cfe089edbe80f4}
+      \strng{authorfullhash}{bae5114f7f182b623a9af0eafc3d98ab}
+      \strng{authorfullhashraw}{bae5114f7f182b623a9af0eafc3d98ab}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:1808.01892}
+      \field{eprintclass}{physics.ins-det}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{8}
+      \field{title}{{PTOLEMY: A Proposal for Thermal Relic Detection of Massive Neutrinos and Directional Detection of MeV Dark Matter}}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.48550/arXiv.1808.01892
+      \endverb
+      \verb{eprint}
+      \verb 1808.01892
+      \endverb
+      \keyw{Physics - Instrumentation and Detectors,Astrophysics - Cosmology and Nongalactic Astrophysics,High Energy Physics - Experiment}
+    \endentry
     \entry{SENSEI2020}{article}{}{}
       \name{author}{23}{}{%
         {{un=0,uniquepart=base,hash=fcf70f1c9efa9879661781b53fd6692a}{%
@@ -24659,6 +24997,173 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevD.108.102005
       \endverb
     \endentry
+    \entry{BattatEtAl2017}{article}{}{}
+      \name{author}{21}{}{%
+        {{un=0,uniquepart=base,hash=9f58c9a433ff6c1ed730f22949f18e91}{%
+           family={Battat},
+           familyi={B\bibinitperiod},
+           given={J.B.R.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=efb4dbb08a0cd253c3c68b7087d36a30}{%
+           family={Ezeribe},
+           familyi={E\bibinitperiod},
+           given={A.C.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb3311d5ee3ad77403cdd34218190a75}{%
+           family={Gauvreau},
+           familyi={G\bibinitperiod},
+           given={J.-L.},
+           giveni={J\bibinithyphendelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=24cf33adfe3537d2f0e589504d691119}{%
+           family={Harton},
+           familyi={H\bibinitperiod},
+           given={J.L.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86b22e584da33ec9d1992206a4679b67}{%
+           family={Lafler},
+           familyi={L\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d0a5c4ba912ce98527ab340ad8e3806}{%
+           family={Law},
+           familyi={L\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f74283bc345842a25c0221f95eb4cea}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={E.R.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=302e5ca7bb5e2f7f239885744c903ffa}{%
+           family={Loomba},
+           familyi={L\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5085b04e267794e81f9ebbc7e209826}{%
+           family={Lumnah},
+           familyi={L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7d5f9fc28ed3908c0c93ff76dc9c0c5}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={E.H.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c949e7e1b89b14ccfde30187e0867e16}{%
+           family={Monte},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15fae949307a7c3e50101cbbc3e4d9a1}{%
+           family={Mouton},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=467e24f95cf8d98c08bf984a5df6c5d6}{%
+           family={Paling},
+           familyi={P\bibinitperiod},
+           given={S.M.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b11ed7915294e2b4091b84d961adf52b}{%
+           family={Phan},
+           familyi={P\bibinitperiod},
+           given={N.S.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a47054238a96962b5fb612812edb5164}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d6651abd237fdf4c59667cc6c08d320}{%
+           family={Sadler},
+           familyi={S\bibinitperiod},
+           given={S.W.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b3ff6f706a7d06433fa6348434836c6}{%
+           family={Scarff},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e0dca5b5182365c1f8f0840f2d9156d}{%
+           family={{Schuckman II}},
+           familyi={S\bibinitperiod},
+           given={F.G.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8210cceb5e0acfff8470ab6e42fe182d}{%
+           family={Snowden-Ifft},
+           familyi={S\bibinithyphendelim I\bibinitperiod},
+           given={D.P.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee9b2d526d155b0c12763b7099ba9a6f}{%
+           family={Spooner},
+           familyi={S\bibinitperiod},
+           given={N.J.C.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f6640f997eac20fc917402aa246c0f7}{%
+           family={Waldram},
+           familyi={W\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b5d1c736fd1a48fa8bc0055dc72f24d}
+      \strng{fullhash}{5193b901ae2f6de4b5944aa081cf8c52}
+      \strng{fullhashraw}{5193b901ae2f6de4b5944aa081cf8c52}
+      \strng{bibnamehash}{9806be9acb54e25e020e027ffa9430a2}
+      \strng{authorbibnamehash}{9806be9acb54e25e020e027ffa9430a2}
+      \strng{authornamehash}{7b5d1c736fd1a48fa8bc0055dc72f24d}
+      \strng{authorfullhash}{5193b901ae2f6de4b5944aa081cf8c52}
+      \strng{authorfullhashraw}{5193b901ae2f6de4b5944aa081cf8c52}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{collaboration}{DRIFT Collaboration}
+      \field{eprintclass}{astro-ph.IM}
+      \field{eprinttype}{arXiv}
+      \field{issn}{0927-6505}
+      \field{journaltitle}{\app}
+      \field{title}{Low threshold results and limits from the DRIFT directional dark matter detector}
+      \field{volume}{91}
+      \field{year}{2017}
+      \field{pages}{65\bibrangedash 74}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.astropartphys.2017.03.007
+      \endverb
+      \verb{eprint}
+      \verb 1701.00171
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0927650517300075
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0927650517300075
+      \endverb
+      \keyw{Directional,Dark matter,Limits,Neutron detection}
+    \endentry
     \entry{BattistoniEtAl2005}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=95ca4c450e2c018f6b3509025caee5e5}{%
@@ -24717,6 +25222,74 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/S0927650505000526
+      \endverb
+    \endentry
+    \entry{BaumEtAl2020}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=953baf5f2fd527595e5431a846a88757}{%
+           family={Baum},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9573835c0f0651f4e155288ce3c01f4f}{%
+           family={Drukier},
+           familyi={D\bibinitperiod},
+           given={Andrzej\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36480e14a64c0a18cf2adbce137a95d2}{%
+           family={Freese},
+           familyi={F\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f79d3b1a78c849dc355aab0ff528b6cc}{%
+           family={Górski},
+           familyi={G\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5dda9b3158058fbd61d3063200f68e40}{%
+           family={Stengel},
+           familyi={S\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b3da18ebea01f385644a90696cabe7ef}
+      \strng{fullhash}{5781271f5c28de368fece5c288e02aae}
+      \strng{fullhashraw}{5781271f5c28de368fece5c288e02aae}
+      \strng{bibnamehash}{eb7af6740433ccef16b8292dfa8697bc}
+      \strng{authorbibnamehash}{eb7af6740433ccef16b8292dfa8697bc}
+      \strng{authornamehash}{b3da18ebea01f385644a90696cabe7ef}
+      \strng{authorfullhash}{5781271f5c28de368fece5c288e02aae}
+      \strng{authorfullhashraw}{5781271f5c28de368fece5c288e02aae}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{135325}
+      \field{eprintclass}{astro-ph.CO}
+      \field{eprinttype}{arXiv}
+      \field{issn}{0370-2693}
+      \field{journaltitle}{\plb}
+      \field{title}{Searching for dark matter with paleo-detectors}
+      \field{volume}{803}
+      \field{year}{2020}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.physletb.2020.135325
+      \endverb
+      \verb{eprint}
+      \verb 1806.05991
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0370269320301295
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0370269320301295
       \endverb
     \endentry
     \entry{BaxterEtAl2021}{article}{}{}
@@ -26160,7 +26733,7 @@
       \field{eprintclass}{hep-ph}
       \field{eprinttype}{arXiv}
       \field{issn}{2212-6864}
-      \field{journaltitle}{Physics of the Dark Universe}
+      \field{journaltitle}{\pdu}
       \field{title}{Snowmass2021 Cosmic Frontier White Paper: Primordial black hole dark matter}
       \field{volume}{41}
       \field{year}{2023}
@@ -26588,6 +27161,70 @@
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevD.106.063012
       \endverb
+    \endentry
+    \entry{CapparelliEtAl2015}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b2e3763ecfe818367c9dbedec042fe80}{%
+           family={Capparelli},
+           familyi={C\bibinitperiod},
+           given={L.M.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=68726760a464dfb98535349a233620df}{%
+           family={Cavoto},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9dc51f25e15b6f7e9cf57d30cbd45582}{%
+           family={Mazzilli},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b73b6f6ec82eccbe2522aeb3bbc1ac9}{%
+           family={Polosa},
+           familyi={P\bibinitperiod},
+           given={A.D.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6424c8d1b362fd9f4ea0eb03c0ed3b1a}
+      \strng{fullhash}{62387ee52dd021242edc6cfb0458f4a5}
+      \strng{fullhashraw}{62387ee52dd021242edc6cfb0458f4a5}
+      \strng{bibnamehash}{389d0e21d38a62f6d72b68e1305fa376}
+      \strng{authorbibnamehash}{389d0e21d38a62f6d72b68e1305fa376}
+      \strng{authornamehash}{6424c8d1b362fd9f4ea0eb03c0ed3b1a}
+      \strng{authorfullhash}{62387ee52dd021242edc6cfb0458f4a5}
+      \strng{authorfullhashraw}{62387ee52dd021242edc6cfb0458f4a5}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{physics.ins-det}
+      \field{eprinttype}{arXiv}
+      \field{issn}{2212-6864}
+      \field{journaltitle}{\pdu}
+      \field{title}{Directional dark matter searches with carbon nanotubes}
+      \field{volume}{9--10}
+      \field{year}{2015}
+      \field{pages}{24\bibrangedash 30}
+      \range{pages}{7}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.dark.2015.08.002
+      \endverb
+      \verb{eprint}
+      \verb 1412.8213
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2212686415000175
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2212686415000175
+      \endverb
+      \keyw{Directional dark matter searches,Dark matter direct detection,New possible detection schemes}
     \endentry
     \entry{CarewEtAl2024}{article}{}{}
       \name{author}{4}{}{%
@@ -27041,6 +27678,56 @@
       \verb 2409.13226
       \endverb
     \endentry
+    \entry{CirelliStrumiaZupan2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2e061928bdeeb85a91287613d03b7698}{%
+           family={{Cirelli}},
+           familyi={C\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b217c027775fbf2541a4c4dcf0a78f8e}{%
+           family={{Strumia}},
+           familyi={S\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c32e6f43940a3d1c33324fb0d3c28dd7}{%
+           family={{Zupan}},
+           familyi={Z\bibinitperiod},
+           given={Jure},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d02d380695f6398976b490f5ac634ac5}
+      \strng{fullhash}{d02d380695f6398976b490f5ac634ac5}
+      \strng{fullhashraw}{d02d380695f6398976b490f5ac634ac5}
+      \strng{bibnamehash}{d02d380695f6398976b490f5ac634ac5}
+      \strng{authorbibnamehash}{d02d380695f6398976b490f5ac634ac5}
+      \strng{authornamehash}{d02d380695f6398976b490f5ac634ac5}
+      \strng{authorfullhash}{d02d380695f6398976b490f5ac634ac5}
+      \strng{authorfullhashraw}{d02d380695f6398976b490f5ac634ac5}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2406.01705}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{6}
+      \field{title}{{Dark Matter}}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.48550/arXiv.2406.01705
+      \endverb
+      \verb{eprint}
+      \verb 2406.01705
+      \endverb
+      \keyw{High Energy Physics - Phenomenology,Astrophysics - Cosmology and Nongalactic Astrophysics,Astrophysics - High Energy Astrophysical Phenomena}
+    \endentry
     \entry{CloweEtAl2006}{article}{}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=702a2dad984e6bd2124ee9a14ae51829}{%
@@ -27231,7 +27918,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{collaboration}{ANAIS Collaboration}
-      \field{eid}{arXiv:2404.17348}
       \field{eprintclass}{astro-ph.IM}
       \field{eprinttype}{arXiv}
       \field{issn}{2399-3650}
@@ -27767,6 +28453,80 @@
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevD.104.063037
       \endverb
+    \endentry
+    \entry{DrukierEtAl2012}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=f122614be19354bf4d1a0cf493119674}{%
+           family={{Drukier}},
+           familyi={D\bibinitperiod},
+           given={Andrzej},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36480e14a64c0a18cf2adbce137a95d2}{%
+           family={{Freese}},
+           familyi={F\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bfc5c9caf1792f5c76671018d44eaeee}{%
+           family={{Lopez}},
+           familyi={L\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa60573e37e26d17d764bfff093b54a0}{%
+           family={{Spergel}},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c6e238b483e6daafd4548d4aba32fd0}{%
+           family={{Cantor}},
+           familyi={C\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01ca887b2f310e8541c15136caabe09c}{%
+           family={{Church}},
+           familyi={C\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5978e2a489826cfd1b147dc4ee62260}{%
+           family={{Sano}},
+           familyi={S\bibinitperiod},
+           given={Takeshi},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8ea2022341436a4bed6821fa361b2580}
+      \strng{fullhash}{7529ab1f202868dcac74ba02258c3c40}
+      \strng{fullhashraw}{7529ab1f202868dcac74ba02258c3c40}
+      \strng{bibnamehash}{a35bfa1b575cad301a0ff3ac23656c68}
+      \strng{authorbibnamehash}{a35bfa1b575cad301a0ff3ac23656c68}
+      \strng{authornamehash}{8ea2022341436a4bed6821fa361b2580}
+      \strng{authorfullhash}{7529ab1f202868dcac74ba02258c3c40}
+      \strng{authorfullhashraw}{7529ab1f202868dcac74ba02258c3c40}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:1206.6809}
+      \field{eprintclass}{astro-ph.IM}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{6}
+      \field{title}{{New Dark Matter Detectors using DNA or RNA for Nanometer Tracking}}
+      \field{year}{2012}
+      \verb{doi}
+      \verb 10.48550/arXiv.1206.6809
+      \endverb
+      \verb{eprint}
+      \verb 1206.6809
+      \endverb
+      \keyw{Astrophysics - Instrumentation and Methods for Astrophysics,Astrophysics - Cosmology and Nongalactic Astrophysics,High Energy Physics - Experiment,High Energy Physics - Phenomenology,Physics - Instrumentation and Detectors}
     \endentry
     \entry{Einasto1965}{article}{}{}
       \name{author}{1}{}{%
@@ -28338,6 +29098,78 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevD.105.035020
       \endverb
     \endentry
+    \entry{Graham2018}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=0ec5c6cc2f186150110dbb613daeed1e}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={Peter\bibnamedelima W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=246f70cc1be306ccd2a7d7f14c78dae7}{%
+           family={Janish},
+           familyi={J\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ece5b7cca4550427f9060d9cf0990ed6}{%
+           family={Narayan},
+           familyi={N\bibinitperiod},
+           given={Vijay},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ca4b7cf6935e0bf85d1050726e1b010}{%
+           family={Rajendran},
+           familyi={R\bibinitperiod},
+           given={Surjeet},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aabd171108baeab2297c373721cf79f6}{%
+           family={Riggins},
+           familyi={R\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{e88a1751d7c222fd853c89082f2ea72f}
+      \strng{fullhash}{1f33e2da88c86055b4484727903dc441}
+      \strng{fullhashraw}{1f33e2da88c86055b4484727903dc441}
+      \strng{bibnamehash}{8cad4f1130e55408f00df692fd9f2b21}
+      \strng{authorbibnamehash}{8cad4f1130e55408f00df692fd9f2b21}
+      \strng{authornamehash}{e88a1751d7c222fd853c89082f2ea72f}
+      \strng{authorfullhash}{1f33e2da88c86055b4484727903dc441}
+      \strng{authorfullhashraw}{1f33e2da88c86055b4484727903dc441}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{115027}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\prd}
+      \field{month}{12}
+      \field{number}{11}
+      \field{title}{White dwarfs as dark matter detectors}
+      \field{volume}{98}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.98.115027
+      \endverb
+      \verb{eprint}
+      \verb 1805.07381
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.98.115027
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.98.115027
+      \endverb
+    \endentry
     \entry{HarveyEtAl2015}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=4f63956032539faf2fc63521a396bb52}{%
@@ -28717,6 +29549,242 @@
       \endverb
       \verb{url}
       \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/ggge.20129
+      \endverb
+    \endentry
+    \entry{Hubble1929}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=095a52969f0b95a9824841c15cc59106}{%
+           family={{Hubble}},
+           familyi={H\bibinitperiod},
+           given={Edwin},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{095a52969f0b95a9824841c15cc59106}
+      \strng{fullhash}{095a52969f0b95a9824841c15cc59106}
+      \strng{fullhashraw}{095a52969f0b95a9824841c15cc59106}
+      \strng{bibnamehash}{095a52969f0b95a9824841c15cc59106}
+      \strng{authorbibnamehash}{095a52969f0b95a9824841c15cc59106}
+      \strng{authornamehash}{095a52969f0b95a9824841c15cc59106}
+      \strng{authorfullhash}{095a52969f0b95a9824841c15cc59106}
+      \strng{authorfullhashraw}{095a52969f0b95a9824841c15cc59106}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\procnas}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{{A Relation between Distance and Radial Velocity among Extra-Galactic Nebulae}}
+      \field{volume}{15}
+      \field{year}{1929}
+      \field{pages}{168\bibrangedash 173}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1073/pnas.15.3.168
+      \endverb
+    \endentry
+    \entry{IkedaEtAl2021}{article}{}{}
+      \name{author}{17}{}{%
+        {{un=0,uniquepart=base,hash=cdcf2f3d02bd68538d5cd0cd7646be61}{%
+           family={Ikeda},
+           familyi={I\bibinitperiod},
+           given={Tomonori},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa36d0ee12f5a734f90771a1ce640b34}{%
+           family={Nakamura},
+           familyi={N\bibinitperiod},
+           given={Kiseki},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=820315f72a3c079ce06af2acf031acd1}{%
+           family={Shimada},
+           familyi={S\bibinitperiod},
+           given={Takuya},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01bc17f66d7349b6ea120a9edf3e04ca}{%
+           family={Yakabe},
+           familyi={Y\bibinitperiod},
+           given={Ryota},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e18f221226f0ceb806bc1b3224f222b}{%
+           family={Hashimoto},
+           familyi={H\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3337c47bf2273a645fb07e488c856613}{%
+           family={Ishiura},
+           familyi={I\bibinitperiod},
+           given={Hirohisa},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2f17db7aced54441845c0fdacea4d038}{%
+           family={Nakamura},
+           familyi={N\bibinitperiod},
+           given={Takuma},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fdfb36a68a86730c24df3e43eadb3c1a}{%
+           family={Ito},
+           familyi={I\bibinitperiod},
+           given={Hiroshi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fac46843d0db82aa7317d97808a2c620}{%
+           family={Ichimura},
+           familyi={I\bibinitperiod},
+           given={Koichi},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=034313eab514ac7fade794e9bfd5000c}{%
+           family={Abe},
+           familyi={A\bibinitperiod},
+           given={Ko},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b1fec8f0a58d82d06ff3730895a5d562}{%
+           family={Kobayashi},
+           familyi={K\bibinitperiod},
+           given={Kazuyoshi},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2faa3e8e35e4105a8dba8fe5b4a5c17}{%
+           family={Tanimori},
+           familyi={T\bibinitperiod},
+           given={Toru},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=37bd2a702d20a24376bd998c73fe042d}{%
+           family={Kubo},
+           familyi={K\bibinitperiod},
+           given={Hidetoshi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f60a5e51a45e1831a4e6a8e95a94cfde}{%
+           family={Takada},
+           familyi={T\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5bb1793e88a88be7a650dcc6eff753c9}{%
+           family={Sekiya},
+           familyi={S\bibinitperiod},
+           given={Hiroyuki},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e730474a2ae9c0f43893555453f63166}{%
+           family={Takeda},
+           familyi={T\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4c333158032691ae5af392bc291e0692}{%
+           family={Miuchi},
+           familyi={M\bibinitperiod},
+           given={Kentaro},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{92b8d03e443ae30ebc667177a573b444}
+      \strng{fullhash}{dea36e2bd43f8aad2b9e1974c9fdbfc2}
+      \strng{fullhashraw}{dea36e2bd43f8aad2b9e1974c9fdbfc2}
+      \strng{bibnamehash}{6aff7e0781334bc71155bc4a41f87018}
+      \strng{authorbibnamehash}{6aff7e0781334bc71155bc4a41f87018}
+      \strng{authornamehash}{92b8d03e443ae30ebc667177a573b444}
+      \strng{authorfullhash}{dea36e2bd43f8aad2b9e1974c9fdbfc2}
+      \strng{authorfullhashraw}{dea36e2bd43f8aad2b9e1974c9fdbfc2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{063F01}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{issn}{2050-3911}
+      \field{journaltitle}{Progress of Theoretical and Experimental Physics}
+      \field{month}{04}
+      \field{number}{6}
+      \field{title}{Direction-sensitive dark matter search with the low-background gaseous detector NEWAGE-0.3b”}
+      \field{volume}{2021}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1093/ptep/ptab053
+      \endverb
+      \verb{eprint}
+      \verb 2101.09921
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/ptep/ptab053
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/ptep/ptab053
+      \endverb
+    \endentry
+    \entry{JacobsStarkmanLynn2015}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ae4751806a580af7bfeb464a567e16d6}{%
+           family={Jacobs},
+           familyi={J\bibinitperiod},
+           given={David\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c147ad8e5e611e538ea151a9bf243f6}{%
+           family={Starkman},
+           familyi={S\bibinitperiod},
+           given={Glenn\bibnamedelima D.},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b6a0d33e03707950fdb67c8c4c3d2a1}{%
+           family={Lynn},
+           familyi={L\bibinitperiod},
+           given={Bryan\bibnamedelima W.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{07bbc558bbff991d9006f6cd1200538b}
+      \strng{fullhash}{07bbc558bbff991d9006f6cd1200538b}
+      \strng{fullhashraw}{07bbc558bbff991d9006f6cd1200538b}
+      \strng{bibnamehash}{07bbc558bbff991d9006f6cd1200538b}
+      \strng{authorbibnamehash}{07bbc558bbff991d9006f6cd1200538b}
+      \strng{authornamehash}{07bbc558bbff991d9006f6cd1200538b}
+      \strng{authorfullhash}{07bbc558bbff991d9006f6cd1200538b}
+      \strng{authorfullhashraw}{07bbc558bbff991d9006f6cd1200538b}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.CO}
+      \field{eprinttype}{arXiv}
+      \field{issn}{0035-8711}
+      \field{journaltitle}{\mnras}
+      \field{month}{05}
+      \field{number}{4}
+      \field{title}{Macro dark matter}
+      \field{volume}{450}
+      \field{year}{2015}
+      \field{pages}{3418\bibrangedash 3430}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1093/mnras/stv774
+      \endverb
+      \verb{eprint}
+      \verb 1410.2236
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/mnras/stv774
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/mnras/stv774
       \endverb
     \endentry
     \entry{KadribasicEtAl2018}{article}{}{}
@@ -29851,6 +30919,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eprinttype}{ads}
       \field{journaltitle}{\assb}
       \field{month}{1}
       \field{title}{{Un Univers homogène de masse constante et de rayon croissant rendant compte de la vitesse radiale des nébuleuses extra-galactiques}}
@@ -29858,6 +30927,9 @@
       \field{year}{1927}
       \field{pages}{49\bibrangedash 59}
       \range{pages}{11}
+      \verb{eprint}
+      \verb 1927ASSB...47...49L
+      \endverb
       \keyw{cosmology,big-bang theory}
     \endentry
     \entry{LimEtAl2016}{article}{}{}
@@ -30700,6 +31772,78 @@
       \endverb
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevC.88.014605
+      \endverb
+    \endentry
+    \entry{MarshallEtAl2021}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=d451e59cae7b5dee7439ae3bbfbbcf65}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={Mason\bibnamedelima C},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c96331bf8c3a125c08982e04120ba318}{%
+           family={Turner},
+           familyi={T\bibinitperiod},
+           given={Matthew\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=24b13ae6966c47fed4e1760a97cdcd5d}{%
+           family={Ku},
+           familyi={K\bibinitperiod},
+           given={Mark\bibnamedelimb J\bibnamedelima H},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a045377dbd241f8cc425a55008673b7f}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={David\bibnamedelima F},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9a6b5c7e31735a67e4d649782c06518}{%
+           family={Walsworth},
+           familyi={W\bibinitperiod},
+           given={Ronald\bibnamedelima L},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{81912af299f378aac49d6d3b5288d11e}
+      \strng{fullhash}{b8c80bf9402838bd27849aae7357af08}
+      \strng{fullhashraw}{b8c80bf9402838bd27849aae7357af08}
+      \strng{bibnamehash}{7326e3d502811078182b29fcc8a24525}
+      \strng{authorbibnamehash}{7326e3d502811078182b29fcc8a24525}
+      \strng{authornamehash}{81912af299f378aac49d6d3b5288d11e}
+      \strng{authorfullhash}{b8c80bf9402838bd27849aae7357af08}
+      \strng{authorfullhashraw}{b8c80bf9402838bd27849aae7357af08}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{024011}
+      \field{eprintclass}{physics.ins-det}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\qst}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{Directional detection of dark matter with diamond}
+      \field{volume}{6}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1088/2058-9565/abe5ed
+      \endverb
+      \verb{eprint}
+      \verb 2009.01028
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/2058-9565/abe5ed
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/2058-9565/abe5ed
       \endverb
     \endentry
     \entry{McMillan2017}{article}{}{}
@@ -31903,6 +33047,106 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.127.251802
       \endverb
     \endentry
+    \entry{OHareEtAl2022}{article}{}{}
+      \name{author}{11}{ul=1}{%
+        {{un=0,uniquepart=base,hash=4220a1fa5edbb20e76b9652be2a5f93d}{%
+           family={{O'Hare}},
+           familyi={O\bibinitperiod},
+           given={Ciaran\bibnamedelima A.\bibnamedelimi J.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e330c4952eeb741ab667c32d91d6c668}{%
+           family={{Matsos}},
+           familyi={M\bibinitperiod},
+           given={Vassili\bibnamedelima G.},
+           giveni={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5927bbe017c608a6e3c6c1438f5f0805}{%
+           family={{Newton}},
+           familyi={N\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7794f31cd9847a666e66fd849007343}{%
+           family={{Smith}},
+           familyi={S\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=052063045cf122df203361301c9674c6}{%
+           family={{Hochstetter}},
+           familyi={H\bibinitperiod},
+           given={Joel},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e6ea0276eca3636cbed4c26480fd8f5d}{%
+           family={{Jaiswar}},
+           familyi={J\bibinitperiod},
+           given={Ravi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c124dfa7a875384688c73beda243c0a}{%
+           family={{Kyaw}},
+           familyi={K\bibinitperiod},
+           given={Wunna},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e98ebefd6f439df3309d04dd48f1e7c3}{%
+           family={{McNamara}},
+           familyi={M\bibinitperiod},
+           given={Aimee},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b599577ad425c32c4d50f5dc8801511}{%
+           family={{Kuncic}},
+           familyi={K\bibinitperiod},
+           given={Zdenka},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5b99099bc3443362e787cb0669d7851}{%
+           family={{Grellscheid}},
+           familyi={G\bibinitperiod},
+           given={Sushma\bibnamedelima Nagaraja},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=616f17690070858ce4752a64131d9a60}{%
+           family={{BÅ`hm}},
+           familyi={B\bibinitperiod},
+           given={Céline},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{914f94cd6fb7471057e432af3e0a6c69}
+      \strng{fullhash}{27d052910df75703f949d67a3586d3cd}
+      \strng{fullhashraw}{27d052910df75703f949d67a3586d3cd}
+      \strng{bibnamehash}{914f94cd6fb7471057e432af3e0a6c69}
+      \strng{authorbibnamehash}{914f94cd6fb7471057e432af3e0a6c69}
+      \strng{authornamehash}{914f94cd6fb7471057e432af3e0a6c69}
+      \strng{authorfullhash}{27d052910df75703f949d67a3586d3cd}
+      \strng{authorfullhashraw}{27d052910df75703f949d67a3586d3cd}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{306}
+      \field{eprintclass}{physics.ins-det}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\epjc}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{{Particle detection and tracking with DNA}}
+      \field{volume}{82}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-022-10264-6
+      \endverb
+      \verb{eprint}
+      \verb 2105.11949
+      \endverb
+      \keyw{Physics - Instrumentation and Detectors,High Energy Physics - Experiment,High Energy Physics - Phenomenology}
+    \endentry
     \entry{OrebiGann2021}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=f3f87a3bb55375f2c6b2320802d2f512}{%
@@ -32123,6 +33367,74 @@
       \verb https://doi.org/10.1093/mnras/stw2819
       \endverb
     \endentry
+    \entry{RajendranEtAl2017}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=9ca4b7cf6935e0bf85d1050726e1b010}{%
+           family={Rajendran},
+           familyi={R\bibinitperiod},
+           given={Surjeet},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d7d01c01bbc00a1152b3fea8fc10a05}{%
+           family={Zobrist},
+           familyi={Z\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ffefd10937c417cc67a3dbeeed40e856}{%
+           family={Sushkov},
+           familyi={S\bibinitperiod},
+           given={Alexander\bibnamedelima O.},
+           giveni={A\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2880156a14d7cdd1fa10547e93a1fe9f}{%
+           family={Walsworth},
+           familyi={W\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=905a9876c41a35bc62d65c75cda55cce}{%
+           family={Lukin},
+           familyi={L\bibinitperiod},
+           given={Mikhail},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{d826e9e2c6fabb91786ec3633cfa4d5c}
+      \strng{fullhash}{a7afd6bbb7975ea12f63086448e6c1d9}
+      \strng{fullhashraw}{a7afd6bbb7975ea12f63086448e6c1d9}
+      \strng{bibnamehash}{bd8d92b3a1515fca369e18e569ea587f}
+      \strng{authorbibnamehash}{bd8d92b3a1515fca369e18e569ea587f}
+      \strng{authornamehash}{d826e9e2c6fabb91786ec3633cfa4d5c}
+      \strng{authorfullhash}{a7afd6bbb7975ea12f63086448e6c1d9}
+      \strng{authorfullhashraw}{a7afd6bbb7975ea12f63086448e6c1d9}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3}
+      \field{journaltitle}{\prd}
+      \field{month}{8}
+      \field{title}{A method for directional detection of dark matter using spectroscopy of crystal defects}
+      \field{volume}{96}
+      \field{year}{2017}
+      \field{pages}{035009}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.96.035009
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.96.035009
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.96.035009
+      \endverb
+    \endentry
     \entry{Robertson1935}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9504e023ae815449e68126168114bf83}{%
@@ -32147,6 +33459,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eprinttype}{ads}
       \field{journaltitle}{\apj}
       \field{month}{11}
       \field{title}{{Kinematics and World-Structure}}
@@ -32156,6 +33469,9 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1086/143681
+      \endverb
+      \verb{eprint}
+      \verb 1935ApJ....82..284R
       \endverb
     \endentry
     \entry{Robertson1936a}{article}{}{}
@@ -32183,6 +33499,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eprinttype}{ads}
       \field{journaltitle}{\apj}
       \field{month}{4}
       \field{title}{{Kinematics and World-Structure II.}}
@@ -32192,6 +33509,9 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1086/143716
+      \endverb
+      \verb{eprint}
+      \verb 1936ApJ....83..187R
       \endverb
     \endentry
     \entry{Robertson1936b}{article}{}{}
@@ -32219,6 +33539,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eprinttype}{ads}
       \field{journaltitle}{\apj}
       \field{month}{5}
       \field{title}{{Kinematics and World-Structure III.}}
@@ -32228,6 +33549,9 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1086/143726
+      \endverb
+      \verb{eprint}
+      \verb 1936ApJ....83..257R
       \endverb
     \endentry
     \entry{RomaniEtAl2018}{article}{}{}
@@ -32933,6 +34257,62 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0370269303012103
       \endverb
     \endentry
+    \entry{SidhuScherrerStarkman2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=efc3a5a3ccb64844c3aac2595f6641a1}{%
+           family={Sidhu},
+           familyi={S\bibinitperiod},
+           given={Jagjit\bibnamedelima Singh},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8db36ca0a4a6af2d950ddbd54955f50a}{%
+           family={Scherrer},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c147ad8e5e611e538ea151a9bf243f6}{%
+           family={Starkman},
+           familyi={S\bibinitperiod},
+           given={Glenn\bibnamedelima D.},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e7d08023fd5c251da0e73d452a199e5e}
+      \strng{fullhash}{e7d08023fd5c251da0e73d452a199e5e}
+      \strng{fullhashraw}{e7d08023fd5c251da0e73d452a199e5e}
+      \strng{bibnamehash}{e7d08023fd5c251da0e73d452a199e5e}
+      \strng{authorbibnamehash}{e7d08023fd5c251da0e73d452a199e5e}
+      \strng{authornamehash}{e7d08023fd5c251da0e73d452a199e5e}
+      \strng{authorfullhash}{e7d08023fd5c251da0e73d452a199e5e}
+      \strng{authorfullhashraw}{e7d08023fd5c251da0e73d452a199e5e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{135300}
+      \field{eprintclass}{astro-ph.CO}
+      \field{eprinttype}{arXiv}
+      \field{issn}{0370-2693}
+      \field{journaltitle}{\plb}
+      \field{title}{Death and serious injury from dark matter}
+      \field{volume}{803}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1016/j.physletb.2020.135300
+      \endverb
+      \verb{eprint}
+      \verb 1907.06674
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0370269320301040
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0370269320301040
+      \endverb
+    \endentry
     \entry{SkordisZlosnik2021}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=129caf7e8246eca69d60b335a6a75c68}{%
@@ -32985,6 +34365,41 @@
       \endverb
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.127.161302
+      \endverb
+    \endentry
+    \entry{Slipher1917}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=75aa4ff4cb47ec29a4b707c130a4bc66}{%
+           family={{Slipher}},
+           familyi={S\bibinitperiod},
+           given={V.\bibnamedelimi M.},
+           giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{75aa4ff4cb47ec29a4b707c130a4bc66}
+      \strng{fullhash}{75aa4ff4cb47ec29a4b707c130a4bc66}
+      \strng{fullhashraw}{75aa4ff4cb47ec29a4b707c130a4bc66}
+      \strng{bibnamehash}{75aa4ff4cb47ec29a4b707c130a4bc66}
+      \strng{authorbibnamehash}{75aa4ff4cb47ec29a4b707c130a4bc66}
+      \strng{authornamehash}{75aa4ff4cb47ec29a4b707c130a4bc66}
+      \strng{authorfullhash}{75aa4ff4cb47ec29a4b707c130a4bc66}
+      \strng{authorfullhashraw}{75aa4ff4cb47ec29a4b707c130a4bc66}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{ads}
+      \field{journaltitle}{\obs}
+      \field{month}{8}
+      \field{title}{{Radial velocity observations of spiral nebulae}}
+      \field{volume}{40}
+      \field{year}{1917}
+      \field{pages}{304\bibrangedash 306}
+      \range{pages}{3}
+      \verb{eprint}
+      \verb 1917Obs....40..304S
       \endverb
     \endentry
     \entry{Smith1936}{article}{}{}
@@ -34141,6 +35556,85 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1214/aoms/1177732360
+      \endverb
+    \endentry
+    \entry{Wirtz1922}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4f264e9dcf21c7520f7308a27609acac}{%
+           family={{Wirtz}},
+           familyi={W\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{fullhash}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{fullhashraw}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{bibnamehash}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{authorbibnamehash}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{authornamehash}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{authorfullhash}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{authorfullhashraw}{4f264e9dcf21c7520f7308a27609acac}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{ads}
+      \field{journaltitle}{\anr}
+      \field{month}{4}
+      \field{title}{{Einiges zur Statistik der Radialbewegungen von Spiralnebeln und Kugelsternhaufen}}
+      \field{volume}{215}
+      \field{year}{1922}
+      \field{pages}{349}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/asna.19212151703
+      \endverb
+      \verb{eprint}
+      \verb 1922AN....215..349W
+      \endverb
+    \endentry
+    \entry{Wirtz1924}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4f264e9dcf21c7520f7308a27609acac}{%
+           family={{Wirtz}},
+           familyi={W\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{fullhash}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{fullhashraw}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{bibnamehash}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{authorbibnamehash}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{authornamehash}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{authorfullhash}{4f264e9dcf21c7520f7308a27609acac}
+      \strng{authorfullhashraw}{4f264e9dcf21c7520f7308a27609acac}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{ads}
+      \field{journaltitle}{\anr}
+      \field{month}{7}
+      \field{number}{2}
+      \field{title}{{De Sitters Kosmologie und die Radialbewegungen der Spiralnebel}}
+      \field{volume}{222}
+      \field{year}{1924}
+      \field{pages}{21}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/asna.19242220203
+      \endverb
+      \verb{eprint}
+      \verb 1924AN....222...21W
       \endverb
     \endentry
     \entry{XuWangZhang2015}{article}{}{}
