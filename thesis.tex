@@ -239,7 +239,7 @@
 
 % Font settings
 %
-% Note: you need to have these fonts installed on your system. All these fonts 
+% Note: the fonts used need to be installed on the system. All these fonts 
 % should be included in a modern TeXLive distribution. If not, install the 
 % fonts f the fonts and run `luaotfload-tool -u` to update the font database.
 \setmainfont{STIXTwoText}[BoldFont=Stix Two Text Semibold]
@@ -402,7 +402,7 @@
 \newcommand{\department}{Department of Physics}
 
 \newcommand{\defenseplace}{\textcolor{\typographersred}{[place]}}
-\newcommand{\defensedate}{\textcolor{\typographersred}{[date]}}
+\newcommand{\defensedate}{March 6, 2025}
 \newcommand{\defensetime}{\textcolor{\typographersred}{[time]}}
 
 \newcommand{\thesistitle}{Dark Matter in Next Generation Detectors}
@@ -479,7 +479,7 @@
         \vspace{8pc}
         \textucsf{DOCTORAL DISSERTATION}\\
         \vspace{1pc}
-        To be presented for public discussion with the permission of the \faculty{} of the \institution, in \defenseplace{} on \defensedate{} at \defensetime\\
+        To be presented for public discussion with the permission of the \faculty{} of the \institution, in \defenseplace{} on \defensedate{}, at \defensetime\\
         \vfill
         Helsinki \thesisyear
     \end{center}
@@ -504,21 +504,17 @@
     \textuc{ISSN}: \issne{} (electronic)\\
 \end{copyrightpage}
 
-% Section 1: Intro
-% Section 2: Detection of dark matter
-%	Indirect
-%	Direct
-%	Ionization, scintillation, phonon
-% Semiconductor crystals
-%	Defect creation, energy loss, and ionization threshold
-% Section 2: Dark matter interactions
-%	Nonrelativistic EFT
-% Section 3: Dark matter distribution
-% Section  : Lab frame
-
 \tableofcontents
 
 \chapter{Abstract}
+
+The mystery of the nature of dark matter is one of the great outstanding challenges in modern physics. A large body of observational evidence suggests that the majority of the matter content in the universe is in the form of cold, massive particles, whose nongravitational interactions with ordinary matter are extremely weak. Although the existence of this cold dark matter is well supported by observations of its gravitational effects, absolutely nothing else is known about it.
+
+A number of experiments have been built to seek direct evidence of scattering of dark matter off ordinary matter. These experiments use large quantitites of various elements and compounds, covered in detector instruments, to maximize the likelihood of observing the exceedingly rare dark matter scattering events. While none of these experiments has yet made a definitive observation of dark matter scattering, over the past two decades they have been highly successful in pushing down the upper limits of the dark matter interaction cross section with ordinary matter for dark matter masses above one GeV.
+
+Recent advances in low energy threshold detector technology have made viable the detection of scattering events with recoil energies down to the order of electron volts. This has made more viable direct detection study of sub-GeV dark matter, which has been historically less constrained. At these energy scales, coinciding with the energy scales of atomic binding energies, however, the material physical properties of the detector material become important, which has a number of effects on the signal of scattering events, which need to be accounted for.
+
+This thesis is an investigation of the implications of these material effects on the hypothetical signal of sub-GeV dark matter in next generation detectors. The main effort of this work is a detailed study of the daily modulation of the dark matter signal, induced by an anisotropic response of crystalline detector materials due to the rotational motion of the Earth. The daily modulation signal encodes information about the anisotropy of the dark matter scattering rate, which is traditionally inaccessible to detectors without directional sensitivity. We have therefore studied the prospect of using the daily modulation to aid in distinguishing a dark matter signal from the background of solar neutrinos, which presents an obstacle to the observation sub-GeV dark matter. We have also studied the possibility of using daily modulation to distinguish the presence of an anisotropy in the dark matter velocity distribution. In addition to the daily modulation investigations, this work also includes a molecular dynamics simluation study of defect formation in a number of common and hypothetical detector materials, where we analyze the implications of energy loss in low-energy scattering events on the observed nuclear recoil event rate.
 
 \chapter{Acknowledgements}
 
@@ -691,13 +687,13 @@ with $\mu_\text{DM--n}$ the DM--nucleon reduced mass. It is then immediately cle
 \vec{v}^\perp\equiv\frac{1}{2}(\vec{v}+\vec{v}')=\vec{v}+\frac{\vec{q}}{2\mu_\text{DM--n}}.
 \end{equation}
 
-All the possible operators can now be constructed by taking combinations of the four operators $i\vec{q}$, $\vec{v}^\perp$, $\vec{S}_\chi$ and $\vec{S}_N$. Under standard theoretical descriptions of dark matter the interaction between the dark sector and standard model particles are mediated by spin-0 or spin-1 particles. With this restriction one is left with a collection of 11 possible operators
+All the possible operators can now be constructed by taking combinations of the four operators $i\vec{q}$, $\vec{v}^\perp$, $\vec{S}_\chi$ and $\vec{S}_N$. Under standard theoretical descriptions of dark matter the interaction between the dark sector and standard model particles are mediated by spin-0 or spin-1 particles. With this restriction one is left with a collection of 11 possible operators \parencite{FitzpatrickEtAl2013},
 \begin{gather*}
     \mathcal{O}_1=1,\quad\mathcal{O}_2=|\vec{v}_\perp|^2,\quad\mathcal{O}_3=i\vec{S}_n\cdot(\vec{q}\times\vec{v}^\perp),\quad\mathcal{O}_4=\vec{S}_\chi\cdot\vec{S}_n,\\
     \quad\mathcal{O}_5=i\vec{S}_\chi\cdot(\vec{q}\times\vec{v}^\perp),\quad\mathcal{O}_6=(\vec{S}_\chi\cdot\vec{q})(\vec{S}_n\cdot\vec{q}),\quad\mathcal{O}_7=\vec{S}_n\cdot\vec{v}^\perp,\\
     \quad\mathcal{O}_8=\vec{S}_\chi\cdot\vec{v}^\perp,\quad\mathcal{O}_9=i\vec{S}_\chi\cdot(\vec{S}_n\times\vec{q}),\quad\mathcal{O}_{10}=\vec{S}_\chi\cdot\vec{q},\quad\mathcal{O}_{11}=\vec{S}_n\cdot\vec{q}.
 \end{gather*}
-It is worth noting that operator $\mathcal{O}_2$ is commonly discarded A general Lagrangian for nuclear scattering constructed from these operators can be written as it does not arise at leading order from the reduction of any relativistic operator.
+It is worth noting that operator $\mathcal{O}_2$ is commonly discarded as it does not arise at leading order from the reduction of any relativistic operator.
 \begin{equation}
     \mathcal{L}=\sum_{i=1}^{11}c_i^p\mathcal{O}_i^p+c_i^n\mathcal{O}_i^n,
 \end{equation}
@@ -714,7 +710,7 @@ where $F_{ij}^{(N,N')}(v_\perp^2,q^2)$ are form factors, which capture the effec
 \end{equation}
 such that it only ever contains at most second powers of the incoming dark matter velocity $v$.
 
-A clear advantage of having such an effective theory is that it can be used to derive model-independent bounds on dark matter interactions for the different operators, which can then be matched to any relativistic theory of dark matter. This is the generalization of the standard spin-dependent/independent cross-section dichotomy considered in chapter~\ref{chap:direct-detection}, which can be seen as a restriction of the effective theory to the spin-independent operator $\mathcal{O}_1$ and the spin-dependent operators $\mathcal{O}_4$ and $\mathcal{O}_6$. An essential qualitative difference to the usual picture is the introduction of operators with $\vec{v}$ dependence, i.e., the operators $\mathcal{O}_3$, $\mathcal{O}_5$, $\mathcal{O}_7$ and $\mathcal{O}_8$. These operators suppress low-speed dark matter, enhancing effects of the high-speed tail of the velocity distribution. Moreover, this effect is direction dependent with $v_\perp^2=v^2-(\vec{v}\cdot\unitv{q})^2$, which implies a total suppression of events in the direction of the dark matter velocity. This results in an angular distribution distinct from that of the velocity independent operators. In detectors with anisotropic response this leads to a different daily modulation signature. This effect plays a role in publication~\ref{pub:sassi2024}, which analyzes how uncertainty over choice between $\mathcal{O}_1$ and $\mathcal{O}_7$ operators impacts the prospect of distinguishing anisotropies in the velocity distribution.
+A clear advantage of having such an effective theory is that it can be used to derive model-independent bounds on dark matter interactions for the different operators, which can then be matched to any relativistic theory of dark matter. An essential qualitative difference to the conventional picture is the introduction of operators with $\vec{v}$ dependence, i.e., the operators $\mathcal{O}_3$, $\mathcal{O}_5$, $\mathcal{O}_7$ and $\mathcal{O}_8$. These operators suppress low-speed dark matter, enhancing effects of the high-speed tail of the velocity distribution. Moreover, this effect is direction dependent with $v_\perp^2=v^2-(\vec{v}\cdot\unitv{q})^2$, which implies a total suppression of events in the direction of the dark matter velocity. This results in an angular distribution distinct from that of the velocity independent operators. In detectors with anisotropic response this leads to a different daily modulation signature. This effect plays a role in publication~\ref{pub:sassi2024}, which analyzes how uncertainty over choice between $\mathcal{O}_1$ and $\mathcal{O}_7$ operators impacts the prospect of distinguishing anisotropies in the velocity distribution.
 
 The application of the effective theory description also provides a computational benefit. If equation~\eqref{eq:eft-amplitude-square} is plugged into the event rate equation~\eqref{eq:dm-master-rate}, then the dark matter scattering rate on nuclei takes the form
 \begin{equation}
@@ -728,7 +724,7 @@ where
     \label{eq:transverse-radon}
     \mathcal{R}_\perp[f](v_\text{min},\unitv{q})&=\int\delta\left(\vec{v}\cdot\unitv{q}+\frac{q}{2\mu_\text{DM--T}}\right)v_\perp^2f(\vec{v})\difd^3v.
 \end{align}
-These equations represent the integrals of $f(\vec{v})$ and $v_\perp^2f(\vec{v})$, respectively, over planes perpendicular to $\unitv{q}$. Such an integral is known as the (three-dimensional) \emph{Radon transform}. In analogy with the standard Radon transform, defined by equation~\eqref{eq:radon}, we also define the \emph{transverse Radon transform} as equation~\eqref{eq:transverse-radon} because it appears naturally in commonly in the context of the effective theory description of direct detection. The importance of equation~\eqref{eq:eft-event-rate} is that it separates the concerns of the dark matter interaction model from those of the velocity distribution. That is, the transforms~\eqref{eq:radon} and~\eqref{eq:transverse-radon} only depend on the velocity distribution, and on the DM--nucleus reduced mass via $v_\text{min}$. The dark matter interaction with the detector material is entirely captured within the form factors $P(q^2)$ and $P_\perp(q^2)$.
+These equations represent the integrals of $f(\vec{v})$ and $v_\perp^2f(\vec{v})$, respectively, over planes perpendicular to $\unitv{q}$. Such an integral is known as the (three-dimensional) \emph{Radon transform}. In analogy with the standard Radon transform, defined by equation~\eqref{eq:radon}, we also define the \emph{transverse Radon transform} as equation~\eqref{eq:transverse-radon} because it appears naturally in the context of the effective theory description of direct detection. The importance of equation~\eqref{eq:eft-event-rate} is that it separates the concerns of the dark matter interaction model from those of the velocity distribution. That is, the transforms~\eqref{eq:radon} and~\eqref{eq:transverse-radon} only depend on the velocity distribution, and on the DM--nucleus reduced mass via $v_\text{min}$. The dark matter interaction with the detector material is entirely captured within the form factors $P(q^2)$ and $P_\perp(q^2)$.
 
 A corresponding framework as the one described here in the context of scattering of dark matter off nuclei also exists for dark matter--electron interactions \parencites{CatenaEtAl2020, CatenaEtAl2021}. The above discussion broadly applies to the electron framework, with nuclear form factors replaced by atomic form factors, and with the exception that---due to the relativistic motion of electrons orbiting nuclei---the electron may not be regarded as nonrelativistic.
 
@@ -765,13 +761,13 @@ where
 \begin{equation}
     n_i=\mu n_i^\text{DM}+\vec{\theta}\cdot\vec{n}_i^0
 \end{equation}
-is the expected event count in each bin.
+is the expected event count in each bin, and $\Sigma$ represents the covariance matrix of the uncertainties in the parameters $\vec{\theta}_0$.
 
 Given an observation $\vec{k}$, one can then compute parameter values $\hat{\mu}$ and $\unitv{\theta}$, which maximize the likelihood such that
 \begin{equation}
     \mathcal{L}(\hat{\mu},\unitv{\theta}\mid\vec{k})=\max_{\mu,\vec{\theta}\in\Theta}\mathcal{L}(\mu,\vec{\theta}\mid\vec{k}).
 \end{equation}
-This, by definition, gives the signal model which has the highest probability of producing the observation $\vec{k}$, and may therefore be regarded as the best fit to the observation. Typically, however, one is concerned with how the best fit signal model compares to some assumption of a signal model with a fixed parameter $\mu$, and $\unitv{\theta}'$
+This, by definition, gives the signal model which has the highest probability of producing the observation $\vec{k}$, and may therefore be regarded as the best fit to the observation. Typically, however, one is concerned with how the best fit signal model compares to some assumption of a signal model with a fixed parameter $\mu$, such that $\unitv{\theta}'$ maximizes the likelihood,
 \begin{equation}
     \mathcal{L}(\mu,\unitv{\theta}'\mid\vec{k})=\max_{\unitv{\theta}'\in\Theta}\mathcal{L}(\mu,\unitv{\theta}'\mid\vec{k}).
 \end{equation}
@@ -781,7 +777,7 @@ One can then compare the fit provided by $\hat{\mu}$ and $\unitv{\theta}$ to the
 \end{equation}
 The likelihood ratio is always between zero and one, because the denominator is the maximum likelihood, the value approaches unity if the fit with $\mu$ fixed is as good as the best fit. Values close to unity therefore indicate that the best fit model is not substantially better than the model assuming $\mu$. The relevance of this is clear if we consider the special case $\mu=0$, assuming no signal, i.e., the null hypothesis. In this case $\lambda(0)$ close to unity suggests that the model does not explain the observation significantly better than the null hypothesis. This statement can be made exact by defining the test statistic
 \begin{equation}
-    t_\mu=-2\log\lambda(\mu)
+    t_\mu=-2\log\lambda(\mu).
 \end{equation}
 Translating the interpretation of the likelihood ratio to the test statistic, we see that higher values of $t_\mu$ indicate larger differences between the best fit, and the fit assuming $\mu$.
 
@@ -791,7 +787,7 @@ One can consider the distribution $f(t_\mu\mid\tilde{\mu})$ of $t_\mu$ over obse
 \end{equation}
 Again, as a special case one has the value $p_0$, which is traditionally used to determine whether to reject the null hypothesis. Alternative to the $p$-value, one can consider the significance $Z_\mu=\Phi^{-1}(1-p_\mu)$, where $\Phi$ is the cumulative distribution function of the normal distribution. According to a well known theorem due to \textcite{Wilks1938}, the test statistic $t_\mu$ is asymptotically $\chi^2$-distributed. It follows that for large data samples the significance corresponding to a given $t_\mu$ is then $Z_\mu=t_\mu^{1/2}$.
 
-In the situation considered here, where $\mu$ characterizes the strength of the dark matter signal, it is clear $\mu$ must be strictly positive, because any presence of dark matter can only increase the number of observed events. However, the definition of the likelihood~\eqref{eq:likelihood} there is no indication that this should be the case. Therefore, it is entirely plausible that the likelihood maximization process could produce a negative value for $\hat{\mu}$. Therefore, in place of $t_\mu$ one can adopt a modified test statistic \parencite{BaxterEtAl2021}
+In the situation considered here, where $\mu$ characterizes the strength of the dark matter signal, it is clear $\mu$ must be strictly positive, because any presence of dark matter can only increase the number of observed events. However, in the definition of the likelihood~\eqref{eq:likelihood} there is no indication that this should be the case. Therefore, it is entirely plausible that the likelihood maximization process could produce a negative value for $\hat{\mu}$. Therefore, in place of $t_\mu$ one can adopt a modified test statistic \parencite{BaxterEtAl2021}
 \begin{equation}
     \tilde{t}_\mu=
     \begin{cases}
@@ -808,7 +804,7 @@ where $\mathcal{L}(0,\unitv{\theta}_0\mid\vec{k})$ is the maximum likelihood und
     \end{cases}
 \end{equation}
 
-The present state with dark matter direct detection experiments is that, in the vast majority of experiments, no definite signal has been observed, with the exception being the annual modulation observed by DAMA/LIBRA---discussed at the end of chapter~\ref{chap:dist} \parencite{BernabeiEtAl2023}. The typical case to test then are the implications of an observation which is compatible with the null hypothesis. There are two perspectives from which such a situation can be analyzed. On one hand, there is an experiment which has made an observation, and one has to determine the highest value of the parameter $\mu$, which is still compatible with the observation. On the other hand, there is a theoretical analysis, where one has to determine the lowest value of the parameter $\mu$ for which a hypothetical experiment of given exposure could reject the null hypothesis. Both of these analyses fundamentally have the same goal: to establish limits on the possible size of $\mu$, but they are carried out in subtly different ways.
+The present state with dark matter direct detection experiments is that, in the vast majority of experiments, no definite signal has been observed---with the exception being the annual modulation observed by DAMA/LIBRA \parencite{BernabeiEtAl2023}, see chapter~\ref{chap:dist} for further discussion. The typical case to test then are the implications of an observation which is compatible with the null hypothesis. There are two perspectives from which such a situation can be analyzed. On one hand, there is an experiment which has made an observation, and one has to determine the highest value of the parameter $\mu$, which is still compatible with the observation. On the other hand, there is a theoretical analysis, where one has to determine the lowest value of the parameter $\mu$ for which a hypothetical experiment of given exposure could reject the null hypothesis. Both of these analyses fundamentally have the same goal: to establish limits on the possible size of $\mu$, but they are carried out in subtly different ways.
 
 The exclusion curves of various experiments shown in figure~\ref{fig:dd-reach} represent the upper limits on the respective cross-sections derived from the observations of the experiments. These limits are typically obtained via a raster scan method, where the likelihood analysis is carried separately for a set of mass values to draw the limiting curves. Concretely, the upper and lower limits on $\mu$ by finding the $p$-value $p_\mu$ of a given two-sided test statistic such that it equals some predetermined test size $\alpha$. Although modern experiments typically use the two-sided method with the test statistic $\tilde{t}_\mu$ for determining the upper limit (see, e.g., \textcites{XENON2019b, PandaX2021, LZ2024}) some experiments have employed an alternative one-sided test statistic to determine the upper limit \parencite{CowanEtAl2011}
 \begin{equation}
@@ -820,11 +816,11 @@ The exclusion curves of various experiments shown in figure~\ref{fig:dd-reach} r
 \end{equation}
 One can see that this differs from $\tilde{t}_\mu$ in that all values of $\hat{\mu}$ above $\mu$ are regarded as maximally compatible with the hypothesis.
 
-From a theoretical standpoint, one is generally interested in the capability of a hypothetical experiment to detect a signal of a given strength; that is, one is interested the lowest value of the strength $\mu$ for which the null hypothesis can be rejected at a given significance. Without a specific instance of observed data, the hypothetical experiment must be understood in the statistical sense, such that $\tilde{t}_0^\text{obs}$ is itself a random variable. Then the expected sensitivity can be interpreted in terms of the strength $\mu$ for which the median experiment would reject the null hypothesis. This means that in terms of the $p$-value
+From a theoretical standpoint, one is generally interested in the capability of a hypothetical experiment to detect a signal of a given strength; that is, one is interested the lowest value of the strength $\mu$ for which the null hypothesis can be rejected at a given significance. Without a specific instance of observed data, the hypothetical experiment must be understood in the statistical sense, such that $\tilde{t}_0^\text{obs}$ is itself a random variable. Then the expected sensitivity can be interpreted in terms of the strength $\mu$ for which the median experiment would reject the null hypothesis. This means that in terms of the $p$-value,
 \begin{equation}
-    p_0=\int_{\tilde{t}_0^\text{obs}}^\infty f(\tilde{t}_0\mid\mu)\difd\tilde{t}_0
+    p_0=\int_{\tilde{t}_0^\text{obs}}^\infty f(\tilde{t}_0\mid\mu)\difd\tilde{t}_0,
 \end{equation}
-the sensitivity is given by $\med[p_0\mid\mu]=\alpha$, where $\alpha$ represents the $p$-value required for rejecting the null hypothesis.
+the sensitivity is given by the median $\med[p_0\mid\mu]=\alpha$, where $\alpha$ represents the $p$-value required to reject the null hypothesis.
 
 In principle one could equally well consider the mean of the $p$-value $\mathbb{E}[p_0]$. However, the median is preferred, because the median operation commutes with any invertible transformation of the random variable. That is, if $f$ is an invertible function on the domain of a random variable $X$, then $\med[f(X)]=f(\med[X])$. Therefore, it is straightforward to convert, for example, between the median $p$-value and the median significance, since $\med[p_0\mid\mu]=1-\Phi(\med[Z_0\mid\mu])$, or between the median $p$-value and the median of the test statistic $\med[\tilde{t}_0\mid\mu]$. It is worth noting that the above commutativity property can be generalized to any quantile statistic $Q_p[X]$, such that $Q_p[f(X)]=f(Q_{p'}[X])$ where $p'$ equals $p$ for $f$ increasing, and $1-p$ for $f$ decreasing. Therefore, one may, with this caveat, use any quantile statistic in place of the median.
 
@@ -1021,7 +1017,7 @@ For masses below 10 GeV, however, all limits become less stringent. The reason f
 \chapter{The neutrino background}
 \label{chap:background}
 
-The discussion in the previous chapter only considered the scattering of dark matter particles from the detector. In reality detectors only observe energy deposition, and, in general, cannot necessarily tell where that energy came from. They cannot tell whether a nucleus recoiled due to a collision with a dark matter particle, with a neutrino, or with a neutron. For this reason, detectors are subject to a number of natural background signals that have nothing to do with dark matter, but which cannot be immediately identified as distinct from dark matter recoil events \parencite{BaxterEtAl2022}. These backgrounds form the greatest obstacle to direct detection of dark matter, because nonobservation of dark matter is not simply a lack of recoil events, but a complex background of events which has to be understood in order to deduce a nonobservation. Therefore, mitigating, understanding, and discriminating these backgrounds is a crucial aspect of direct detection experiments. Some mitigation strategies are relatively straightforward to implement. Direct detection experiments are generally performed deep underground with copious amounts of shielding around the detector to shield from cosmic rays and sources of atmospheric and environmental radiation. Furthermore, measures are taken to minimize contamination of the materials that make up the detector from radioactive impurities.
+The discussion in the previous chapter only considered the scattering of dark matter particles from the detector. In reality detectors only observe energy deposition, and, in general, cannot necessarily tell where that energy came from. They cannot tell whether a nucleus recoiled due to a collision with a dark matter particle, with a neutrino, or with a neutron. For this reason, detectors are subject to a number of natural background signals that have nothing to do with dark matter, but which cannot be immediately identified as distinct from dark matter recoil events \parencite{BaxterEtAl2022}. These backgrounds form the greatest obstacle to direct detection of dark matter, because nonobservation of dark matter is not simply a lack of recoil events, but a complex background of events which has to be understood in order to deduce a nonobservation. Therefore, mitigating, understanding, and discriminating these backgrounds is a crucial aspect of direct detection experiments. Some mitigation strategies are relatively straightforward to implement. Direct detection experiments are generally performed deep underground with copious amounts of shielding around the detector to protect from cosmic rays and sources of atmospheric and environmental radiation. Furthermore, measures are taken to manufacture detectors from materials with minimal radioactive impurities.
 
 Despite best efforts to protect experiments from external backgrounds and contamination, however, some backgrounds remain. When the signal being searched consists of perhaps tens or hundreds of events per year, the smallest amount of contamination is sufficient to generate a background that cannot be neglected. Therefore, understanding the structure of the background signals is of fundamental importance. Even if they cannot be physically removed, if their profiles and magnitudes are known, they can be accounted for in such that, ideally, the dark matter signal would appear as an excess over the known backgrounds whose magnitude can be precisely measured.
 
@@ -1260,18 +1256,18 @@ In a crystalline solid the atoms are arranged in a lattice, a repeating pattern 
 \end{equation}
 Apart from the translational symmetry, lattices posses discrete rotational and reflection symmetries which form the point group of the lattice.
 
-In an atomic crystal, the atoms are bound together in the lattice. We can describe the potential energy of a test particle at any point in the lattice as a sum of potential energies from the individual atoms
+In an atomic crystal, the atoms are bound together in the lattice. We can describe the potential energy of a test particle at any point in the lattice as a sum of potential energies from the individual atoms,
 \begin{equation}
-    V(\vec{r})=\sum_iV(\vec{r}-\vec{r}_i)
+    V(\vec{r})=\sum_iV(\vec{r}-\vec{r}_i),
     \label{eq:crystal-atom-pe}
 \end{equation}
 where $i$ runs over all atoms in the lattice with positions $\vec{r}_i$. In an equilibrium state each of the atoms can be considered as sitting at a local minimum of their potential. In the limit of small displacements $\vec{x}_i$ of the atoms from their equilibrium positions we can neglect effects of all but the nearest neighbors, and take the lowest order expansion of the potential energy. The system can thus be described as a system of coupled harmonic oscillators with potential energies
 \begin{equation}
-    V(\vec{x}_i)=\sum_{i\in\text{neigh.}}\frac{1}{2}k_{ij}|\vec{x}_i-\vec{x}_i|^2.
+    V(\vec{x}_i)=\sum_{j\in\text{neigh.}}\frac{1}{2}k_{ij}|\vec{x}_i-\vec{x}_j|^2.
 \end{equation}
 Assuming for simplicity the atoms are identical, this leads to the Hamiltonian
 \begin{equation}
-    H=\sum_i\frac{p_i^2}{2m}+\sum_{ij\in\text{neigh.}}\frac{1}{2}m\omega^2|\vec{x}_i-\vec{x}_i|^2.
+    H=\sum_i\frac{p_i^2}{2m}+\sum_{ij\in\text{neigh.}}\frac{1}{2}m\omega^2|\vec{x}_i-\vec{x}_j|^2.
     \label{eq:lattice-ham}
 \end{equation}
 Classically, the solution of the equations of motion of this Hamiltonian lead to vibrational modes in the lattice, and waves in the continuum limit. When we take this description over to quantum mechanics, and quantize the Hamiltonian \eqref{eq:lattice-ham}, in the quantum field theoretic limit the corresponding solutions of the quantum system are quasi-particle excitations in the lattice. In analogy with photons being the quantum excitations of the electromagnetic field, and as representative of acoustic vibrations, these quasiparticles are known as \emph{phonons}.
@@ -1537,7 +1533,7 @@ which consists of a round component $f_R(\vec{v})$ given by the SHM distribution
 \end{equation}
 Here $\sigma_r$ is the radial velocity dispersion as before, while $\sigma_\theta$ and $\sigma_\varphi$ are the tangential and azimuthal dispersions, respectively, relative to the galactic plane. As before, the tangential and azimuthal dispersions are taken to be degenerate such that $\sigma_\theta=\sigma_\varphi$.
 
-Beyond the overall shape of the dark matter halo and its typical velocity distribution, the true local galactic environment is a complex dynamic environment. The Milky Way is surrounded by a number of smaller satellite galaxies, and their existence suggests the presence of subhalos of dark matter within the larger galactic halo. These subhalos can get torn apart by tidal forces, which lead to dark matter streams: structures of dark matter with overall velocity relative to the galactic center, and small velocity dispersion. Some observational evidence for dark matter streams comes from observations of the Sagittarius stream \parencite{BelokurovEtAl2013} and from recent Gaia data\parencite{NecibLisantiBelokurov2019}. However, numerical simulations suggest the existence of a large number of streams \needcite. Although streams constitute a small part of the total mass of the dark matter halo \needcite, they can form a significant contribution to the local density if one happens to be passing through the Earth.
+Beyond the overall shape of the dark matter halo and its typical velocity distribution, the true local galactic environment is a complex dynamic environment. The Milky Way is surrounded by a number of smaller satellite galaxies, and their existence suggests the presence of subhalos of dark matter within the larger galactic halo. These subhalos can get torn apart by tidal forces, which lead to dark matter streams: structures of dark matter with overall velocity relative to the galactic center, and small velocity dispersion. Some observational evidence for dark matter streams comes from observations of the Sagittarius stream \parencite{BelokurovEtAl2013} and from recent Gaia data\parencite{NecibLisantiBelokurov2019}. However, numerical simulations suggest the existence of a large number of streams \parencite{HelmiWhiteSpringel2002}. Although streams constitute a small part of the total mass of the dark matter halo, they can form a significant contribution to the local density if one happens to be passing through the Earth.
 
 \section{Earth's motion and the dark matter halo}
 
@@ -1732,7 +1728,7 @@ The motion of the Earth-based detector relative to the dark matter distribution 
 \end{equation}
 A change of variables $\vec{v}'=\vec{v}+\vec{v}_\text{lab}$ in the integral and solution of the trivial angular part then gives
 \begin{equation}
-    \ddder{R_S}{E}{\Omega}\sim\int_{|\vec{v}_\text{lab}\cdot\unitv{q}+v_\text{min}|}^\infty vf(v)\difd v.
+    \ddder{R_S}{E}{\Omega}\sim\int_{|\vec{v}_\text{lab}\cdot\unitv{q}+v_\text{min}|}^\infty\hspace{-3em}vf(v)\difd v.
     \label{eq:isotropic-rate}
 \end{equation}
 Since $vf(v)$ is positive, the integral is monotonic as a function of the lower limit. Therefore, as a function of $v_\text{min}\sim E^{1/2}$, it reaches a maximum at $v_\text{min}=\max\{0,-\vec{v}_\text{lab}\cdot\unitv{q}\}$. It follows that the energy integrated event rate $dR_S/d\Omega$ is maximized when $-\vec{v}_\text{lab}\cdot\unitv{q}=v_\text{lab}$, i.e., when $\unitv{q}=-\unitv{v}_\text{lab}$.
@@ -1893,8 +1889,27 @@ Overall, the presence of these significant variations in both the declination an
 
 \chapter{Discussion}
 
+The past two decades have seen a great amount of development in the field of dark matter direct detection. The massive scaling up especially of the liquid noble detectors has ruled out large parts of the parameter space to the point that it is likely they will have to contend with the background of neutrinos before they will discover evidence of dark matter. Development of new detector technologies, and refinement of existing ones, has meanwhile made it possible to search for scattering events at lower and lower energies. Recent progress on thermal phonon and ionization detector technologies using crystalline solid-state materials has made feasible the search for sub-GeV dark matter with scattering energies down to the electronvolt range.
+
+The development of these low-threshold detector technologies brings with it new challenges and opportunities. The electronvolt-scale energies probed by these detectors are of the order of atomic binding energies, and therefore the detector signal is highly sensitive to not just the properties of the target nuclei, but also to properties of the larger crystalline lattice structure formed by the nuclei. Understanding of these properties and their impact on the direct detection signal of dark matter has been a central part of this thesis.
+
+Study of the effects of low-energy recoil events in crystals is a nontrivial task, and generally can only be done by means of direct simulation of the recoil events. A substantial part of this thesis is dedicated to the study of lattice defect formation from low-energy recoil events, because it relates to both the energy loss, and the ionization threshold energy in nuclear recoil events in crystalline solid-state materials as discussed in chapter~\ref{chap:energy-loss}. Therefore, in publication~\ref{pub:sassi2022} we performed a survey of defect formation in a number of common and potential detector materials using classical molecular dynamics simulations. This study specifically considered the energy loss near the defect formation threshold, because nonlinear behavior there could induce a prominent feature on the nuclear recoil spectrum, as first demonstrated by \textcite{KadribasicEtAl2020}. Our survey found varied defect formation behavior in the materials studied, and we showed that materials with simple crystal structure and where defects are not likely to recombine have the most drastic effect on the energy spectrum.
+
+Although publication~\ref{pub:sassi2022} was mainly a broad study of materials with a focus on energy loss---and therefore we only performed a low-resolution scan over the recoil directions for each materials---it also produced preliminary data on the directional behavior of the defect formation threshold in a number of materials. As was pointed out in chapter~\ref{chap:energy-loss}, the defect formation threshold relates to the ionization threshold, whose anisotropy is important for the daily modulation effect in the dark matter event rate. The low-resolution scans of the defect formation threshold obtained in the study suggest interesting structure in the anisotropy of the different materials, but conclusive determination of the shape of the defect threshold surface would require further study with higher resolution scans.
+
+The variety of the results shown in publication~\ref{pub:sassi2022} demonstrates that thorough understanding of the material behavior will be crucial for correct interpretation of results from future low-threshold direct detection experiments. The observation of a yet unexplained low-energy excess in a number of direct detection experiments, mentioned in chapter~\ref{chap:energy-loss}, underscores this need.
+
+Another important reason for need of a more thorough understanding of behavior of detector materials is the daily modulation effect of the dark matter event rate signal. In the absence of detectors capable of measuring the recoil directions of events, daily modulation of the dark matter event rate due to material anisotropies is the best probe of the directionality of a hypotheticl dark matter signal. It can act as a smoking gun of the dark matter origin of an observed signal, and it can reveal information about the nature of dark matter interactions, and about the properties of the velocity distribution of dark matter. Therefore both publications~\ref{pub:sassi2021} and~\ref{pub:sassi2024} were dedicated to the study of the role of daily modulation in direct detection experiments.
+
+In publication~\ref{pub:sassi2021}, we analyzed the potential benefit gained from daily modulation information for discriminating a dark matter signal from the background of solar neutrinos in a germanium detector. The neutrino background is the greatest challenge for progress in direct detection. If the dark matter direct detection cross section is low enough that the neutrino signal dominates the dark matter signal, which appears more and more likely as direct detection limits are pushed down, then methods of discriminating the dark matter origin of a signal are needed. The background of solar neutrinos is interesting, because it is the primary background for sub-GeV dark matter, and it possesses both an annual modulation and a daily modulation, as shown in chapter~\ref{chap:background}. We found in our study that, in case solar neutrinos, accounting for daily modulation does not lead to substantially better discrimination than when only annual modulation information is used. This conclusion can be understood on the basis of the fact that, while both the dark matter and solar neutrino signal have an annual modulation component, they have the opposite phase. Therefore, given that the annual modulation of the dark matter event rate typically has a higher amplitude than the daily modulation, the two signals can always be disriminated by their annual modulation when they could be discriminated by their daily modulation. For this reason we also investigated a toy model with a background whose annual modulation matches the phase of the dark matter annual modulation, and demonstrated that in this case in a narrow mass range accounting for daily modulation could improve the sensitivity by a factor of two.
+
+Publication~\ref{pub:sassi2024}, on the other hand, focused on the prospect of using daily modulation information for discrimination of an anisotropic component in the dark matter velocity distribution. Specifically, we considered the SHM$^{++}$ model of \textcite{EvansOHareMcCabe2019}, described in chapter~\ref{chap:dist}. Our investigation demonstrated that in this case, in a narrow range of masses, the daily modulation signal contains additional information over annual modulation which can substantially improve the ability of an experiment to detect the presence of an anisotropic component in the velocity distribution. Although in the range where this effect was significant, with the tested parameters the sensitivity was generally not sufficient to detect an anisotropic component containing a fraction of dark matter consistent with the SHM$^{++}$ model.
+
+The analyses of both publications~\ref{pub:sassi2021} and~\ref{pub:sassi2024} were performed under the assumption of an anisotropy in the ionization threshold of the detector, using the defect formation threshold as a proxy for the ionization threshold. The fundamental challenge with the threshold anisotropy is the fact that it is a threshold effect. Therefore its impact on the signal is the most significant for events with recoil energies near the detector threshold, and diminishes quickly if majority of the events have recoil energies above the threshold. However, when the effect is significant, a large portion of the scattering events are not being counted, so the detector sensitivity in this range is diminished in general. The result of this is that it is challenging to derive significant practical benefit from the anisotropy of the ionization threshold. The importance of the study of daily modulation effects in this thesis is therefore more appropriately viewed in the broader context. Any anisotropic feature in the detector can give rise to a daily modulation in the dark matter signal to which the same methods of analysis and the general observations made in this thesis apply. The general method of analysis employed in this thesis only assumes the presence of a direction-dependent response factor in the event rate, and the general results follow from that assumption. Therefore if in the future a source of anisotropy less dependent on the detection threshold is found, or if clever detector designs are employed to produce a less energy sensitive anisotropy, the daily modulation effects studied in this work will be apparent in a broader range of energies for a broader range of dark matter masses.
+
 \backmatter
 
+\emergencystretch=1em
 \printbibliography[heading = bibintoc, title = References]
 
 \end{document}
