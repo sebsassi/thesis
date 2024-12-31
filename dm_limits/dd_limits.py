@@ -1,3 +1,5 @@
+# This software has been dedicated to the public domain under CC0:
+# https://creativecommons.org/public-domain/cc0/
 
 import numpy as np
 import json

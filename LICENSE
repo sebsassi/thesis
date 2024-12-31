@@ -1,0 +1,25 @@
+The file thesis.tex is under CC BY-SA 4.0:
+https://creativecommons.org/licenses/by-sa/4.0/
+
+The files
+    collabauthoryear-comp.cbx
+    collabauthoryear.cbx
+    collabauthoryear.bbx
+are under the LaTeX Project Public License (LPPL), version 1.3c:
+https://www.latex-project.org/lppl/
+
+The colormaps in the file pgflibrarypgfplots.extracolormaps.code.tex are
+under the Matplotlib license:
+https://matplotlib.org/stable/project/license.html
+
+The fonts included:
+    STIX Two: https://www.stixfonts.org/
+    Noto: https://notofonts.github.io/
+    Open Sans: https://fonts.google.com/specimen/Open+Sans
+are under the SIL Open Font License:
+https://openfontlicense.org/
+
+All other included documents to which copyright is applicable and which have not
+been published under another license are dedicated to the public domain under
+CC0:
+https://creativecommons.org/public-domain/cc0/

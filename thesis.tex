@@ -1,466 +1,10 @@
+% This document is released under CC BY-SA 4.0
+% https://creativecommons.org/licenses/by-sa/4.0/
 
-% IMPORTANT: This document (probably) needs to be compiled with LuaLaTeX. In
-% case you're still not using LuaLaTeX in <insert current year>.
+% IMPORTANT: This document (probably) doesn't compile without LuaLaTeX. In case 
+% you're still not using LuaLaTeX in <insert current year> for some reason.
 
-% Choose which document to output
-% 0: print
-% 1: electronic
-\newcommand{\mode}{1}
-
-\ifnum\mode=0
-\newcommand{\outformat}{print}
-\else
-\newcommand{\outformat}{electronic}
-\fi
-\documentclass[b5paper, 10pt, twoside]{book}
-
-\frenchspacing
-
-% Programming tools
-\usepackage{ifthen}     % conditional commands
-\usepackage{etoolbox}   % tools for intefacing with internals
-
-\ifthenelse{\equal{\outformat}{print}}{
-\newcommand{\innersize}{55.4pt}
-\newcommand{\outersize}{110.8pt}
-}{
-\newcommand{\innersize}{83.1pt}
-\newcommand{\outersize}{83.1pt}
-}
-
-\newcommand{\topsize}{55.4pt}
-\newcommand{\bottomsize}{115.2pt}
-
-% Page layout
-\usepackage[
-    inner = \innersize,
-    outer = \outersize,
-    top = \topsize,
-    bottom = \bottomsize]{geometry} % modify page layout
-
-% Debugging
-%\usepackage{showframe}     % show the page layout grid
-%\usepackage{kantlipsum}    % English placeholder text
-
-% Mathematics
-\usepackage{amsmath}    % various math macros
-\usepackage{mathtools}  % more math
-%\usepackage{amsthm}    % theorem/definition/etc. enivornments
-\usepackage{amssymb}    % more math symbols
-\usepackage{slashed}    % slashed symbols
-
-% Miscellaneous symbols
-\usepackage{gensymb}    % adds degree symbol (and other stuff)
-\usepackage{ccicons}    % creative commons icons
-\usepackage{textgreek}  % macros for greek letters in text
-
-% General styling
-\usepackage{emptypage}  % suppress page numbers on empty pages
-\usepackage{fancyhdr}   % fancy header designs
-\usepackage{titlesec}   % modify appearance of section titles
-\usepackage{titletoc}   % customize table of contents
-
-\usepackage{graphicx}   % better graphics
-
-% Text formatting
-%\usepackage{setspace}                   % options for line spacing
-\usepackage[xspace]{ellipsis}           % fixes spacing around ellipses
-\usepackage[letterspace=70]{microtype}  % microtypographic features
-
-% Localization
-\usepackage[english]{babel}
-
-% Float customization
-\usepackage[
-    format = plain, labelfont = bf
-]{caption}                  % customize caption formatting
-\usepackage{multirow}       % rows spanning multiple columns for tables
-\usepackage{tabularray}     % tables using latex3
-\usepackage{threeparttable} % tables with notes
-\usepackage{tabularx}       % adjust table column widths
-\usepackage{booktabs}       % more professional tables
-
-% Vector graphics
-\usepackage{pgf}            % backend for tikz and others
-\usepackage{tikz}           % generate graphics programmatically
-\usepackage{pgfplots}       % plots using pgf
-\usepackage{tikz-3dplot}    % easier 3d plots in tikz
-%\usepackage{tikz-feynman}  % easy fenyman diagrams
-
-% Font/text backend stuff
-%\usepackage[utf8]{inputenc}                % input encodings (no longer needed)
-\usepackage[T1]{fontenc}                    % font encodings
-\usepackage{fontspec}                       % interface for opentype fonts
-\usepackage[bold-style=ISO]{unicode-math}   % fontspec equivalent for math fonts
-
-% Colors
-\usepackage{xcolor} % facilitates color in documents
-
-% Miscellaneous packages
-%\usepackage{marginnote}        % allows margin notes
-\usepackage[inline]{enumitem}   % more options for enumerate environment
-\usepackage{hyperref}           % in-document hyperlink references
-\usepackage{zref-totpages}      % macro for printing total number of pages
-
-% Custom packages
-\usepackage{scpcolors}      %  collection of custom colors
-\usepackage{journalnames}   %  journal name macros
-
-\definecolor{grey}{gray}{0.3}
-
-% It's hard to make hyperlinks look tasteful.
-\newcommand{\typographersred}{scp-red-dark-3}
-\newcommand{\linkblue}{scp-blue-dark-3}
-
-\ifthenelse{\equal{\outformat}{electronic}}
-{
-\newcommand{\linkcolor}{\typographersred}
-\newcommand{\citecolor}{\typographersred}
-\newcommand{\urlcolor}{\linkblue}
-}{
-\newcommand{\linkcolor}{black}
-\newcommand{\citecolor}{black}
-\newcommand{\urlcolor}{black}
-}
-
-\hypersetup{
-    linktocpage,
-    colorlinks = true,
-    linkcolor = \linkcolor,
-    citecolor = \citecolor,
-    urlcolor = \urlcolor}
-
-
-% Biblatex data model config file. If you find yourself needing new custom 
-% fields in your `.bib` file, put them here.
-\begin{filecontents*}{biblatex-dm.cfg}
-\DeclareDatamodelFields[type=field, datatype=literal]{collaboration}
-\DeclareDatamodelEntryfields{collaboration}
-\end{filecontents*}
-
-% biblatex setup
-%
-% `collabauthoryear` is a custom cite/bibstyle. It's basically `authoryear`, but
-% but in citations it uses the `collaboration` field instead of author, if
-% available, and in the bibliougraphy it prints the `collaboration` field in
-% parentheses, if available. The definitions are found in the respective `.cbx`
-% and `.bbx` files.
-\usepackage[
-    backend = biber,
-    language = english,
-    natbib = true,
-    citestyle = collabauthoryear-comp,
-    bibstyle = collabauthoryear,
-    sorting = nyt,
-    giveninits = true,
-    minbibnames = 3,
-    mincitenames = 1,
-    maxbibnames = 3,
-    maxcitenames = 3,
-    hyperref = true,
-    arxiv = abs,
-    uniquename = full]{biblatex}
-
-% Bibliography file
-\addbibresource{thesis.bib} 
-
-% These are some modifications to bibliography entry styling:
-%   - Remove "in:" before journal name.
-%   - Use the 3-em dash for repeat authors.
-%   - Set spacing between name initials.
-%   - Add interword spacing to acronyms.
-\renewbibmacro{in:}{}
-\renewcommand*\bibnamedash{\rule[0.48ex]{3em}{0.14ex}\space}
-\renewcommand*\bibnamedelimi{\hspace{0.125em}}
-\renewcommand*{\mkbibacro}[1]{\textls[70]{\textsc{\MakeLowercase{#1}}}}
-
-% Fields to exclude from bibliography
-\AtEveryBibitem{\clearfield{url}}
-\AtEveryBibitem{\clearfield{issn}}
-
-% Allow line breaks after lower case letters in URLs and DOIs in bibliography.
-% The high penalty ensures that this is only allowed in the rare event the
-% URL/DOI overflows into the margin.
-\setcounter{biburllcpenalty}{9000}
-
-\DeclareFieldFormat{authortype}{\mkbibparens{#1}}
-\DeclareFieldFormat{pubtitle}{\textsb{#1}}
-
-% Citation command for citing included publications
-\DeclareCiteCommand{\pubcite}[\AtNextCitekey{\defcounter{maxnames}{99}}]
-    {\usebibmacro{prenote}}
-    {\textbf{\printfield[pubtitle]{title}}\\
-        \printnames[][1-]{author}\\
-        \printfield{year}\addcomma\addspace
-        \printfield{journaltitle}
-        \printfield{volume}\addperiod
-        \printfield{number}\addcomma\addspace
-        \iffieldundef{eid}
-            {}
-            {\printfield{eid}\addcomma}
-        \iffieldundef{pages}
-            {}
-            {\printfield{pages}\addcomma}
-        \printfield[eprint:arxiv]{eprint}\addperiod}
-    {\multicitedelim}
-    {\usebibmacro{postnote}}
-
-% Special handling of NASA/ADS eprints
-\DeclareFieldFormat{eprint:ads}{%
-    {\mkbibacro{ADS}\addcolon}\space%
-    \href{https://ui.adsabs.harvard.edu/abs/#1/abstract}{%
-        \nolinkurl{#1}%
-    }%
-}%
-
-% Special handling of IERS technical note eprints
-\DeclareFieldFormat{eprint:ierstn}{%
-    {\mkbibacro{IERS}\addcolon}\space%
-    \href{https://www.iers.org/IERS/EN/Publications/TechnicalNotes/tn#1.html}{%
-        \iffieldundef{eprinttype}{}{\texttt{tn}}\nolinkurl{#1}%
-    }%
-}
-
-
-\usetikzlibrary{decorations.markings}   % decorations
-\usetikzlibrary{arrows.meta}            % more arrow styles
-\usetikzlibrary{calc}			        % complex coordinate calculations
-\usetikzlibrary{positioning}            % don't remember what this does
-\usetikzlibrary{3d}						% 3D coordinates
-\usetikzlibrary{graphs}					% graph drawing
-\usetikzlibrary{shapes.geometric}       % various geometric shapes
-
-\pgfplotsset{compat=newest}         % needed for newest plot features
-
-\usepgfplotslibrary{fillbetween}    % fill between lines
-\usepgfplotslibrary{groupplots}     % grids of plots
-\usepgfplotslibrary{colormaps}      % additional colormaps
-\usepgfplotslibrary{extracolormaps} % even more colormaps (custom library)
-
-% The default tick color in PGFPlots is grey for some reason. Make it black.
-\pgfplotsset{every tick/.append style={color=black}}
-
-% Font settings
-%
-% Note: the fonts used need to be installed on the system. All these fonts 
-% should be included in a modern TeXLive distribution. If not, install the 
-% fonts f the fonts and run `luaotfload-tool -u` to update the font database.
-\setmainfont{STIXTwoText}[BoldFont=Stix Two Text Semibold]
-\setsansfont{OpenSans}
-\setmonofont{NotoMono}[Scale=0.91]
-\setmathfont{StixTwoMath}[StylisticSet=1]
-
-% Semibold fonts
-\newfontface\sbstyle{StixTwoText-Semibold}
-\newfontface\sbsfstyle{OpenSans-Semibold}
-
-% Some special styles
-\newcommand{\titlestyle}{\sbsfstyle}
-\newcommand{\annotatestyle}{\sbsfstyle}
-\newcommand{\headstyle}{\sbsfstyle}
-\newcommand{\subheadstyle}{\sbsfstyle}
-\newcommand{\subsubheadstyle}{\sbsfstyle}
-
-% Additional commands for typesetting semibold (sb) and uppercase (uc) text in
-% serif and sans serif (sf) style
-\newcommand{\textsb}[1]{{\sbstyle #1}}
-\newcommand{\textsbsf}[1]{{\sbsfstyle #1}}
-\newcommand{\textuc}[1]{\textls[60]{#1}}
-\newcommand{\textucsf}[1]{\textls[60]{\textsf{#1}}}
-
-\SetTblrStyle{remark-tag}{font=\itshape}
-\SetTblrStyle{remark-sep}{font=\itshape}
-\SetTblrStyle{caption-tag}{font=\bfseries}
-\SetTblrStyle{caption}{halign=l}
-
-% Redefine vector command to use bold italics
-\renewcommand{\vec}[1]{\symbfit{#1}}
-
-% Special typesetting for annotating plots
-\newcommand{\plotlineannotation}[1]{{\scriptsize\annotatestyle #1}}
-
-% Definitions for part, chapter, section, subsection styles
-\titleformat{\part}[display]
-    {\filcenter\huge\bfseries}{Part \thepart}{1pc}{\vspace{1pc}}
-\titleformat{\chapter}[hang]
-    {\Large\headstyle\filright}{\thechapter}{0.5em}{}[\vspace{4pt}]
-\titleformat{\section}[hang]
-    {\large\subheadstyle\filright}{\thesection}{0.5em}{}
-\titleformat{\subsection}[hang]
-    {\subsubheadstyle\filright}{\thesubsection}{0.5em}{}
-
-% Spacing around headings
-%\titlespacing*{\part}{0em}{2pc}{0em}
-\titlespacing*{\chapter}{0em}{2pc}{*2.5}
-\titlespacing*{\section}{0em}{*2.0}{*2.0}
-\titlespacing*{\subsection}{0em}{*2.0}{*2.0}
-
-% Table of contents appearance
-\contentsmargin{2.55em}
-\dottedcontents{section}[3.8em]{}{2.3em}{1pc}
-\dottedcontents{subsection}[6.1em]{}{3.2em}{1pc}
-
-% Redefine plain page style to put page numbers on the outer edge in `twoside`
-% mode.
-\ifthenelse{\equal{\outformat}{print}}{
-    \fancypagestyle{plain}{%
-        \fancyhf{}%
-        \fancyfoot[LE,RO]{\thepage}%
-        \renewcommand{\headrulewidth}{0pt}%
-    }
-    \pagestyle{plain}
-}{
-    \pagestyle{plain}
-}
-
-% Vector differential operators typeset like vectors
-\newcommand{\Nabla}{\vec{\nabla}}
-\newcommand{\Div}{\Nabla\cdot}
-\newcommand{\Curl}{\Nabla\times}
-
-% Derivatives
-\newcommand{\tder}[2]{d#1/d#2}
-\newcommand{\der}[2]{\frac{d#1}{d#2}}
-\newcommand{\dder}[2]{\frac{d^2#1}{d#2^2}}
-\newcommand{\ddder}[3]{\frac{d^2#1}{d#2d#3}}
-\newcommand{\dern}[3]{\frac{d^{#3}#1}{d#2^{#3}}}
-\newcommand{\inder}[2]{\frac{\mathfrak{d}#1}{\mathfrak{d}#2}}
-
-% Partial derivatives
-\newcommand{\pder}[2]{\frac{\partial#1}{\partial#2}}
-\newcommand{\pdder}[2]{\frac{\partial^2#1}{\partial#2^2}}
-\newcommand{\ppder}[3]{\frac{\partial^2#1}{\partial#2\partial#3}}
-\newcommand{\pdern}[3]{\frac{\partial^{#3}#1}{\partial#2^{#3}}}
-\newcommand{\tpder}[2]{\partial#1/\partial#2}
-
-% Miscellaneous commands
-%\newcommand{\bm}[1]{\vec{#1}}
-\newcommand{\unitv}[1]{\symbfit{\hat{#1}}}
-\newcommand{\difd}{\,d}
-\newcommand{\mean}[1]{\left\langle#1\right\rangle}
-\newcommand{\tmean}[1]{\langle#1\rangle}
-\newcommand{\vblank}{\vspace{1pc}}
-\newcommand{\imp}[1]{\textsf{#1}}
-\newcommand{\lssc}[1]{\textls[70]{\textsc{#1}}}
-\newcommand{\transp}{\mathsf{T}}
-\newcommand{\mand}{\quad\text{and}\quad}
-
-% Bra-ket macros
-\newcommand{\bra}[1]{\left\langle#1\right|}
-\newcommand{\ket}[1]{\left|#1\right\rangle}
-\newcommand{\braket}[2]{\left\langle#1\middle|#2\right\rangle}
-\newcommand{\brakett}[3]{\left\langle#1\middle|#2\middle|#3\right\rangle}
-\newcommand{\redbrakett}[3]{\left\langle#1\middle\|#2\middle\|#3\right\rangle}
-
-% Command for ignoring large blocks of text. Saves your pinky for RSI.
-\newcommand{\nothing}[1]{}
-
-% TODO commands
-\newcommand{\needcite}{\textcolor{\typographersred}{[citation needed]}}
-\newcommand{\cited}[1]{\textcolor{\typographersred}{[#1]}}
-\newcommand{\todo}[1][]{%
-   \ifthenelse{\equal{#1}{}}
-        {\textcolor{\typographersred}{[TODO]}}
-        {\textcolor{\typographersred}{[TODO: #1]}}
-}
-
-% Some negative spacing commands
-\newcommand{\nen}{\hspace{-5pt}}
-\newcommand{\nquad}{\hspace{-10pt}}
-\newcommand{\nqquad}{\hspace{-20pt}}
-
-% Miscellaneous list of math operators I've collected over the years
-\DeclareMathOperator{\im}{im}
-\DeclareMathOperator{\diag}{diag}
-\DeclareMathOperator{\id}{id}
-\DeclareMathOperator{\Aut}{Aut}
-\DeclareMathOperator{\lcm}{lcm}
-\DeclareMathOperator{\Inn}{Inn}
-\DeclareMathOperator{\chara}{char}
-\DeclareMathOperator{\sgn}{sgn}
-\DeclareMathOperator{\rad}{rad}
-\DeclareMathOperator{\Hom}{Hom}
-\DeclareMathOperator{\End}{End}
-\DeclareMathOperator{\Sym}{Sym}
-\DeclareMathOperator{\Ant}{Ant}
-\DeclareMathOperator{\Int}{int}
-\DeclareMathOperator{\supp}{supp}
-\DeclareMathOperator{\rank}{rank}
-\DeclareMathOperator{\Lie}{Lie}
-\DeclareMathOperator{\tr}{tr}
-\DeclareMathOperator{\tdet}{det}
-\DeclareMathOperator{\Li}{Li}
-\DeclareMathOperator{\Br}{Br}
-\DeclareMathOperator{\ceil}{ceil}
-\DeclareMathOperator{\arccosh}{arccosh}
-\DeclareMathOperator{\arctanh}{arctanh}
-\DeclareMathOperator{\erf}{erf}
-\DeclareMathOperator{\med}{med}
-
-% Environment for the copyright page
-\newenvironment{copyrightpage}{\footnotesize\noindent\ignorespaces}{\thispagestyle{empty}}
-
-\newcommand{\institution}{University of Helsinki}
-\newcommand{\faculty}{Faculty of Science}
-\newcommand{\department}{Department of Physics}
-
-\newcommand{\defenseplace}{\textcolor{\typographersred}{[place]}}
-\newcommand{\defensedate}{March 6, 2025}
-\newcommand{\defensetime}{\textcolor{\typographersred}{[time]}}
-
-\newcommand{\thesistitle}{Dark Matter in Next Generation Detectors}
-\newcommand{\thesisauthor}{Sebastian Sassi}
-\newcommand{\thesisyear}{\the\year}
-
-\newcommand{\hipseriesnumber}{\textcolor{\typographersred}{HIP-\thesisyear-XX}}
-\newcommand{\isbnp}{\textcolor{\typographersred}{XXX-XXX-XXX-XXX-XXX}}
-\newcommand{\isbne}{\textcolor{\typographersred}{XXX-XXX-XXX-XXX-XXX}}
-\newcommand{\issnp}{\textcolor{\typographersred}{XXXX-XXXX}}
-\newcommand{\issne}{\textcolor{\typographersred}{XXXX-XXXX}}
-
-% End of general stuff everything below is very specific to my thesis.
-
-\newcommand{\bubblestyle}{dashdotted}
-\newcommand{\liquidnoblestyle}{solid}
-\newcommand{\semiconductorstyle}{dashed}
-\newcommand{\scintcrystalstyle}{densely dotted}
-
-\newcommand{\naifillcolor}{scp-red-light-1}
-
-\newcommand{\naicolor}{scp-red-dark-1}
-\newcommand{\cawocolor}{scp-purple-dark-1}
-\newcommand{\cfcolor}{scp-green-dark-1}
-\newcommand{\xenoncolor}{scp-orange-dark-1}
-\newcommand{\argoncolor}{scp-brown-dark-1}
-\newcommand{\gecolor}{scp-blue-dark-1}
-\newcommand{\sicolor}{scp-grey-dark-1}
-
-\newcommand{\wccolor}{scp-orange-dark-1}
-\newcommand{\diamondcolor}{scp-green-dark-1}
-\newcommand{\siccolor}{scp-purple-dark-1}
-\newcommand{\sapphirecolor}{scp-red-dark-1}
-\newcommand{\wcolor}{scp-brown-dark-1}
-
-\newcommand{\nufogcolor}{scp-grey-light-2}
-
-\newcommand{\ppcnocolor}{scp-blue-dark-1}
-\newcommand{\lineneutrinocolor}{scp-orange-dark-1}
-\newcommand{\hepbcolor}{scp-grey-dark-1}
-\newcommand{\atmocolor}{scp-purple-dark-1}
-\newcommand{\dsnbreactorcolor}{scp-grey-light-2}
-
-\newcommand{\primarylinecolor}{scp-blue-dark-1}
-\newcommand{\secondarylinecolor}{scp-orange-dark-1}
-
-\newcommand{\infernoaxiscolor}{scp-grey-light-3}
-
-\newcommand{\darkmarkcolor}{scp-grey-dark-4}
-
-\newcommand{\plotbgcolor}{scp-grey-light-2!50!white}
-\newcommand{\plotfgcolor}{white}
-
-% Words LaTeX doesn't know how to hyphenate
-\hyphenation{an-i-so-trop-ic}
+\input{preamble.tex}
 
 \begin{document}
 
@@ -513,9 +57,9 @@
 
 The mystery of the nature of dark matter is one of the great outstanding challenges in modern physics. A large body of observational evidence suggests that the majority of the matter content in the universe is in the form of cold, massive particles, whose nongravitational interactions with ordinary matter are extremely weak. Although the existence of this cold dark matter is strongly supported by observations of its gravitational effects, its properties remain undetermined.
 
-A number of experiments have been built to seek direct evidence of scattering of dark matter with ordinary matter. These experiments use large quantities of various elements and compounds, covered in detector instruments, to maximize the likelihood of observing the exceedingly rare dark matter scattering events. While none of these experiments has yet made a definitive observation of dark matter scattering, over the past two decades they have been highly successful in pushing down the upper limits of the dark matter interaction cross-section with ordinary matter for dark matter masses above one GeV.
+A number of experiments have been built to seek direct evidence of scattering of dark matter with ordinary matter. These experiments use large quantities of various elements and compounds, covered in detector instruments, to maximize the likelihood of observing the exceedingly rare dark matter scattering events. While none of these experiments has yet made a definitive observation of dark matter scattering, over the past two decades they have been highly successful in pushing down the upper limits of the dark matter interaction cross section with ordinary matter for dark matter masses above one GeV.
 
-Recent advances in low-energy-threshold detector technology have enabled the detection of scattering events with recoil energies down to the order of electron volts. This has made direct detection study of sub-GeV dark matter more viable, where the scattering cross-section has historically been less constrained. At these energy scales, coinciding with the energy scales of atomic binding energies the material physical properties of the detector material become important. This has a number of effects on the signal of scattering events, which need to be accounted for.
+Recent advances in low-energy-threshold detector technology have enabled the detection of scattering events with recoil energies down to the order of electron volts. This has made direct detection study of sub-GeV dark matter more viable, where the scattering cross section has historically been less constrained. At these energy scales, coinciding with the energy scales of atomic binding energies the material physical properties of the detector material become important. This has a number of effects on the signal of scattering events, which need to be accounted for.
 
 This thesis is an investigation of the implications of these material effects on the hypothetical signal of sub-GeV dark matter in next generation detectors. The main effort of this work is a detailed study of the daily modulation of the dark matter signal, induced by an anisotropic response of crystalline detector materials due to the rotational motion of the Earth. The daily modulation signal encodes information about the anisotropy of the dark matter scattering rate, which is traditionally inaccessible to detectors without directional sensitivity. We have therefore studied the prospect of using the daily modulation to aid in distinguishing a dark matter signal from the background of solar neutrinos, which presents an obstacle to the observation sub-GeV dark matter. We have also studied the possibility of using daily modulation to distinguish the presence of an anisotropy in the dark matter velocity distribution. In addition to the daily modulation investigations, this work also includes a molecular dynamics simulation study of defect formation in a number of common and hypothetical detector materials, where we analyze the implications of energy loss in low-energy scattering events on the observed nuclear recoil event rate.
 
@@ -548,7 +92,7 @@ For publication~\ref{pub:sassi2021} the author wrote all the numerical code and 
 
 \chapter{Introduction}
 
-The idea of dark matter has its origins in the observation that not all mass in galactic systems emits light. On one hand, one can observe the orbits of objects within the system, and based on Newton's law of gravitation, estimate of the total gravitational mass of the system. On the other hand, one can observe the light emitted from the system, and estimate the luminous mass of the system. It is not unnatural that these two estimates do not agree exactly. After all, not all mass emits enough light, or light in the correct part of the spectrum, to be detectable by our instruments. However, throughout the 20th century, astronomers began to find great discrepancies between estimates of the luminous and gravitational masses of various astronomical systems. Over time these observations became increasingly difficult to explain with ordinary astrophysical matter. With some additional motivation and evidence from the field of cosmology, this eventually culminated in the consensus that the majority of mass in the universe is in the form of cold dark matter of unknown type, which, despite its large quantity, interacts very little with the ordinary luminous matter, apart from its gravitational attraction.
+The idea of dark matter has its origins in the observation that not all mass in galactic systems emits light. On one hand, one can observe the orbits of objects within the system, and based on Newton's law of gravitation, estimate of the total gravitational mass of the system. On the other hand, one can observe the light emitted from the system, and estimate the luminous mass of the system. It is not unnatural that these two estimates do not agree exactly. After all, not all mass emits enough light, or light in the correct part of the spectrum, to be detectable by our instruments. However, throughout the twentieth century, astronomers began to find great discrepancies between estimates of the luminous and gravitational masses of various astronomical systems. Over time these observations became increasingly difficult to explain with ordinary astrophysical matter. With some additional motivation and evidence from the field of cosmology, this eventually culminated in the consensus that the majority of mass in the universe is in the form of cold dark matter of unknown type, which, despite its large quantity, interacts very little with the ordinary luminous matter, apart from its gravitational attraction.
 
 One of the earliest observations of dark matter is an analysis of the motion of galaxies in the Coma galaxy cluster carried out by \textcite{Zwicky1933}. He demonstrated that the galaxies in the cluster appear to move much faster than implied by the mass estimated from the number of visible galaxies. From this he concluded that the majority of the mass in the cluster must be in the form of dark matter. Later studies of the Virgo cluster by \textcite{Smith1936} and of other systems of galaxies by \textcite{Holmberg1937} gave similar results. The major difficulty posed by these observations was the magnitude of the discrepancy. The observations suggested that the dark matter did not constitute just a significant portion of the mass in these systems, but the vast majority of the mass of the systems.
 
@@ -568,17 +112,17 @@ The breakthrough in the role of cosmology in measurement of the mass content of 
 
 The enormous success of the ΛCDM model goes beyond the Planck data, however. Over the past two decades galaxy surveys such as the Sloan Digital Sky Survey \parencite{SDSSIV2022} and Dark Energy Survey \parencite{DES2018} have made great strides in mapping the distribution of galaxies in the observable universe. These observations can be compared to predictions from ΛCDM to make an independent determination of its parameters, and they find general agreement with the CMB-based measurements \parencite{eBOSS2021}.
 
-A further independent test on ΛCDM comes from the Big Bang nucleosynthesis (BBN)---an epoch in the early universe by which the temperature had fallen low enough for protons and neutrons to bind together and form light nuclei. The BBN determines the abundances of light elements in the universe, and therefore allows for determination of the relevant cosmological parameters from measurements of the present day abundances of light elements. In particular, the BBN is sensitive to the baryon to photon ratio, $n_b/n_\gamma$. Given that the number density of photons, $n_\gamma$, can be determined from the present day CMB temperature, which is known at high precision, the BBN gives an independent estimate of the baryon fraction, $\Omega_b$, which is consistent with the CMB value \parencite{FieldsEtAl2020}. The BBN is furthermore sensitive to the number of relativistic particle species, as well as to the energy input, at the time of BBN, which puts additional constraints on the properties of particles which can contribute to the present day dark matter abundance.
+A further independent test on ΛCDM comes from the Big Bang nucleosynthesis (BBN)---an epoch in the early universe by which the temperature had fallen low enough for protons and neutrons to bind together and form light nuclei. The BBN determines the abundances of light elements in the universe, and therefore allows for determination of the relevant cosmological parameters from measurements of the present-day abundances of light elements. In particular, the BBN is sensitive to the baryon to photon ratio, $n_b/n_\gamma$. Given that the number density of photons, $n_\gamma$, can be determined from the present-day CMB temperature, which is known at high precision, the BBN gives an independent estimate of the baryon fraction, $\Omega_b$, which is consistent with the CMB value \parencite{FieldsEtAl2020}. The BBN is furthermore sensitive to the number of relativistic particle species, as well as to the energy input, at the time of BBN, which puts additional constraints on the properties of particles which can contribute to the present-day dark matter abundance.
 
 Any model which intends to replace dark matter with modified gravity would have to be able to reproduce both the CMB and galaxy survey observations, but modified theories of gravity including MOND-like behavior historically struggle with reproducing these cosmological observations \parencites{XuWangZhang2015, TanWoodard2018, ZlosnikSkordis2017}. However, it is possible to construct numerous possible extensions of general relativity, which include MOND-like behavior, and there are some claims of success in fitting the observations \parencite{SkordisZlosnik2021}. Therefore, despite the common failure of MOND theories at making cosmological predictions, it remains difficult to completely rule out the hypothesis on a purely cosmological basis.
 
 Besides cosmology, however, a major challenge to MOND-like theories comes from observations of weak gravitational lensing. One of the most important predictions of the theory of general relativity is the bending of light rays as they pass by massive objects due to the effects of mass on the curvature of spacetime. This phenomenon leads to the effect of gravitational lensing, where images of background galaxies become distorted by the gravitational effects of foreground galaxies and clusters. Because the character of the lensing depends on the precise distribution of mass causing the lensing, an image of lensing can, in principle, be used to reconstruct the mass distribution. Modern instrumentation and methods have enabled observations of very weak lensing effects, which in turn has made possible the estimation of distribution of gravitating mass in galaxy clusters.
 
-Some of the most convincing astrophysical evidence for dark matter nowadays comes from weak lensing observations of certain type of galaxy cluster mergers. \textcite{CloweEtAl2006} were the first to present evidence of this nature in their work analyzing the mass distribution of the 1E 0657-56 galaxy cluster---known more commonly as Bullet Cluster---on the basis of weak lensing observations. The Bullet Cluster consists of two concentrations of galaxies, which have two clouds of X-ray emitting plasma between them. This formation suggests that the cluster is the aftermath of a past merger event of two galaxy clusters. In such a merger, the relatively compact galaxies pass each other unimpeded, while the colliding plasma faces a great amount of resistance, slowing it down. This leads to the observed distribution the galaxies and plasma within the cluster.
+Some of the most convincing astrophysical evidence for dark matter nowadays comes from weak lensing observations of certain type of galaxy cluster mergers. \textcite{CloweEtAl2006} were the first to present evidence of this nature in their work analyzing the mass distribution of the 1E 0657-56 galaxy cluster---known more commonly as the Bullet Cluster---on the basis of weak lensing observations. The Bullet Cluster consists of two concentrations of galaxies, which have two clouds of X-ray emitting plasma between them. This formation suggests that the cluster is the aftermath of a past merger event of two galaxy clusters. In such a merger, the relatively compact galaxies pass each other unimpeded, while the colliding plasma faces a great amount of resistance, slowing it down. This leads to the observed distribution the galaxies and plasma within the cluster.
 
 The plasma contains the majority of the cluster's luminous mass. However, the weak lensing measurements indicate that the total mass of the cluster has two peaks at the locations of the two galaxy subclusters. Under standard assumptions of gravitational interactions these observations imply that the majority of the mass in the Bullet Cluster is dark and collisionless. The observation is therefore evidently in line with the dark matter hypothesis, and it would be difficult to conjure a modified gravity framework that explains this structure and remains consistent with all other observations sensitive to the model of gravitation.
 
-Since the observation of the weak lensing in the Bullet Cluster, observations of numerous similar colliding galaxy clusters have been made. These observations support the hypothesis of collisionless dark matter, and they can be used to place bounds on the self-interaction cross-section of dark matter \parencite{HarveyEtAl2015}.
+Since the observation of the weak lensing in the Bullet Cluster, observations of numerous similar colliding galaxy clusters have been made. These observations support the hypothesis of collisionless dark matter, and they can be used to place bounds on the self-interaction cross section of dark matter \parencite{HarveyEtAl2015}.
 
 Although cosmological and astrophysical observations clearly indicate the presence of collisionless dark matter, which constitutes the majority of the mass in the observable universe, they give little information about the nature of this matter. The reason is that the evidence comes from the gravitational effects of dark matter, and as far as gravitation is concerned, anything with mass will do. These observations, therefore, leave open a number of questions about dark matter. How large are the objects that constitute dark matter? Are they macroscopic objects (e.g., MACHOs) or are they microscopic particles? Can they be explained within the Standard Model of particles physics, or do they require new particles and interactions? If dark matter consists of new types of elementary particles, what are their properties?
 
@@ -598,7 +142,7 @@ Direct detection offers an incredible tool for studying the properties of dark m
 
 A great challenge for direct detection in the present is directional sensitivity; that is, the ability of experiments to detect the direction of a recoil caused by a scattering event. The ability to sense the direction of scattering events in these experiments would be revolutionary. Due to the motion of the solar system through the galaxy, the Earth experiences a dark matter wind, which leads to an anisotropic angular distribution of scattering events centered on the direction of the wind. This is a unique directional signature which cannot be emulated by any known background. Time projection chambers are the most developed technology for directional detection, and is in active use in some currently operating detectors \parencites{BattatEtAl2017, IkedaEtAl2021}. However, due to the need for low-pressure gases to operate, scaling the technology to match the target masses of existing nondirectional detectors is challenging. Various other methods for detecting particle tracks have been suggested for direct detection, including nuclear emulsions \parencite{AgafonovaEtAl2018}, crystal defects \parencites{RajendranEtAl2017, MarshallEtAl2021}, two-dimensional materials \parencites{CapparelliEtAl2015, MarshallEtAl2021, BaracchiniEtAl2018}, DNA/RNA \parencites{DrukierEtAl2012, OHareEtAl2022}, and paleodetectors \parencite{BaumEtAl2020}. These technologies are in various stages of development and none have yet been implemented at scale.
 
-In the absence of straight directional sensitivity, this thesis explores the limits of presently available direct detection technologies. In particular, this thesis focuses on how the unique material properties of crystalline semiconductor detectors can be exploited to gain information about the directional properties of dark matter scattering without directional sensitivity, and how this information can be used to not only set bounds on the scattering cross-section of dark matter, but can also be used to study the properties of the velocity distribution of dark matter. The regular structure of the crystal lattice gives rise to an anisotropic ionization threshold in semiconductors. In modern low-threshold detectors this is expected to lead to a daily modulation of the direct detection event rate for sub-GeV dark matter due to the rotation of the Earth. 
+In the absence of straight directional sensitivity, this thesis explores the limits of presently available direct detection technologies. In particular, this thesis focuses on how the unique material properties of crystalline semiconductor detectors can be exploited to gain information about the directional properties of dark matter scattering without directional sensitivity, and how this information can be used to not only set bounds on the scattering cross section of dark matter, but can also be used to study the properties of the velocity distribution of dark matter. The regular structure of the crystal lattice gives rise to an anisotropic ionization threshold in semiconductors. In modern low-threshold detectors this is expected to lead to a daily modulation of the direct detection event rate for sub-GeV dark matter due to the rotation of the Earth. 
 
 The contents of the thesis are as follows. Chapter \ref{chap:direct-detection} contains a brief general introduction to the theory direct detection, as well as a discussion of its present status. In publication~\ref{pub:sassi2021} we explored the prospect of using daily modulation for discrimination of a dark matter signal from a background of solar neutrinos. Chapter~\ref{chap:background} gives an introduction to the neutrino background and summarizes the results of publication~\ref{pub:sassi2021}. Chapter~\ref{chap:energy-loss} discusses the properties of crystalline detector materials, including the ionization threshold in semiconductors. Publication~\ref{pub:sassi2024} continued the above program by studying the possibility of discriminating an anisotropic component in the velocity distribution of dark matter using full energy and modulation information. Chapter~\ref{chap:dist} contains a discussion of the dark matter velocity distribution, and offers a detailed discussion of the celestial motions that cause the modulation of the dark matter signal, as well as a discussion on the results of publication~\ref{pub:sassi2024}. Finally, in publication~\ref{pub:sassi2022} we investigated the phenomenon of energy loss to lattice defects due to low-energy recoil events in a number of common and potential detector materials using classical molecular dynamics simulations. Understanding of the phenomenon of energy loss is important for correct interpretation of signals in low-threshold phonon-mediated detectors and also has potential to aid in discrimination of nuclear and electronic recoils \parencite{HeikinheimoEtAl2022}. Chapter~\ref{chap:energy-loss} also contains a discussion of the principles of defect formation and energy loss, and outlines the results of publication~\ref{pub:sassi2022}.
 
@@ -607,17 +151,17 @@ The contents of the thesis are as follows. Chapter \ref{chap:direct-detection} c
 
 If the elementary particle hypothesis of dark matter is true, then the dark matter particles should occasionally interact with particles of ordinary matter. This interaction is necessarily extremely weak, given the fact that such interactions have never been definitively observed. According to present understanding of distribution of dark matter, the Milky Way sits in the center of a spherical halo of dark matter particles. Under this model of the distribution of dark matter, there should exist a constant stream of dark matter particles traveling through the Earth. Therefore, if the hypothesis is true, given a sufficiently large detector, scattering events between dark matter and the target material of the detector should produce a detectable signal. This is the basic premise that underlies the efforts of direct detection of dark matter.
 
-A theoretical description of direct detection can be given in the framework of scattering theory. Classically, the rate of particles scattering off a particle with cross-section $\sigma$ traveling at velocity $\vec{v}$ with number density $n$ is given by $\sigma vn$. For dark matter particles with velocity distribution $f(\vec{v})$ the total rate of scattering events per unit mass is
+A theoretical description of direct detection can be given in the framework of scattering theory. Classically, the rate of particles scattering off a particle with cross section $\sigma$ traveling at velocity $\vec{v}$ with number density $n$ is given by $\sigma vn$. For dark matter particles with velocity distribution $f(\vec{v})$ the total rate of scattering events per unit-mass is
 \begin{equation}
     R_S=\frac{n_\text{DM}}{m_T}\int\sigma vf(\vec{v})\difd^3v,
 \end{equation}
-where $N_S$ denotes the total number of scattering events off the target, and $m_T$ is the mass of the target particle. Rather than considering the total scattering rate, it is useful for the analysis to consider the rate of scattering events per unit of momentum transfer per solid angle,
+where $N_S$ denotes the total number of scattering events off the target, and $m_T$ is the mass of the target particle. Rather than considering the total scattering rate, it is useful for the analysis to consider the rate of scattering events per unit-momentum-transfer per solid angle,
 \begin{equation}
     \ddder{R_S}{q}{\Omega}=\frac{n_\text{DM}}{m_T}\int\ddder{\sigma}{q}{\Omega}vf(\vec{v})\difd^3{v}.
 \end{equation}
 Here $q$ is the magnitude of the momentum transferred to the target, $\vec{q}=\vec{p}-\vec{p}'$, where $\vec{p}$ and $\vec{p}'$ denote the initial and final momenta of the dark matter particle, respectively.
 
-Typical models of dark matter assume that the dark matter in the halo is cold; that is, that it is nonrelativistic. It follows that the scattering of dark matter in direct detection can typically be treated as nonrelativistic. Therefore, the scattering of a dark matter particle with initial momentum $\vec{p}$ and final momentum $\vec{p}'$ off a target can be formulated as a nonrelativistic two-to-two scattering problem from an initial state $\ket{i,\vec{p}}$ to a final state $\ket{f,\vec{p}'}$, where $i$ and $f$ refer to the initial and final states of the target particle. The scattering cross-section is then given by the formula
+Typical models of dark matter assume that the dark matter in the halo is cold; that is, that it is nonrelativistic. It follows that the scattering of dark matter in direct detection can typically be treated as nonrelativistic. Therefore, the scattering of a dark matter particle with initial momentum $\vec{p}$ and final momentum $\vec{p}'$ off a target can be formulated as a nonrelativistic two-to-two scattering problem from an initial state $\ket{i,\vec{p}}$ to a final state $\ket{f,\vec{p}'}$, where $i$ and $f$ refer to the initial and final states of the target particle. The scattering cross section is then given by the formula
 \begin{equation}
     \ddder{\sigma}{q}{\Omega}=\frac{1}{v}\frac{1}{(2\pi)^3 16m_\text{DM}^2m_T^2}\sum_f2\pi\delta(E_f-E_i-\omega_{\vec{q}})\left|\brakett{f,\vec{p}'}{H_\text{int}}{i,\vec{p}}\right|^2,
 \end{equation}
@@ -639,7 +183,7 @@ The second equality follows from the substitution of \eqref{eq:momentum-amplitud
 \begin{equation}
     f_{i\rightarrow f}(\vec{q})=\int\psi_f^*(\vec{k}+\vec{q})\psi_i(\vec{k})\frac{\difd^3k}{(2\pi)^3}
 \end{equation}
-is the transition amplitude of the target from the initial state to the final state. The cross-section in two-to-two scattering then takes the form
+is the transition amplitude of the target from the initial state to the final state. The cross section in two-to-two scattering then takes the form
 \begin{equation}
     \ddder{\sigma}{q}{\Omega}=\frac{1}{v}\frac{|\mathcal{M}(\vec{p},\vec{q})|^2}{64\pi^2m_\text{DM}^2m_T^2}\sum_f|f_{i\rightarrow f}(\vec{q})|^2\delta(E_f-E_i-\omega_{\vec{q}}).
 \end{equation}
@@ -661,7 +205,7 @@ The expected number of scattering events, $N_E$, in a detector is given by the p
 \begin{equation}
     N_E=M\int_{T_0}^{T_1} R_E\difd t.
 \end{equation}
-A useful quantity for describing the size of an experiment is its \emph{exposure}, given by the product of the detector mass, $M$, with the duration of the experiment, $\mathcal{E}=M(T_1-T_0)$, since the number of events grows proportional to the exposure, $N_E\sim\mathcal{E}$. The left-hand side of equation~\eqref{eq:dm-master-rate} is often expressed proportional to a reference cross-section $\sigma_0$, which expresses the scattering cross-section of dark matter particles corresponding to a given event rate. This way, for a fixed dark matter distribution and mode of interaction, one can define the \emph{reach} of a given direct detection experiment as the lowest value of the reference cross-section for which the experiment could detect a signal predicted by equation~\eqref{eq:dm-master-rate} under given assumptions of the dark matter model.
+A useful quantity for describing the size of an experiment is its \emph{exposure}, given by the product of the detector mass, $M$, with the duration of the experiment, $\mathcal{E}=M(T_1-T_0)$, since the number of events grows proportional to the exposure, $N_E\sim\mathcal{E}$. The left-hand side of equation~\eqref{eq:dm-master-rate} is often expressed proportional to a reference cross section $\sigma_0$, which expresses the scattering cross section of dark matter particles corresponding to a given event rate. This way, for a fixed dark matter distribution and mode of interaction, one can define the \emph{reach} of a given direct detection experiment as the lowest value of the reference cross section for which the experiment could detect a signal predicted by equation~\eqref{eq:dm-master-rate} under given assumptions of the dark matter model.
 
 \section{Non-relativistic effective theory of dark matter interactions}
 \label{chap:eft}
@@ -728,7 +272,7 @@ These equations represent the integrals of $f(\vec{v})$ and $v_\perp^2f(\vec{v})
 
 A corresponding framework as the one described here in the context of scattering of dark matter off nuclei also exists for dark matter--electron interactions \parencites{CatenaEtAl2020, CatenaEtAl2021}. The above discussion broadly applies in the context of electron interactions, with nuclear form factors replaced by atomic form factors, with the exception that---due to the relativistic motion of electrons orbiting nuclei---the electron may not be regarded as nonrelativistic.
 
-Out of the effective operators, two subsets most commonly considered are the \emph{spin-independent} ($\mathcal{O_1}$) and \emph{spin-dependent} ($\mathcal{O}_4$ and $\mathcal{O}_6$) interactions. In this framework, most commonly cited direct detection bounds on dark matter are the spin-independent nucleon cross-section, $\sigma^\text{SI}$, spin-dependent nucleon proton and neutron cross-sections, $\sigma_p^\text{SD}$ and $\sigma_n^\text{SD}$, and the corresponding electron cross-sections, $\sigma_e^\text{SI}$ and $\sigma_e^\text{SD}$.
+Out of the effective operators, two subsets most commonly considered are the \emph{spin-independent} ($\mathcal{O_1}$) and \emph{spin-dependent} ($\mathcal{O}_4$ and $\mathcal{O}_6$) interactions. In this framework, most commonly cited direct detection bounds on dark matter are the spin-independent nucleon cross section, $\sigma^\text{SI}$, spin-dependent nucleon proton and neutron cross sections, $\sigma_p^\text{SD}$ and $\sigma_n^\text{SD}$, and the corresponding electron cross sections, $\sigma_e^\text{SI}$ and $\sigma_e^\text{SD}$.
 
 \section{Direct detection limits from likelihood analysis}
 
@@ -756,7 +300,7 @@ which describes the likelihood of the observed data $\vec{k}$ given the model $\
 
 In reality, no experimental observation consists purely of the signal being sought for, and there will be background events, which must be accounted for. Therefore, the expected numbers of events, $\vec{n}$, receives a contribution from the backgrounds such that $\vec{n}=\vec{n}_\text{0}+\vec{n}_\text{DM}$, where $\vec{n}_\text{0}$ denotes the background contribution to the event count, and $\vec{n}_\text{DM}$ is the dark matter contribution. The backgrounds are generally not known exactly, and come with their own set of model parameters, $\vec{\theta}_0$, drawn from a background parameter space $\Theta_0$. The complete parameter space is then the Cartesian product $\Theta_\text{DM}\times\Theta_0$. In contrast to the dark matter model, where the model parameters are free, for the backgrounds the values of the model parameters are known with some accuracy. The standard assumption is that $\vec{\theta}_0$ are approximately normally distributed, per the central limit theorem, and their distribution is therefore determined by the central values $\tmean{\vec{\theta}_0}$ and the standard deviations $\vec{\sigma}_0$.
 
-In practice, it is necessary to make a distinction between parameters of interest, $\vec{\mu}$, and nuisance parameters, $\vec{\theta}$, because one is often interested in how the model fits the data under different assumptions of $\vec{\mu}$. The nuisance parameters are relevant only insofar that the uncertainty in their values impacts the confidence of the conclusions which can be drawn from the data. In the case of direct detection experiments, there is often effectively only one parameter of interest, the strength of the signal, usually parametrized by the interaction cross-section, such that we may replace the vector $\vec{\mu}$ with a scalar $\mu$. Other parameters of the dark matter model (mass, distribution parameters, etc.) are typically regarded as fixed, such that the only nuisance parameters are the strengths of the background parameters. One therefore has a likelihood function of the form
+In practice, it is necessary to make a distinction between parameters of interest, $\vec{\mu}$, and nuisance parameters, $\vec{\theta}$, because one is often interested in how the model fits the data under different assumptions of $\vec{\mu}$. The nuisance parameters are relevant only insofar that the uncertainty in their values impacts the confidence of the conclusions which can be drawn from the data. In the case of direct detection experiments, there is often effectively only one parameter of interest, the strength of the signal, usually parametrized by the interaction cross section, such that we may replace the vector $\vec{\mu}$ with a scalar $\mu$. Other parameters of the dark matter model (mass, distribution parameters, etc.) are typically regarded as fixed, such that the only nuisance parameters are the strengths of the background parameters. One therefore has a likelihood function of the form
 \begin{equation}
     \mathcal{L}(\mu,\vec{\theta}\mid\vec{k})=\exp\left(-\frac{1}{2}(\vec{\theta}_0-\tmean{\vec{\theta}_0})^\transp\Sigma^{-1}(\vec{\theta}_0-\tmean{\vec{\theta}_0})\right)\prod_{i=0}^{N_\text{bin}}\frac{n_i^{k_i}e^{-n_i}}{{k_i}!},
     \label{eq:likelihood}
@@ -807,7 +351,7 @@ where $\mathcal{L}(0,\unitv{\theta}_0\mid\vec{k})$ is the maximum likelihood und
 
 The present state of dark matter direct detection experiments is that, in the vast majority of experiments, no definite signal has been observed---with the exception being the observation of annual modulation matching a dark matter signal claimed by DAMA/LIBRA \parencite{BernabeiEtAl2023}, see chapter~\ref{chap:dist} for further discussion. The typical case to test, then, are the implications of an observation which is compatible with the null hypothesis. There are two perspectives from which such a situation can be analyzed. On one hand, there is an experiment which has made an observation, and one has to determine the highest value of the parameter $\mu$, which is still compatible with this observation. On the other hand, there is a theoretical analysis, where one has to determine the lowest value of the parameter $\mu$ for which a hypothetical experiment of given exposure could reject the null hypothesis. Both of these analyses fundamentally have the same goal: to establish limits on the possible value of $\mu$. However, they are carried out in subtly different ways.
 
-Direct detection experiments typically present their results in terms of upper limits on the nucleon/electron interaction cross-sections of dark matter. A typical method for obtaining these limits is a raster scan, where the likelihood analysis is carried out separately for a set of mass values in order to obtain limiting curves in the mass--cross-section plane. Concretely, the upper and lower limits on the cross-section, represented by $\mu$, are obtained by finding the $p$-value, $p_\mu$, of a given two-sided test statistic such that it equals a predetermined test size, $\alpha$. Although modern experiments typically use the two-sided method with the test statistic $\tilde{t}_\mu$ for determining the upper limit (see, e.g., \textcites{XENON2019b, PandaX2021, LZ2024}) some experiments have employed an alternative one-sided test statistic to determine the upper limit \parencite{CowanEtAl2011}
+Direct detection experiments typically present their results in terms of upper limits on the nucleon/electron interaction cross sections of dark matter. A typical method for obtaining these limits is a raster scan, where the likelihood analysis is carried out separately for a set of mass values in order to obtain limiting curves in the mass--cross section plane. Concretely, the upper and lower limits on the cross section, represented by $\mu$, are obtained by finding the $p$-value, $p_\mu$, of a given two-sided test statistic such that it equals a predetermined test size, $\alpha$. Although modern experiments typically use the two-sided method with the test statistic $\tilde{t}_\mu$ for determining the upper limit (see, e.g., \textcites{XENON2019b, PandaX2021, LZ2024}) some experiments have employed an alternative one-sided test statistic to determine the upper limit \parencite{CowanEtAl2011}
 \begin{equation}
     \tilde{q}_\mu=
     \begin{cases}
@@ -842,11 +386,11 @@ Direct detection experiments commonly also use solid-state crystals, recording e
 
 Although the majority of detectors historically and today fall into the categories described above, it is necessary to note for completeness that there are also detectors using bubble chambers. In a bubble chamber the ionization events produce tracks of bubbles in a superheated liquid. Unlike the detection methods described above, bubble chambers are unable to measure the amount of energy deposition, and can therefore only record timing information. Bubble chambers are currently mainly employed by the PICO collaboration, with the recent PICO-60 expriment containing 52 kilograms of octafluoropropane (C$_3$F$_8$) as the target \parencite{PICO602019}.
 
-Figure~\ref{fig:dd-reach} shows the limits on the dark matter--nucleon scattering cross-section from the direct detection experiments discussed above for both spin-independent (SI) and spin-dependent (SD) interactions between dark matter to nucleons. These constitute a sample of limits achieved thus far with various materials and technologies. The figure also shows the boundary of the neutrino fog for a xenon target as defined by \textcite{OHare2021}, which marks the boundary of the region in the parameter space within which the neutrino background---discussed in chapter \ref{chap:background}---becomes relevant. Also shown are the $7\sigma$ best fit contours to the DAMA/LIBRA data \parencite{SavageEtAl2009}. The DAMA/LIBRA experiment has for many years claimed observation of an annual modulation signal consistent in phase with a dark matter annual modulation. However, as can be seen from the figure, the combination of dark matter mass and cross-section compatible with DAMA/LIBRA has been excluded by many experiments using different techniques and targets. Therefore, although a conclusive explanation for the modulation seen by DAMA/LIBRA has not been found, it is generally not regarded as evidence of a dark matter direct detection signal.
+Figure~\ref{fig:dd-reach} shows the limits on the dark matter--nucleon scattering cross section from the direct detection experiments discussed above for both spin-independent (SI) and spin-dependent (SD) interactions between dark matter to nucleons. These constitute a sample of limits achieved thus far with various materials and technologies. The figure also shows the boundary of the neutrino fog for a xenon target as defined by \textcite{OHare2021}, which marks the boundary of the region in the parameter space within which the neutrino background---discussed in chapter \ref{chap:background}---becomes relevant. Also shown are the $7\sigma$ best fit contours to the DAMA/LIBRA data \parencite{SavageEtAl2009}. The DAMA/LIBRA experiment has for many years claimed observation of an annual modulation signal consistent in phase with a dark matter annual modulation. However, as can be seen from the figure, the combination of dark matter mass and cross section compatible with DAMA/LIBRA has been excluded by many experiments using different techniques and targets. Therefore, although a conclusive explanation for the modulation seen by DAMA/LIBRA has not been found, it is generally not regarded as evidence of a dark matter direct detection signal.
 
-The dominant role of the liquid noble detectors is evident from the figure. The combination of liquid xenon and argon detectors gives the best constraints for the spin-independent nucleon cross-section in the wide range of dark matter masses from 100 MeV up to 10 TeV shown here. The xenon detectors by themselves only give strong constraints down to few GeV due to the kinematics of the massive xenon nuclei, and the finite energy threshold of the detectors. The less massive argon gives relatively strong limits in the mass range of few GeV, but is limited by the smaller mass of the DarkSide-50 target.
+The dominant role of the liquid noble detectors is evident from the figure. The combination of liquid xenon and argon detectors gives the best constraints for the spin-independent nucleon cross section in the wide range of dark matter masses from 100 MeV up to 10 TeV shown here. The xenon detectors by themselves only give strong constraints down to few GeV due to the kinematics of the massive xenon nuclei, and the finite energy threshold of the detectors. The less massive argon gives relatively strong limits in the mass range of few GeV, but is limited by the smaller mass of the DarkSide-50 target.
 
-The limits from the xenon-based experiments are close enough to the neutrino fog that they should soon see the atmospheric neutrino background, which dominates the neutrino background at high recoil energies. This, however, is problematic for experiments, as further constraining the dark matter--nucleon cross-section is substantially more difficult with the presence of the irreducible neutrino background.
+The limits from the xenon-based experiments are close enough to the neutrino fog that they should soon see the atmospheric neutrino background, which dominates the neutrino background at high recoil energies. This, however, is problematic for experiments, as further constraining the dark matter--nucleon cross section is substantially more difficult with the presence of the irreducible neutrino background.
 
 \begin{figure}
     \hspace{-0.3em}
@@ -1018,13 +562,13 @@ The limits from the xenon-based experiments are close enough to the neutrino fog
         \end{groupplot}
     \end{tikzpicture}
     \vspace*{-1.0pc}
-    \caption{Selection of direct detection upper limits on spin-independent (top), spin-dependent proton (middle), and spin-dependent neutron (bottom) nuclear scattering cross-sections. The limits are colored according to the target material. Furthermore, solid lines denote liquid noble detectors, while dashed and dotted lines denote solid-state ionization and scintillation detectors, respectively, and a dash-dotted line denotes a bubble chamber. The red shaded region shows the $7\sigma$ best fit contours to the DAMA/LIBRA data \parencite{SavageEtAl2009}. The grey shaded region at the bottom shows the neutrino fog for a xenon target (\textcite{OHare2021}; see chapter \ref{chap:background} for discussion).}
+    \caption{Selection of direct detection upper limits on spin-independent (top), spin-dependent proton (middle), and spin-dependent neutron (bottom) nuclear scattering cross sections. The limits are colored according to the target material. Furthermore, solid lines denote liquid noble detectors, while dashed and dotted lines denote solid-state ionization and scintillation detectors, respectively, and a dash-dotted line denotes a bubble chamber. The red shaded region shows the $7\sigma$ best fit contours to the DAMA/LIBRA data \parencite{SavageEtAl2009}. The grey shaded region at the bottom shows the neutrino fog for a xenon target (\textcite{OHare2021}; see chapter \ref{chap:background} for discussion).}
     \label{fig:dd-reach}
 \end{figure}
 
 It is necessary to stress at this point that the neutrino fog is defined per target and is different for different elements. The region displayed in figure~\ref{fig:dd-reach} is for a xenon target and, therefore, although the limits for PICO-60 in the middle panel appear to go well within the neutrino fog between three and ten GeV, the neutrino fog of fluorine starts significantly lower than that of xenon. Hence, PICO-60 is not at all close to a detection of the neutrino background. See the supplementary figures of \textcite{OHare2021} for graphs of the neutrino fog in other materials.
 
-A notable trend in figure~\ref{fig:dd-reach} is that the dark matter--nucleon scattering cross-sections are historically well-constrained only down to masses of around few GeV. In particular, sub-GeV dark matter typically less constrained by many orders of magnitude. A significant practical reason for this are the historically high energy thresholds in direct detection experiments. An increase in the size of non-xenon detectors, in combination with advancements in low-threshold detectors should alleviate this in the future, however.
+A notable trend in figure~\ref{fig:dd-reach} is that the dark matter--nucleon scattering cross sections are historically well-constrained only down to masses of around few GeV. In particular, sub-GeV dark matter typically less constrained by many orders of magnitude. A significant practical reason for this are the historically high energy thresholds in direct detection experiments. An increase in the size of non-xenon detectors, in combination with advancements in low-threshold detectors should alleviate this in the future, however.
 
 \chapter{The neutrino background}
 \label{chap:background}
@@ -1037,20 +581,20 @@ As the experimental bounds on dark matter become more stringent, the background 
 
 Neutrinos can be generated in a variety of processes from decays of unstable nuclei to high energy particle collisions. Therefore, numerous sources of neutrinos exist, which are relevant for direct detection. Neutrinos are created in distant supernovae \parencite{Beacom2010}, they are created as a side product of the nuclear reactions that heat up the sun \parencites{BergstromEtAl2016, OrebiGann2021}, they are created by collisions of cosmic rays with the Earth's atmosphere \parencite{BattistoniEtAl2005}, they are created in nuclear reactors \parencites{MuellerEtAl2011, MaEtAl2013} and by radioactive decays in the Earth \parencites{LudhovaZavatarelli2013, HuangEtAl2013}. Neutrinos from these processes form the diffuse supernova, solar, atmospheric, reactor neutrino and geoneutrino backgrounds, respectively. While this is not an exhaustive list of all sources of neutrinos, it includes ones which are in an energy range relevant for typical direct detection experiments \parencite{VitaglianoTamborraRaffelt2020}.
 
-Because neutrinos interact so weakly with ordinary matter, they stream straight through the Earth, straight through any shielding, into the detector. The vast majority of the neutrinos continue through the detector without ever interacting with it given the small interaction cross-section of neutrinos, but due to their high flux, some do occasionally hit the detector. The neutrino background is small, but important for the increasingly sensitive dark matter detectors.
+Because neutrinos interact so weakly with ordinary matter, they stream straight through the Earth, straight through any shielding, into the detector. The vast majority of the neutrinos continue through the detector without ever interacting with it given the small interaction cross section of neutrinos, but due to their high flux, some do occasionally hit the detector. The neutrino background is small, but important for the increasingly sensitive dark matter detectors.
 
 The presence of the neutrino background leads to an effect traditionally known as the ``neutrino floor'', which places limits on the reach of conventional dark matter direct detection experiments. Eventually, once detectors become sensitive enough, they will begin to see the neutrino background. Beyond this point, the presence of the neutrino signal will impede the identification of any potential dark matter signal, and the benefits of increasing the exposure of a detector will become more limited.
 
-The traditional term ``neutrino floor'' is a somewhat misleading description of the phenomenon. Although it suggests something impassable, in precise terms the neutrino floor corresponds to a transitional boundary in the parameter space. This boundary is between the region where the discovery reach---the lowest dark matter cross-section a given detector could hypothetically detect---evolves inversely proportional to the exposure ($\sigma\propto \mathcal{E}^{-1}$), and the region where it evolves as the inverse \emph{square root} of the exposure ($\sigma\propto \mathcal{E}^{-1/2}$) due to the presence of the neutrino background \parencite{BillardFigueroaFelicianoStrigari2014}. The line traditionally used to demarcate the neutrino floor is simply the discovery reach of some idealized experiment of a given target material and exposure, the overall position of which can be drawn arbitrarily low with an appropriate choice of exposure, although generally some reasonable value for the exposure is chosen. For these reasons, recently a more precise notion of ``neutrino fog'' has been suggested to describe the region where the neutrino background is relevant. A precise definition of the neutrino fog is given in terms of the index $n$ of the scaling $\sigma\propto \mathcal{E}^{-1/n}$ as the region of the parameter space where $n>2$ \parencites{OHare2021, CarewEtAl2024}.
+The traditional term ``neutrino floor'' is a somewhat misleading description of the phenomenon. Although it suggests something impassable, in precise terms the neutrino floor corresponds to a transitional boundary in the parameter space. This boundary is between the region where the discovery reach---the lowest dark matter cross section a given detector could hypothetically detect---evolves inversely proportional to the exposure ($\sigma\propto \mathcal{E}^{-1}$), and the region where it evolves as the inverse \emph{square root} of the exposure ($\sigma\propto \mathcal{E}^{-1/2}$) due to the presence of the neutrino background \parencite{BillardFigueroaFelicianoStrigari2014}. The line traditionally used to demarcate the neutrino floor is simply the discovery reach of some idealized experiment of a given target material and exposure, the overall position of which can be drawn arbitrarily low with an appropriate choice of exposure, although generally some reasonable value for the exposure is chosen. For these reasons, recently a more precise notion of ``neutrino fog'' has been suggested to describe the region where the neutrino background is relevant. A precise definition of the neutrino fog is given in terms of the index $n$ of the scaling $\sigma\propto \mathcal{E}^{-1/n}$ as the region of the parameter space where $n>2$ \parencites{OHare2021, CarewEtAl2024}.
 
 In order to deal with the neutrino background, a precise systematic understanding of its structure is crucial. Neutrinos generated via different processes have different energy spectra, which determine the spectra of their observed event rates. The recoil energy spectrum of dark matter changes with the dark matter mass, and can resemble the neutrino spectra to varying extents. This leads to the undulating shape of the neutrino fog boundary in figure~\ref{fig:dd-reach}. The peaks in the shape correspond to masses at which the dark matter recoil energy spectrum precisely matches the recoil energy spectrum of a given neutrino source. The sharp rise around 1 GeV is due to the solar neutrino background becoming relevant for dark matter below that mass scale. The better the structure of the neutrino background and the spectra of its various components are understood, the better it can be accounted for in analysis of the experimental data.
 
-The expected double differential scattering rate of neutrinos per unit mass of a target is given by
+The expected double differential scattering rate of neutrinos per unit-mass of a target is given by
 \begin{equation}
     \ddder{R}{E_r}{\Omega_r}=\frac{1}{m_\text{T}}\int\ddder{\sigma}{E_r}{\Omega_r}\ddder{\Phi}{E_\nu}{\Omega_\nu}\difd E_\nu\difd\Omega_\nu.
     \label{eq:neutrino-master-rate}
 \end{equation}
-Here $m_\text{T}$ is the target mass, $\sigma$ is the neutrino--target scattering cross-section, and $\Phi$ is the local neutrino flux at the location of the detector. The scattering cross-section for neutrinos can be calculated from first principles. For a nuclear target
+Here $m_\text{T}$ is the target mass, $\sigma$ is the neutrino--target scattering cross section, and $\Phi$ is the local neutrino flux at the location of the detector. The scattering cross section for neutrinos can be calculated from first principles. For a nuclear target
 \begin{equation}
     \ddder{\sigma}{E_r}{\Omega_r}=\frac{1}{2\pi}\der{\sigma}{E_r}\delta\left(\unitv{q}_\nu\cdot\unitv{q}-\frac{E_\nu+m_\text{N}}{E_\nu}\sqrt{\frac{E_r}{2m_\text{N}}}\right),
     \label{eq:neutrino-cross-sec}
@@ -1290,7 +834,7 @@ Assuming, for simplicity, that the atoms are identical, this leads to the Hamilt
     H=\sum_i\frac{p_i^2}{2m}+\sum_{ij\in\text{neigh.}}\frac{1}{2}m\omega^2|\vec{x}_i-\vec{x}_j|^2.
     \label{eq:lattice-ham}
 \end{equation}
-Classically, the solution of the equations of motion of this Hamiltonian lead to vibrational modes in the lattice, and waves in the continuum limit. When we take this description over to quantum mechanics, and quantize the Hamiltonian \eqref{eq:lattice-ham}, in the quantum field theoretic limit the corresponding solutions of the quantum system are quasi-particle excitations in the lattice. In analogy with photons being the quantum excitations of the electromagnetic field, and as representative of acoustic vibrations, these quasiparticles are known as \emph{phonons}.
+Classically, the solution of the equations of motion of this Hamiltonian lead to vibrational modes in the lattice, and waves in the continuum limit. When we take this description over to quantum mechanics, and quantize the Hamiltonian \eqref{eq:lattice-ham}, in the quantum field theoretic limit the corresponding solutions of the quantum system are quasiparticle excitations in the lattice. In analogy with photons being the quantum excitations of the electromagnetic field, and as representative of acoustic vibrations, these quasiparticles are known as \emph{phonons}.
 
 The description of electrons and their energy states in the crystal is covered by the theory of electronic band structure. The overlapping of the atomic orbitals in a solid leads to a structure where the spectrum of energy eigenstates is split into bands of tightly spaced energy bands separated by relatively large band gaps. In the standard picture the occupation number of a given energy state is described by the Fermi--Dirac distribution,
 \begin{equation}
@@ -1573,7 +1117,7 @@ The dark matter halo, by definition, should have no overall linear motion in the
 
 Attempts to observe scattering events of dark matter particles from the galactic halo are in the foreseeable future likely to take place in terrestrial laboratories. From the observer's perspective, then, regardless of what minor angular motion the halo has, the dark matter appears to be coming at us at the same speed with which Earth moves through the galaxy. The immediate consequence of this is that the mean of the velocity distribution in the laboratory coordinates is shifted such that $f(\vec{v})\rightarrow f(\vec{v}+\vec{v}_\text{lab})$, where $\vec{v}_\text{lab}$ is the velocity of the laboratory frame relative to the galactic frame. In addition, relevant for direct detection experiments with any kind of sensitivity to the direction of the incoming dark matter particles is the orientation of the laboratory frame with respect to the galactic frame, which for any terrestrial frame is not constant due to the rotation of the Earth. Full understanding of these coordinate transformations is therefore imperative for prediction and interpretation of potential direct detection signals.
 
-The decomposition of $\vec{v}_\text{lab}$ to well-understood components is straightforward. The greatest contribution comes from the rotational motion of the Milky Way galaxy, which gives for the mean motion of the local neighborhood of the solar system the circular velocity, $\vec{v}_\text{circ}$, with an observed magnitude of around 220--240 km/s. The solar system has some peculiar motion relative to its surroundings, which introduces a correction $\vec{v}_\text{pec}$ to the velocity. The combination of these two velocities gives the center of mass velocity of the solar system. An observer on Earth then has two motions with respect to the rest frame of the solar system: the orbital velocity of the Earth, $\vec{v}_\text{orb}$, and rotational velocity of a point on the Earth's surface, $\vec{v}_\text{rot}$, from the rotation of the Earth about its axis. Of these the orbital velocity, $\vec{v}_\text{orb}$, has a magnitude around 30 km/s, and therefore has a significant contribution to $\vec{v}_\text{lab}$ which produces the well-known and sought for annual modulation of the dark matter direct detection signal. The magnitude of $\vec{v}_\text{rot}$ is at most about 0.46 km/s. In principle its presence induces a daily modulation of the direct detection signal via the same principle as the annual modulation signal. However, because of its small amplitude, this signal is unlikely to be detectable by any experiment in the foreseeable future. In any case, in summary, $\vec{v}_\text{lab}$ has the decomposition
+The decomposition of $\vec{v}_\text{lab}$ to well-understood components is straightforward. The greatest contribution comes from the rotational motion of the Milky Way galaxy, which gives for the mean motion of the local neighborhood of the solar system the circular velocity, $\vec{v}_\text{circ}$, with an observed magnitude of around 220--240 km/s. The solar system has some peculiar motion relative to its surroundings, which introduces a correction $\vec{v}_\text{pec}$ to the velocity. The combination of these two velocities gives the center-of-mass velocity of the solar system. An observer on Earth then has two motions with respect to the rest frame of the solar system: the orbital velocity of the Earth, $\vec{v}_\text{orb}$, and rotational velocity of a point on the Earth's surface, $\vec{v}_\text{rot}$, from the rotation of the Earth about its axis. Of these the orbital velocity, $\vec{v}_\text{orb}$, has a magnitude around 30 km/s, and therefore has a significant contribution to $\vec{v}_\text{lab}$ which produces the well-known and sought for annual modulation of the dark matter direct detection signal. The magnitude of $\vec{v}_\text{rot}$ is at most about 0.46 km/s. In principle its presence induces a daily modulation of the direct detection signal via the same principle as the annual modulation signal. However, because of its small amplitude, this signal is unlikely to be detectable by any experiment in the foreseeable future. In any case, in summary, $\vec{v}_\text{lab}$ has the decomposition
 \begin{equation}
     \vec{v}_\text{lab}=\vec{v}_\text{circ}+\vec{v}_\text{pec}+\vec{v}_\text{orb}+\vec{v}_\text{rot}.
 \end{equation}
@@ -1909,7 +1453,7 @@ There is, in principle, also a daily modulation signal arising from the variatio
 
 The daily modulation caused by detector response can be substantially more varied in nature than the annual modulation, or the daily modulation from variation of the magnitude $v_\text{lab}$. The latter two modulations generally have the same period as the motion that generates them: around 365 days (length of a sidereal year), and around 24 hours (length of a stellar day), respectively. However, the daily modulation due to the detector response, in general, consists of a combination of harmonics of the fundamental period of a stellar day. Depending on the shape of the detector response, and the orientation of the detector, any one of the harmonics may dominate, and therefore the dominant period of the modulation may also be half a stellar day, or third of a stellar day, or fourth of a stellar day, and so on.
 
-A notable property of both types of daily modulation caused by the Earth's motion is that the phase of the signal varies throughout the year. Let $\vec{v}_E=\vec{v}_\text{sol}+\vec{v}_\text{orb}$ denote the center of mass velocity of Earth, and let $\vec{v}_E^\parallel$ be its component parallel to the equatorial plane. One period of daily modulation is then defined as the length of time it takes for the Earth to make one full revolution relative to $\vec{v}_E^\parallel$. If the direction of $\vec{v}_E^\parallel$ was constant, the daily modulation period would be exactly a stellar day. However, due to the time dependence of $\vec{v}_\text{orb}$, the direction of $\vec{v}_E^\parallel$ drifts throughout the year. This causes the period of daily modulation to vary slowly, which can be modeled as a time-dependent phase whose value is equal to the right ascension of the dark matter wind speed, $\alpha_w(t)$. Neglecting the small effect of Earth's axial tilt relative to the orbital plane, it is straightforward to show that the magnitude of the phase variation is approximately given by
+A notable property of both types of daily modulation caused by the Earth's motion is that the phase of the signal varies throughout the year. Let $\vec{v}_E=\vec{v}_\text{sol}+\vec{v}_\text{orb}$ denote the center-of-mass velocity of Earth, and let $\vec{v}_E^\parallel$ be its component parallel to the equatorial plane. One period of daily modulation is then defined as the length of time it takes for the Earth to make one full revolution relative to $\vec{v}_E^\parallel$. If the direction of $\vec{v}_E^\parallel$ was constant, the daily modulation period would be exactly a stellar day. However, due to the time dependence of $\vec{v}_\text{orb}$, the direction of $\vec{v}_E^\parallel$ drifts throughout the year. This causes the period of daily modulation to vary slowly, which can be modeled as a time-dependent phase whose value is equal to the right ascension of the dark matter wind speed, $\alpha_w(t)$. Neglecting the small effect of Earth's axial tilt relative to the orbital plane, it is straightforward to show that the magnitude of the phase variation is approximately given by
 \begin{equation}
     \Delta\alpha_w\approx 2\arcsin\left(\frac{|\vec{v}_\text{orb}^\parallel|}{|\vec{v}_\text{sol}^\parallel|}\right),
 \end{equation}
@@ -1917,7 +1461,7 @@ which has a value of around 20\degree.
 
 There is similarly a variation in the declination of the dark matter wind speed, $\delta_w(t)$, which results from variation in the velocity component $\vec{v}_E^\perp$ perpendicular to the orbital plane. This variation, of around 15\degree{}, can be seen in figure~\ref{fig:v-lab-dir} showing the daily paths of the direction of $\vec{v}_\text{lab}$ and solar direction, $\unitv{r}_\odot$, throughout the year as seen by an observer on Earth. This variation of the declination has the effect of slightly changing the profile of the daily modulation throughout the year.
 
-Overall, the presence of these significant variations in both the declination and right ascension of the direction of $\vec{v}_\text{lab}$, in combination with the dependence of daily modulation on the orientation of the detector, makes the analysis of daily modulation substantially more complicated than the comparatively simple analysis of yearly modulation. Publication~\ref{pub:sassi2024} contains a detailed analysis on the variation in the daily modulation in germanium when the crystal orientation is changed. This analysis shows that the daily modulation can be dominated by completely different harmonics of the 24-hour period depending on the orientation of the crystal. That is, in one orientation the dominant period could be 12 hours, while in another it could be 6 hours. Furthermore, the dominant period depends on the degree of anisotropy in the velocity distribution. This complexity creates both challenges and opportunities. On one hand, the complex harmonic structure makes fitting daily modulation onto data far more difficult than in the case of annual modulation, and more assumptions are needed about the underlying model. On the other hand, the fact that daily modulation is sensitive to the model means that it could potentially be used to aid in model discrimination in the event of discovery of a signal.
+Overall, the presence of these significant variations in both the declination and right ascension of the direction of $\vec{v}_\text{lab}$, in combination with the dependence of daily modulation on the orientation of the detector, makes the analysis of daily modulation substantially more complicated than the comparatively simple analysis of annual modulation. Publication~\ref{pub:sassi2024} contains a detailed analysis on the variation in the daily modulation in germanium when the crystal orientation is changed. This analysis shows that the daily modulation can be dominated by completely different harmonics of the 24-hour period depending on the orientation of the crystal. That is, in one orientation the dominant period could be 12 hours, while in another it could be 6 hours. Furthermore, the dominant period depends on the degree of anisotropy in the velocity distribution. This complexity creates both challenges and opportunities. On one hand, the complex harmonic structure makes fitting daily modulation onto data far more difficult than in the case of annual modulation, and more assumptions are needed about the underlying model. On the other hand, the fact that daily modulation is sensitive to the model means that it could potentially be used to aid in model discrimination in the event of discovery of a signal.
 
 The main goal of publication~\ref{pub:sassi2024} was to study whether daily modulation could be used aid in the discrimination of an SHM$^{++}$-style anisotropic component in the velocity distribution. More concretely, we assumed as a ``background'' model the SHM velocity distribution, and then used a likelihood analysis to investigate how small $\eta$, the fraction of the anisotropic component, could be to detect the presence of the anisotropy for a given number of recorded dark matter events. For the detector material and the source of daily modulation we used germanium and the ionization threshold anisotropy as in publication~\ref{pub:sassi2021}. We found that at $10^4$ recoil events, with an energy resolution of 10 eV, above a dark matter mass of 400 MeV, the anisotropic component was mainly revealed by its different recoil energy distribution due to its large tail of high velocity particles. In this case including temporal modulation effects did not improve the results. Below 400 MeV, however, annual modulation could improve the bounds on $\eta$ by at most around 10\%, and addition of daily modulation information would improve the bounds at most around 30\% over that. There was therefore a substantial gain from using daily modulation information, although in the mass range where the improvement was the greatest, the bounds never reached the SHM$^{++}$ compatible values of $\eta<0.3$.
 
@@ -1939,7 +1483,7 @@ The variety of the results shown in publication~\ref{pub:sassi2022} demonstrates
 
 Another important reason for need of a more thorough understanding of behavior of detector materials is the daily modulation effect of the dark matter event rate signal. In the absence of detectors capable of measuring the recoil directions of events, daily modulation of the dark matter event rate due to material anisotropies is the best probe of the directionality of a hypothetical dark matter signal. It can act as a smoking gun of the dark matter origin of an observed signal, and it can reveal information about the nature of dark matter interactions, and about the properties of the velocity distribution of dark matter. Therefore, both publications~\ref{pub:sassi2021} and~\ref{pub:sassi2024} were dedicated to the study of the role of daily modulation in direct detection experiments.
 
-In publication~\ref{pub:sassi2021}, we analyzed the potential benefit gained from daily modulation information for discriminating a dark matter signal from the background of solar neutrinos in a germanium detector. The neutrino background is the greatest challenge for progress in direct detection. If the dark matter direct detection cross-section is low enough that the neutrino signal dominates the dark matter signal, which appears more and more likely as direct detection limits are lowered, then methods of discriminating the dark matter origin of a signal are needed. The background of solar neutrinos is interesting, because it is the primary background for sub-GeV dark matter, and it possesses both an annual modulation and a daily modulation, as shown in chapter~\ref{chap:background}. We found in our study that, in case of solar neutrinos, accounting for daily modulation does not lead to substantially better discrimination than when only annual modulation information is available. This conclusion can be understood on the basis of the fact that, while both the dark matter and solar neutrino signal have an annual modulation component, they have the opposite phase. Therefore, given that the annual modulation of the dark matter event rate typically has a higher amplitude than the daily modulation, the two signals can always be discriminated by their annual modulation when they could be discriminated by their daily modulation. For this reason we also investigated a toy model with a background whose annual modulation matches the phase of the dark matter annual modulation, and demonstrated that in this case in a narrow mass range accounting for daily modulation could improve the sensitivity by a factor of two.
+In publication~\ref{pub:sassi2021}, we analyzed the potential benefit gained from daily modulation information for discriminating a dark matter signal from the background of solar neutrinos in a germanium detector. The neutrino background is the greatest challenge for progress in direct detection. If the dark matter direct detection cross section is low enough that the neutrino signal dominates the dark matter signal, which appears more and more likely as direct detection limits are lowered, then methods of discriminating the dark matter origin of a signal are needed. The background of solar neutrinos is interesting, because it is the primary background for sub-GeV dark matter, and it possesses both an annual modulation and a daily modulation, as shown in chapter~\ref{chap:background}. We found in our study that, in case of solar neutrinos, accounting for daily modulation does not lead to substantially better discrimination than when only annual modulation information is available. This conclusion can be understood on the basis of the fact that, while both the dark matter and solar neutrino signal have an annual modulation component, they have the opposite phase. Therefore, given that the annual modulation of the dark matter event rate typically has a higher amplitude than the daily modulation, the two signals can always be discriminated by their annual modulation when they could be discriminated by their daily modulation. For this reason we also investigated a toy model with a background whose annual modulation matches the phase of the dark matter annual modulation, and demonstrated that in this case in a narrow mass range accounting for daily modulation could improve the sensitivity by a factor of two.
 
 Publication~\ref{pub:sassi2024}, on the other hand, focused on the prospect of using daily modulation information for discrimination of an anisotropic component in the dark matter velocity distribution. Specifically, we considered the SHM$^{++}$ model of \textcite{EvansOHareMcCabe2019}, described in chapter~\ref{chap:dist}. Our investigation demonstrated that in this case, in a narrow range of masses, the daily modulation signal contains additional information over annual modulation which can substantially improve the ability of an experiment to detect the presence of an anisotropic component in the velocity distribution. Although in the range where this effect was significant, with the tested parameters the sensitivity was generally not sufficient to detect an anisotropic component containing a fraction of dark matter consistent with the SHM$^{++}$ model.
 
