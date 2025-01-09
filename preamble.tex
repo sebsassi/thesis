@@ -11,14 +11,16 @@
 
 \newcommand{\outformat}{electronic}
 
+% Sizes of inner and outer margins
 \ifthenelse{\equal{\outformat}{print}}{
-\newcommand{\innersize}{55.4pt}
-\newcommand{\outersize}{110.8pt}
+    \newcommand{\innersize}{55.4pt}
+    \newcommand{\outersize}{110.8pt}
 }{
-\newcommand{\innersize}{83.1pt}
-\newcommand{\outersize}{83.1pt}
+    \newcommand{\innersize}{83.1pt}
+    \newcommand{\outersize}{83.1pt}
 }
 
+% Sizes of top and bottom margins
 \newcommand{\topsize}{55.4pt}
 \newcommand{\bottomsize}{115.2pt}
 
@@ -27,7 +29,8 @@
     inner = \innersize,
     outer = \outersize,
     top = \topsize,
-    bottom = \bottomsize]{geometry} % modify page layout
+    bottom = \bottomsize
+]{geometry} % modify page layout
 
 % Debugging
 %\usepackage{showframe}     % show the page layout grid
@@ -105,13 +108,13 @@
 
 \ifthenelse{\equal{\outformat}{electronic}}
 {
-\newcommand{\linkcolor}{\typographersred}
-\newcommand{\citecolor}{\typographersred}
-\newcommand{\urlcolor}{\linkblue}
+    \newcommand{\linkcolor}{\typographersred}
+    \newcommand{\citecolor}{\typographersred}
+    \newcommand{\urlcolor}{\linkblue}
 }{
-\newcommand{\linkcolor}{black}
-\newcommand{\citecolor}{black}
-\newcommand{\urlcolor}{black}
+    \newcommand{\linkcolor}{black}
+    \newcommand{\citecolor}{black}
+    \newcommand{\urlcolor}{black}
 }
 
 \hypersetup{
@@ -150,10 +153,8 @@
     maxcitenames = 3,
     hyperref = true,
     arxiv = abs,
-    uniquename = full]{biblatex}
-
-% Bibliography file
-\addbibresource{thesis.bib} 
+    uniquename = full
+]{biblatex}
 
 % These are some modifications to bibliography entry styling:
 %   - Remove "in:" before journal name.
@@ -163,7 +164,7 @@
 \renewbibmacro{in:}{}
 \renewcommand*\bibnamedash{\rule[0.48ex]{3em}{0.14ex}\space}
 \renewcommand*\bibnamedelimi{\hspace{0.125em}}
-\renewcommand*{\mkbibacro}[1]{\textls[70]{\textsc{\MakeLowercase{#1}}}}
+\renewcommand*{\mkbibacro}[1]{\textls[70]{#1}}
 
 % Fields to exclude from bibliography
 \AtEveryBibitem{\clearfield{url}}
@@ -212,6 +213,8 @@
     }%
 }
 
+% Bibliography file
+\addbibresource{thesis.bib}
 
 \usetikzlibrary{decorations.markings}   % decorations
 \usetikzlibrary{arrows.meta}            % more arrow styles
@@ -325,7 +328,6 @@
 \newcommand{\tpder}[2]{\partial#1/\partial#2}
 
 % Miscellaneous commands
-%\newcommand{\bm}[1]{\vec{#1}}
 \newcommand{\unitv}[1]{\symbfit{\hat{#1}}}
 \newcommand{\difd}{\,d}
 \newcommand{\mean}[1]{\left\langle#1\right\rangle}
