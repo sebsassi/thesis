@@ -108,10 +108,12 @@
 
 \ifthenelse{\equal{\outformat}{electronic}}
 {
+    \newcommand{\usecolorlinks}{true}
     \newcommand{\linkcolor}{\typographersred}
     \newcommand{\citecolor}{\typographersred}
     \newcommand{\urlcolor}{\linkblue}
 }{
+    \newcommand{\usecolorlinks}{false}
     \newcommand{\linkcolor}{black}
     \newcommand{\citecolor}{black}
     \newcommand{\urlcolor}{black}
@@ -119,7 +121,7 @@
 
 \hypersetup{
     linktocpage,
-    colorlinks = true,
+    colorlinks = \usecolorlinks,
     linkcolor = \linkcolor,
     citecolor = \citecolor,
     urlcolor = \urlcolor}
@@ -176,14 +178,14 @@
 \setcounter{biburllcpenalty}{9000}
 
 \DeclareFieldFormat{authortype}{\mkbibparens{#1}}
-\DeclareFieldFormat{pubtitle}{\textsb{#1}}
+\DeclareFieldFormat{pubtitle}{#1}
 
 % Citation command for citing included publications
 \DeclareCiteCommand{\pubcite}[\AtNextCitekey{\defcounter{maxnames}{99}}]
     {\usebibmacro{prenote}}
-    {\textbf{\printfield[pubtitle]{title}}\\
-        \printnames[][1-]{author}\\
-        \printfield{year}\addcomma\addspace
+    {\printfield[pubtitle]{title}\\
+        \printnames[][1-]{author}\addspace
+        \bibopenparen\printfield{year}\bibcloseparen\addperiod\addspace
         \printfield{journaltitle}
         \printfield{volume}\addperiod
         \printfield{number}\addcomma\addspace
@@ -259,8 +261,8 @@
 % serif and sans serif (sf) style
 \newcommand{\textsb}[1]{{\sbstyle #1}}
 \newcommand{\textsbsf}[1]{{\sbsfstyle #1}}
-\newcommand{\textuc}[1]{\textls[60]{#1}}
-\newcommand{\textucsf}[1]{\textls[60]{\textsf{#1}}}
+\newcommand{\textuc}[1]{\textls[70]{#1}}
+\newcommand{\textucsf}[1]{\textls[70]{\textsf{#1}}}
 
 \SetTblrStyle{remark-tag}{font=\itshape}
 \SetTblrStyle{remark-sep}{font=\itshape}
@@ -290,9 +292,22 @@
 \titlespacing*{\subsection}{0em}{*2.0}{*2.0}
 
 % Table of contents appearance
-\contentsmargin{2.55em}
-\dottedcontents{section}[3.8em]{}{2.3em}{1pc}
-\dottedcontents{subsection}[6.1em]{}{3.2em}{1pc}
+%\contentsmargin{2.55em}
+\titlecontents{chapter}
+    [2.0em]
+    {\addvspace{0.7pc}}
+    {\contentslabel{2.0em}\itshape}
+    {\itshape}
+    {\hspace{1ex}\thecontentspage}
+    [\addvspace{0.1pc}]
+\titlecontents{section}
+    [2.0em]
+    {\addvspace{0.1pc}\small}
+    {}
+    {}
+    {\hspace{1ex}\thecontentspage}
+%\dottedcontents{section}[3.8em]{}{2.3em}{1pc}
+%\dottedcontents{subsection}[6.1em]{}{3.2em}{1pc}
 
 % Redefine plain page style to put page numbers on the outer edge in `twoside`
 % mode.
@@ -393,23 +408,7 @@
 % Environment for the copyright page
 \newenvironment{copyrightpage}{\footnotesize\noindent\ignorespaces}{\thispagestyle{empty}}
 
-\newcommand{\institution}{University of Helsinki}
-\newcommand{\faculty}{Faculty of Science}
-\newcommand{\department}{Department of Physics}
-
-\newcommand{\defenseplace}{\textcolor{\typographersred}{[place]}}
-\newcommand{\defensedate}{March 6, 2025}
-\newcommand{\defensetime}{\textcolor{\typographersred}{[time]}}
-
-\newcommand{\thesistitle}{Dark Matter in Next Generation Detectors}
-\newcommand{\thesisauthor}{Sebastian Sassi}
-\newcommand{\thesisyear}{\the\year}
-
-\newcommand{\hipseriesnumber}{\textcolor{\typographersred}{HIP-\thesisyear-XX}}
-\newcommand{\isbnp}{\textcolor{\typographersred}{XXX-XXX-XXX-XXX-XXX}}
-\newcommand{\isbne}{\textcolor{\typographersred}{XXX-XXX-XXX-XXX-XXX}}
-\newcommand{\issnp}{\textcolor{\typographersred}{XXXX-XXXX}}
-\newcommand{\issne}{\textcolor{\typographersred}{XXXX-XXXX}}
+\input{thesis_info.tex}
 
 % End of general stuff everything below is very specific to my thesis.
 
