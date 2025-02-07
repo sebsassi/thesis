@@ -176,15 +176,15 @@ where $R_S$ denotes the total number of scattering events off the target, and $m
 \begin{equation}
     \ddder{R_S}{q}{\Omega}=\frac{n_\text{DM}}{m_T}\int\ddder{\sigma}{q}{\Omega}vf(\vec{v})\difd^3{v}.
 \end{equation}
-Here $q$ is the magnitude of the momentum transferred to the target, $\vec{q}=\vec{p}-\vec{p}'$, where $\vec{p}$ and $\vec{p}'$ denote the initial and final momenta of the dark matter particle, respectively.
+Here $q$ is the magnitude of the momentum transferred to the target, $\vec{q}=\vec{p}'-\vec{p}$, where $\vec{p}$ and $\vec{p}'$ denote the initial and final momenta of the dark matter particle, respectively.
 
 Typical models of dark matter assume that the dark matter in the halo is cold; that is, that it is nonrelativistic. It follows that the scattering of dark matter in direct detection can typically be treated as nonrelativistic. Therefore, the scattering of a dark matter particle with initial momentum $\vec{p}$ and final momentum $\vec{p}'$ off a target can be formulated as a nonrelativistic two-to-two scattering problem from an initial state $\ket{i,\vec{p}}$ to a final state $\ket{f,\vec{p}'}$, where $i$ and $f$ refer to the initial and final states of the target particle. The scattering cross section is then given by the formula
 \begin{equation}
     \ddder{\sigma}{q}{\Omega}=\frac{1}{v}\frac{1}{(2\pi)^3 16m_\text{DM}^2m_T^2}\sum_f2\pi\delta(E_f-E_i-\omega_{\vec{q}})\left|\brakett{f,\vec{p}'}{H_\text{int}}{i,\vec{p}}\right|^2,
 \end{equation}
-where the summation over the final states in case of continuous momentum states is to be interpreted as integration with the appropriate measure, and $v=|\vec{v}-\vec{v}_T|$ represents the magnitude of the difference of the initial velocities of the particles. The energy deposition $\omega_{\vec{q}}$ is defined as
+where the summation over the final states in case of continuous momentum states is to be interpreted as integration with the appropriate measure, and $v=|\vec{v}_\text{DM}-\vec{v}_T|$ represents the magnitude of the difference of the initial velocities of the particles. The energy deposition $\omega_{\vec{q}}$ is defined as
 \begin{equation}
-    \omega_{\vec{q}}\equiv E_{\vec{p}}-E_{\vec{p}'}=\vec{q}\cdot\vec{v}-\frac{q^2}{2m_\text{DM}}.
+    \omega_{\vec{q}}\equiv E_{\vec{p}}-E_{\vec{p}'}=-\vec{q}\cdot\vec{v}_\text{DM}-\frac{q^2}{2m_\text{DM}}.
 \end{equation}
 
 If the initial and final states of the target can be described as plane waves with momenta $\vec{k}$ and $\vec{k}'$, then the scattering amplitude can be written as
@@ -198,7 +198,7 @@ For general initial and final state wave functions, one can consider their repre
 \end{equation}
 The second equality follows from the substitution of \eqref{eq:momentum-amplitude} for the plane wave scattering amplitude, where
 \begin{equation}
-    f_{i\rightarrow f}(\vec{q})=\int\psi_f^*(\vec{k}+\vec{q})\psi_i(\vec{k})\frac{\difd^3k}{(2\pi)^3}
+    f_{i\rightarrow f}(\vec{q})=\int\psi_f^*(\vec{k}-\vec{q})\psi_i(\vec{k})\frac{\difd^3k}{(2\pi)^3}
 \end{equation}
 is the transition amplitude of the target from the initial state to the final state. The cross section in two-to-two scattering then takes the form
 \begin{equation}
@@ -237,11 +237,11 @@ The starting point of the nonrelativistic effective theory of dark matter intera
 \end{equation}
 It is clear by momentum conservation that the anti-Hermitian operator reduces to
 \begin{equation}
-    \frac{1}{2}(\vec{v}-\vec{v}')=\frac{\vec{q}}{2\mu_\text{DM--n}},
+    \frac{1}{2}(\vec{v}-\vec{v}')=-\frac{\vec{q}}{2\mu_\text{DM--n}},
 \end{equation}
 with $\mu_\text{DM--n}$ the reduced mass of the dark matter--nucleon system. It then immediately follows that the Hermitian operator is
 \begin{equation}
-    \vec{v}^\perp\equiv\frac{1}{2}(\vec{v}+\vec{v}')=\vec{v}-\frac{\vec{q}}{2\mu_\text{DM--n}}.
+    \vec{v}^\perp\equiv\frac{1}{2}(\vec{v}+\vec{v}')=\vec{v}+\frac{\vec{q}}{2\mu_\text{DM--n}}.
 \end{equation}
 
 All the possible operators can now be constructed by taking products of the four operators $i\vec{q}$, $\vec{v}^\perp$, $\vec{S}_\chi$ and $\vec{S}_N$. Under standard theoretical descriptions of dark matter the interaction between the dark sector and Standard Model particles are mediated by spin-0 or spin-1 particles. With this restriction we are left with a collection of eleven possible operators \parencite{FitzpatrickEtAl2013},

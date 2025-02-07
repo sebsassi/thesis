@@ -9,12 +9,12 @@
 \usepackage{ifthen}     % conditional commands
 \usepackage{etoolbox}   % tools for intefacing with internals
 
-\newcommand{\outformat}{electronic}
+\newcommand{\outformat}{print}
 
 % Sizes of inner and outer margins
 \ifthenelse{\equal{\outformat}{print}}{
-    \newcommand{\innersize}{55.4pt}
-    \newcommand{\outersize}{110.8pt}
+    \newcommand{\innersize}{58.4pt}
+    \newcommand{\outersize}{107.8pt}
 }{
     \newcommand{\innersize}{83.1pt}
     \newcommand{\outersize}{83.1pt}
@@ -117,6 +117,8 @@
     \newcommand{\linkcolor}{black}
     \newcommand{\citecolor}{black}
     \newcommand{\urlcolor}{black}
+
+    \hypersetup{hidelinks}
 }
 
 \hypersetup{
